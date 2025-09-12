@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\CMakeFiles\3da94c00795d0188a49acad3bbed338f\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Files">
+      <UniqueIdentifier>{1AA4D5C2-C462-384B-AB9B-09B879F0D91B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BC0AA72F-9768-3AB1-978E-AD36A14042AD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

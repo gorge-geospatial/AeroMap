@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\util\geosop\GeosOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\util\geosop\GeometryOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\AeroMap\Lib\geos-3.13.0\util\geosop\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DD2137F4-727F-3664-8D6E-30BF7960143E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

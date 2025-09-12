@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src\tests\geodtest.cpp">
+      <Filter>Source Files\Bin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src\CMakeLists.txt">
+      <Filter>CMake Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Files">
+      <UniqueIdentifier>{1AA4D5C2-C462-384B-AB9B-09B879F0D91B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{32D77F5A-3A11-38D0-ADFB-E72FDF59B67D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bin">
+      <UniqueIdentifier>{F1328DB7-0826-3A70-9BD2-F26BB57F515A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

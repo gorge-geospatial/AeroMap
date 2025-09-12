@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/AeroMap/Lib/geos-3.13.0/util/geosop/CMakeLists.txt
+  GeosOp.cpp
+  GeometryOp.cpp
+  Generating Code...
+  geosop.vcxproj -> C:\AeroMap\Lib\geos-3.13.0\bin\Debug\geosop.exe

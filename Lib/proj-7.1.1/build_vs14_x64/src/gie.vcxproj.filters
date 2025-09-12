@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src\apps\gie.cpp">
+      <Filter>Source Files\Bin</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src\apps\proj_strtod.cpp">
+      <Filter>Source Files\Bin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src\apps\proj_strtod.h">
+      <Filter>Source Files\Bin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src\apps\optargpm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src\CMakeLists.txt">
+      <Filter>CMake Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Files">
+      <UniqueIdentifier>{1AA4D5C2-C462-384B-AB9B-09B879F0D91B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1882D0E8-CFB4-35E1-A3B9-7905A3E6EE38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{32D77F5A-3A11-38D0-ADFB-E72FDF59B67D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bin">
+      <UniqueIdentifier>{F1328DB7-0826-3A70-9BD2-F26BB57F515A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

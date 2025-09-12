@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/AeroMap/Lib/geos-3.13.0/tests/xmltester/CMakeLists.txt
+  XMLTester.cpp
+  BufferResultMatcher.cpp
+  SingleSidedBufferResultMatcher.cpp
+  Generating Code...
+  test_xmltester.vcxproj -> C:\AeroMap\Lib\geos-3.13.0\bin\Debug\test_xmltester.exe

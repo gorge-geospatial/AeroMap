@@ -1,0 +1,1515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="filters">
+      <UniqueIdentifier>{90d4510a-dd9b-4208-bb28-7b4fb3ee84f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{c399e20f-c468-4766-b2fb-53cb38938027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernels">
+      <UniqueIdentifier>{69712edc-2912-4b42-a1d3-04e9095b82e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors">
+      <UniqueIdentifier>{ef696146-59b9-4baa-8cbf-955670f7b8af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pdal">
+      <UniqueIdentifier>{aa24550c-5db8-4b46-a483-428f2798ef1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\private">
+      <UniqueIdentifier>{1c0b1c3e-8f1c-49ab-a92d-2e702745d8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\private\ept">
+      <UniqueIdentifier>{2b41b546-3dde-487b-b378-af6363b04e63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filters\private">
+      <UniqueIdentifier>{69121c0e-8986-4219-9685-50c770696096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filters\private\expr">
+      <UniqueIdentifier>{edb4bd96-b418-4194-8b65-02621c5a6913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filters\private\hexer">
+      <UniqueIdentifier>{ff3a33a4-451e-4eec-8935-3aab90bfc0ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pdal\private">
+      <UniqueIdentifier>{a03fd5f4-ddfc-4511-885f-fede2089b909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pdal\util">
+      <UniqueIdentifier>{f861b960-c8dc-44d1-b065-56b2020528d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost">
+      <UniqueIdentifier>{a8ff5e67-9afd-43da-8c0b-12f205397626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\boost">
+      <UniqueIdentifier>{0429f4bb-0a17-495e-b8f5-291d53b4b998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\libs">
+      <UniqueIdentifier>{780c5e3e-404f-4049-a3f2-e1cb3abc4435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\boost\filesystem">
+      <UniqueIdentifier>{914ac095-4f96-4810-8138-d54ae5839689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\boost\system">
+      <UniqueIdentifier>{f61bd96e-e4d0-45e0-bd4e-1b9bf1a8b925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\libs\filesystem">
+      <UniqueIdentifier>{0f7a8d55-e797-4ff5-9deb-dc81c18a4a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\libs\system">
+      <UniqueIdentifier>{22538ecb-bbb4-4c7c-9796-31fa14310d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\libs\filesystem\src">
+      <UniqueIdentifier>{ff1305ee-f4df-454b-97ad-7b3a77bc1601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\pdalboost\libs\system\src">
+      <UniqueIdentifier>{b98f0592-d756-47d6-9a37-3427e31a06d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pdal\private\gdal">
+      <UniqueIdentifier>{9fc13ccf-2744-4ed8-840c-c408d6f4de8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernels\private">
+      <UniqueIdentifier>{7f226564-b83c-410d-bbc4-8bbe737c0372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernels\private\density">
+      <UniqueIdentifier>{ade334c7-e0ae-4f60-9d6f-4662a46181a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\arbiter">
+      <UniqueIdentifier>{8d9c48ed-84e2-44ac-9719-8b09ff13b0b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\nanoflann">
+      <UniqueIdentifier>{40098972-131a-4254-91b3-cc72d6dfb27e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\nlohmann">
+      <UniqueIdentifier>{6197fc81-1c1c-40da-8bc6-9698c6df709b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendors\nlohmann\nlohmann">
+      <UniqueIdentifier>{7b0a3ac8-b501-46b6-8aa3-7a111494fdf0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="filters\ApproximateCoplanarFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\AssignFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ChipperFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ClusterFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ColorinterpFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ColorInterpRamps.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ColorizationFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\CovarianceFeaturesFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\CropFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\CSFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\DBSCANFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\DecimationFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\DelaunayFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\DEMFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\DividerFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\EigenvaluesFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ELMFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\EstimateRankFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\FaceRasterFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\FarthestPointSamplingFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\FerryFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\GpsTimeConvert.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\GreedyProjection.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\GroupByFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\HagDelaunayFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\HagDemFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\HagNnFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\HeadFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\HexBinFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\InfoFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\IQRFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\IterativeClosestPoint.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\LiTreeFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\LloydKMeansFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\LocateFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\LOFFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\MADFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\MergeFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\MiniballFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\MongoExpressionFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\MortonOrderFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\NeighborClassifierFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\NNDistanceFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\NormalFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\OptimalNeighborhoodFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\OutlierFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\OverlayFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\PlaneFitFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\PMFFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\PoissonFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ProjPipelineFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\RadialDensityFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\RandomizeFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\RangeFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ReciprocityFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\RelaxationDartThrowing.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ReprojectionFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ReturnsFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\SampleFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\SeparateScanLineFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ShellFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\SkewnessBalancingFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\SMRFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\SortFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\SplitterFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\StatsFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\StreamCallbackFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\TailFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\TransformationFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\VoxelCenterNearestNeighborFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\VoxelCentroidNearestNeighborFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\VoxelDownsizeFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\ZsmoothFilter.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Artifact.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\ArtifactManager.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\DimDetail.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Dimension.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\DimType.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\DimUtil.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Filter.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\FlexWriter.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Geometry.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\gitsha.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\JsonFwd.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\KDIndex.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Kernel.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Log.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Mesh.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Metadata.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Options.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\pdal.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\pdal_config.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\pdal_export.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\pdal_internal.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\pdal_types.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PDALUtils.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PipelineExecutor.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PipelineManager.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PipelineReaderJSON.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PipelineWriter.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PluginDirectory.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PluginHelper.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PluginInfo.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PluginManager.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PointContainer.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PointLayout.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PointRef.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PointTable.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\PointView.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Polygon.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\QuadIndex.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\QuickInfo.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Reader.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Scaling.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\SpatialReference.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\SrsBounds.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Stage.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\StageExtensions.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\StageFactory.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\StageWrapper.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Streamable.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\SubcommandKernel.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\Writer.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="io\BpfCompressor.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\BpfHeader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\BpfReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\BpfWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\BufferReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\EptAddonWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\EptReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\FauxReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\GDALReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\GDALWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\GeotiffSupport.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\GltfWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\HeaderVal.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\LasError.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\LasHeader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\LasReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\LasSummaryData.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\LasUtils.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\LasVLR.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\LasWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\MemoryViewReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\NullWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\ObjReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\OGRWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\OptechCommon.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\OptechReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\OptechRotationMatrix.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\PcdHeader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\PcdReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\PcdWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\PlyReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\PlyWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\point_types.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\PtsReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\QfitReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\RasterWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\SbetCommon.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\SbetReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\SbetWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\TerrasolidReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\TextReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\TextWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\TIndexReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\pdal_features.h">
+      <Filter>pdal</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\ChamferKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\DeltaKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\DensityKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\EvalKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\GroundKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\HausdorffKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\InfoKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\MergeKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\PipelineKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\RandomKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\SortKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\SplitKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\TileKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\TIndexKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\TranslateKernel.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\GDALGrid.h">
+      <Filter>io\private</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\Addon.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\Connector.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\EptArtifact.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\EptInfo.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\EptSupport.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\FixedPointLayout.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\Key.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\Overlap.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\TileContents.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="io\private\ept\VectorPointTable.h">
+      <Filter>io\private\ept</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\delaunator.h">
+      <Filter>filters\private</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\DimRange.h">
+      <Filter>filters\private</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\Point.h">
+      <Filter>filters\private</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\Segmentation.h">
+      <Filter>filters\private</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\AssignParser.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\AssignStatement.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\BaseParser.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\ConditionalExpression.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\ConditionalParser.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\Expression.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\IdentExpression.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\Lexer.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\MathExpression.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\MathParser.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\expr\Token.h">
+      <Filter>filters\private\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\exception.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\Hexagon.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\HexGrid.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\HexInfo.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\HexIter.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\Mathpair.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\HexerPath.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\Processor.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="filters\private\hexer\Segment.h">
+      <Filter>filters\private\hexer</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\DynamicLibrary.h">
+      <Filter>pdal\private</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\KDImpl.h">
+      <Filter>pdal\private</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\MathUtils.h">
+      <Filter>pdal\private</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\Raster.h">
+      <Filter>pdal\private</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\SrsTransform.h">
+      <Filter>pdal\private</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\StageRunner.h">
+      <Filter>pdal\private</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Algorithm.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Backtrace.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Bounds.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Charbuf.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Extractor.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\FileUtils.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Georeference.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Inserter.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\IStream.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\NullOStream.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\OStream.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\endian.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\ProgramArgs.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Random.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\ThreadPool.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Utils.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\util\Uuid.h">
+      <Filter>pdal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\config.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\convenience.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\exception.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\fstream.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\operations.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\path.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\path_traits.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\string_file.hpp">
+      <Filter>vendors\pdalboost\boost\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\system\api_config.hpp">
+      <Filter>vendors\pdalboost\boost\system</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\system\config.hpp">
+      <Filter>vendors\pdalboost\boost\system</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\system\cygwin_error.hpp">
+      <Filter>vendors\pdalboost\boost\system</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\system\error_code.hpp">
+      <Filter>vendors\pdalboost\boost\system</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\system\linux_error.hpp">
+      <Filter>vendors\pdalboost\boost\system</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\system\system_error.hpp">
+      <Filter>vendors\pdalboost\boost\system</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\boost\system\windows_error.hpp">
+      <Filter>vendors\pdalboost\boost\system</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\pdalboost\libs\filesystem\src\windows_file_codecvt.hpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\gdal\ErrorHandler.h">
+      <Filter>pdal\private\gdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\gdal\GDALError.h">
+      <Filter>pdal\private\gdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\gdal\GDALUtils.h">
+      <Filter>pdal\private\gdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\gdal\GdalRaster.h">
+      <Filter>pdal\private\gdal</Filter>
+    </ClInclude>
+    <ClInclude Include="pdal\private\gdal\SpatialRef.h">
+      <Filter>pdal\private\gdal</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\private\density\OGR.h">
+      <Filter>kernels\private\density</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\arbiter\arbiter.h">
+      <Filter>vendors\arbiter</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\nanoflann\nanoflann.h">
+      <Filter>vendors\nanoflann</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\nlohmann\nlohmann\json.h">
+      <Filter>vendors\nlohmann\nlohmann</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="filters\ApproximateCoplanarFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\AssignFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ChipperFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ClusterFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ColorinterpFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ColorizationFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\CovarianceFeaturesFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\CropFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\CSFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\DBSCANFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\DecimationFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\DelaunayFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\DEMFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\DividerFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\EigenvaluesFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ELMFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\EstimateRankFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\FaceRasterFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\FarthestPointSamplingFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\FerryFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\GpsTimeConvert.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\GreedyProjection.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\GroupByFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\HagDelaunayFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\HagDemFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\HagNnFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\HeadFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\HexBinFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\InfoFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\IQRFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\IterativeClosestPoint.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\LiTreeFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\LloydKMeansFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\LocateFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\LOFFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\MADFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\MergeFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\MiniballFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\MongoExpressionFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\MortonOrderFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\NeighborClassifierFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\NNDistanceFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\NormalFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\OptimalNeighborhoodFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\OutlierFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\OverlayFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\PlaneFitFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\PMFFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\PoissonFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ProjPipelineFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\RadialDensityFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\RandomizeFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\RangeFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ReciprocityFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\RelaxationDartThrowing.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ReprojectionFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ReturnsFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\SampleFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\SeparateScanLineFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ShellFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\SkewnessBalancingFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\SMRFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\SortFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\SplitterFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\StatsFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\StreamCallbackFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\TailFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\TransformationFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\VoxelCenterNearestNeighborFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\VoxelCentroidNearestNeighborFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\VoxelDownsizeFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\ZsmoothFilter.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\ColumnPointTable.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\DynamicLibrary.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Filter.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Geometry.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\KDIndex.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Kernel.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Log.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Metadata.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Options.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\pdal_config.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PDALUtils.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PipelineExecutor.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PipelineManager.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PipelineReaderJSON.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PipelineWriter.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PluginDirectory.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PluginManager.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PointLayout.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PointTable.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\PointView.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Polygon.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\QuadIndex.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Reader.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Scaling.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\SpatialReference.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\SrsBounds.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Stage.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\StageExtensions.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\StageFactory.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Streamable.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\SubcommandKernel.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\Writer.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+    <ClCompile Include="io\BpfCompressor.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\BpfHeader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\BpfReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\BpfWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\EptAddonWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\EptReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\FauxReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\GDALReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\GDALWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\GeotiffSupport.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\GltfWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\LasHeader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\LasReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\LasSummaryData.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\LasUtils.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\LasVLR.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\LasWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\MemoryViewReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\NullWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\ObjReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\OGRWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\OptechReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\PcdHeader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\PcdReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\PcdWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\PlyReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\PlyWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\PtsReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\QfitReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\RasterWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\SbetReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\SbetWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\TerrasolidReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\TextReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\TextWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\TIndexReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\ChamferKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\DeltaKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\DensityKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\EvalKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\GroundKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\HausdorffKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\InfoKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\MergeKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\PipelineKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\RandomKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\SortKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\SplitKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\TileKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\TIndexKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\TranslateKernel.cpp">
+      <Filter>kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="io\private\GDALGrid.cpp">
+      <Filter>io\private</Filter>
+    </ClCompile>
+    <ClCompile Include="io\private\ept\Addon.cpp">
+      <Filter>io\private\ept</Filter>
+    </ClCompile>
+    <ClCompile Include="io\private\ept\Connector.cpp">
+      <Filter>io\private\ept</Filter>
+    </ClCompile>
+    <ClCompile Include="io\private\ept\EptInfo.cpp">
+      <Filter>io\private\ept</Filter>
+    </ClCompile>
+    <ClCompile Include="io\private\ept\FixedPointLayout.cpp">
+      <Filter>io\private\ept</Filter>
+    </ClCompile>
+    <ClCompile Include="io\private\ept\TileContents.cpp">
+      <Filter>io\private\ept</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\delaunator.cpp">
+      <Filter>filters\private</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\DimRange.cpp">
+      <Filter>filters\private</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\Point.cpp">
+      <Filter>filters\private</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\Segmentation.cpp">
+      <Filter>filters\private</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\AssignParser.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\AssignStatement.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\BaseParser.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\ConditionalExpression.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\ConditionalParser.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\Expression.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\IdentExpression.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\Lexer.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\MathExpression.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\expr\MathParser.cpp">
+      <Filter>filters\private\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\hexer\Hexagon.cpp">
+      <Filter>filters\private\hexer</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\hexer\HexGrid.cpp">
+      <Filter>filters\private\hexer</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\hexer\HexerPath.cpp">
+      <Filter>filters\private\hexer</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\hexer\Processor.cpp">
+      <Filter>filters\private\hexer</Filter>
+    </ClCompile>
+    <ClCompile Include="filters\private\hexer\Segment.cpp">
+      <Filter>filters\private\hexer</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\MathUtils.cpp">
+      <Filter>pdal\private</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\Raster.cpp">
+      <Filter>pdal\private</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\SrsTransform.cpp">
+      <Filter>pdal\private</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\StageRunner.cpp">
+      <Filter>pdal\private</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\Backtrace.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\Bounds.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\Charbuf.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\FileUtils.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\Georeference.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\Random.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\ThreadPool.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\util\Utils.cpp">
+      <Filter>pdal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\codecvt_error_category.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\operations.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\path.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\path_traits.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\portability.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\unique_path.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\utf8_codecvt_facet.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\windows_file_codecvt.cpp">
+      <Filter>vendors\pdalboost\libs\filesystem\src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\pdalboost\libs\system\src\error_code.cpp">
+      <Filter>vendors\pdalboost\libs\system\src</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\gdal\BaseBand.cpp">
+      <Filter>pdal\private\gdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\gdal\ErrorHandler.cpp">
+      <Filter>pdal\private\gdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\gdal\GDALUtils.cpp">
+      <Filter>pdal\private\gdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\gdal\GdalRaster.cpp">
+      <Filter>pdal\private\gdal</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\private\gdal\SpatialRef.cpp">
+      <Filter>pdal\private\gdal</Filter>
+    </ClCompile>
+    <ClCompile Include="kernels\private\density\OGR.cpp">
+      <Filter>kernels\private\density</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\arbiter\arbiter.cpp">
+      <Filter>vendors\arbiter</Filter>
+    </ClCompile>
+    <ClCompile Include="pdal\gitsha.cpp">
+      <Filter>pdal</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

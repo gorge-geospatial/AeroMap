@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{87dcff1b-439a-4ced-9817-7a9ab16f8369}</ProjectGuid>
+    <RootNamespace>pdal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.;.\vendor;.\vendor\eigen;.\vendor\nlohmann;.\vendor\pdalboost;..\gdal-3.2.1\gcore;..\gdal-3.2.1\ogr;..\gdal-3.2.1\ogr\vector_frmts;..\gdal-3.2.1\port;..\gdal-3.2.1\raster_frmts\gtiff\libgeotiff</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Shlwapi.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.;.\vendor;.\vendor\eigen;.\vendor\nlohmann;.\vendor\pdalboost;..\gdal-3.2.1\gcore;..\gdal-3.2.1\ogr;..\gdal-3.2.1\ogr\vector_frmts;..\gdal-3.2.1\port;..\gdal-3.2.1\raster_frmts\gtiff\libgeotiff</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Shlwapi.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="filters\ApproximateCoplanarFilter.h" />
+    <ClInclude Include="filters\AssignFilter.h" />
+    <ClInclude Include="filters\ChipperFilter.h" />
+    <ClInclude Include="filters\ClusterFilter.h" />
+    <ClInclude Include="filters\ColorinterpFilter.h" />
+    <ClInclude Include="filters\ColorInterpRamps.h" />
+    <ClInclude Include="filters\ColorizationFilter.h" />
+    <ClInclude Include="filters\CovarianceFeaturesFilter.h" />
+    <ClInclude Include="filters\CropFilter.h" />
+    <ClInclude Include="filters\CSFilter.h" />
+    <ClInclude Include="filters\DBSCANFilter.h" />
+    <ClInclude Include="filters\DecimationFilter.h" />
+    <ClInclude Include="filters\DelaunayFilter.h" />
+    <ClInclude Include="filters\DEMFilter.h" />
+    <ClInclude Include="filters\DividerFilter.h" />
+    <ClInclude Include="filters\EigenvaluesFilter.h" />
+    <ClInclude Include="filters\ELMFilter.h" />
+    <ClInclude Include="filters\EstimateRankFilter.h" />
+    <ClInclude Include="filters\FaceRasterFilter.h" />
+    <ClInclude Include="filters\FarthestPointSamplingFilter.h" />
+    <ClInclude Include="filters\FerryFilter.h" />
+    <ClInclude Include="filters\GpsTimeConvert.h" />
+    <ClInclude Include="filters\GreedyProjection.h" />
+    <ClInclude Include="filters\GroupByFilter.h" />
+    <ClInclude Include="filters\HagDelaunayFilter.h" />
+    <ClInclude Include="filters\HagDemFilter.h" />
+    <ClInclude Include="filters\HagNnFilter.h" />
+    <ClInclude Include="filters\HeadFilter.h" />
+    <ClInclude Include="filters\HexBinFilter.h" />
+    <ClInclude Include="filters\InfoFilter.h" />
+    <ClInclude Include="filters\IQRFilter.h" />
+    <ClInclude Include="filters\IterativeClosestPoint.h" />
+    <ClInclude Include="filters\LiTreeFilter.h" />
+    <ClInclude Include="filters\LloydKMeansFilter.h" />
+    <ClInclude Include="filters\LocateFilter.h" />
+    <ClInclude Include="filters\LOFFilter.h" />
+    <ClInclude Include="filters\MADFilter.h" />
+    <ClInclude Include="filters\MergeFilter.h" />
+    <ClInclude Include="filters\MiniballFilter.h" />
+    <ClInclude Include="filters\MongoExpressionFilter.h" />
+    <ClInclude Include="filters\MortonOrderFilter.h" />
+    <ClInclude Include="filters\NeighborClassifierFilter.h" />
+    <ClInclude Include="filters\NNDistanceFilter.h" />
+    <ClInclude Include="filters\NormalFilter.h" />
+    <ClInclude Include="filters\OptimalNeighborhoodFilter.h" />
+    <ClInclude Include="filters\OutlierFilter.h" />
+    <ClInclude Include="filters\OverlayFilter.h" />
+    <ClInclude Include="filters\PlaneFitFilter.h" />
+    <ClInclude Include="filters\PMFFilter.h" />
+    <ClInclude Include="filters\PoissonFilter.h" />
+    <ClInclude Include="filters\private\delaunator.h" />
+    <ClInclude Include="filters\private\DimRange.h" />
+    <ClInclude Include="filters\private\expr\AssignParser.h" />
+    <ClInclude Include="filters\private\expr\AssignStatement.h" />
+    <ClInclude Include="filters\private\expr\BaseParser.h" />
+    <ClInclude Include="filters\private\expr\ConditionalExpression.h" />
+    <ClInclude Include="filters\private\expr\ConditionalParser.h" />
+    <ClInclude Include="filters\private\expr\Expression.h" />
+    <ClInclude Include="filters\private\expr\IdentExpression.h" />
+    <ClInclude Include="filters\private\expr\Lexer.h" />
+    <ClInclude Include="filters\private\expr\MathExpression.h" />
+    <ClInclude Include="filters\private\expr\MathParser.h" />
+    <ClInclude Include="filters\private\expr\Token.h" />
+    <ClInclude Include="filters\private\hexer\exception.h" />
+    <ClInclude Include="filters\private\hexer\Hexagon.h" />
+    <ClInclude Include="filters\private\hexer\HexGrid.h" />
+    <ClInclude Include="filters\private\hexer\HexInfo.h" />
+    <ClInclude Include="filters\private\hexer\HexIter.h" />
+    <ClInclude Include="filters\private\hexer\Mathpair.h" />
+    <ClInclude Include="filters\private\hexer\HexerPath.h" />
+    <ClInclude Include="filters\private\hexer\Processor.h" />
+    <ClInclude Include="filters\private\hexer\Segment.h" />
+    <ClInclude Include="filters\private\Point.h" />
+    <ClInclude Include="filters\private\Segmentation.h" />
+    <ClInclude Include="filters\ProjPipelineFilter.h" />
+    <ClInclude Include="filters\RadialDensityFilter.h" />
+    <ClInclude Include="filters\RandomizeFilter.h" />
+    <ClInclude Include="filters\RangeFilter.h" />
+    <ClInclude Include="filters\ReciprocityFilter.h" />
+    <ClInclude Include="filters\RelaxationDartThrowing.h" />
+    <ClInclude Include="filters\ReprojectionFilter.h" />
+    <ClInclude Include="filters\ReturnsFilter.h" />
+    <ClInclude Include="filters\SampleFilter.h" />
+    <ClInclude Include="filters\SeparateScanLineFilter.h" />
+    <ClInclude Include="filters\ShellFilter.h" />
+    <ClInclude Include="filters\SkewnessBalancingFilter.h" />
+    <ClInclude Include="filters\SMRFilter.h" />
+    <ClInclude Include="filters\SortFilter.h" />
+    <ClInclude Include="filters\SplitterFilter.h" />
+    <ClInclude Include="filters\StatsFilter.h" />
+    <ClInclude Include="filters\StreamCallbackFilter.h" />
+    <ClInclude Include="filters\TailFilter.h" />
+    <ClInclude Include="filters\TransformationFilter.h" />
+    <ClInclude Include="filters\VoxelCenterNearestNeighborFilter.h" />
+    <ClInclude Include="filters\VoxelCentroidNearestNeighborFilter.h" />
+    <ClInclude Include="filters\VoxelDownsizeFilter.h" />
+    <ClInclude Include="filters\ZsmoothFilter.h" />
+    <ClInclude Include="io\BpfCompressor.h" />
+    <ClInclude Include="io\BpfHeader.h" />
+    <ClInclude Include="io\BpfReader.h" />
+    <ClInclude Include="io\BpfWriter.h" />
+    <ClInclude Include="io\BufferReader.h" />
+    <ClInclude Include="io\EptAddonWriter.h" />
+    <ClInclude Include="io\EptReader.h" />
+    <ClInclude Include="io\FauxReader.h" />
+    <ClInclude Include="io\GDALReader.h" />
+    <ClInclude Include="io\GDALWriter.h" />
+    <ClInclude Include="io\GeotiffSupport.h" />
+    <ClInclude Include="io\GltfWriter.h" />
+    <ClInclude Include="io\HeaderVal.h" />
+    <ClInclude Include="io\LasError.h" />
+    <ClInclude Include="io\LasHeader.h" />
+    <ClInclude Include="io\LasReader.h" />
+    <ClInclude Include="io\LasSummaryData.h" />
+    <ClInclude Include="io\LasUtils.h" />
+    <ClInclude Include="io\LasVLR.h" />
+    <ClInclude Include="io\LasWriter.h" />
+    <ClInclude Include="io\MemoryViewReader.h" />
+    <ClInclude Include="io\NullWriter.h" />
+    <ClInclude Include="io\ObjReader.h" />
+    <ClInclude Include="io\OGRWriter.h" />
+    <ClInclude Include="io\OptechCommon.h" />
+    <ClInclude Include="io\OptechReader.h" />
+    <ClInclude Include="io\OptechRotationMatrix.h" />
+    <ClInclude Include="io\PcdHeader.h" />
+    <ClInclude Include="io\PcdReader.h" />
+    <ClInclude Include="io\PcdWriter.h" />
+    <ClInclude Include="io\PlyReader.h" />
+    <ClInclude Include="io\PlyWriter.h" />
+    <ClInclude Include="io\point_types.h" />
+    <ClInclude Include="io\private\ept\Addon.h" />
+    <ClInclude Include="io\private\ept\Connector.h" />
+    <ClInclude Include="io\private\ept\EptArtifact.h" />
+    <ClInclude Include="io\private\ept\EptInfo.h" />
+    <ClInclude Include="io\private\ept\EptSupport.h" />
+    <ClInclude Include="io\private\ept\FixedPointLayout.h" />
+    <ClInclude Include="io\private\ept\Key.h" />
+    <ClInclude Include="io\private\ept\Overlap.h" />
+    <ClInclude Include="io\private\ept\TileContents.h" />
+    <ClInclude Include="io\private\ept\VectorPointTable.h" />
+    <ClInclude Include="io\private\GDALGrid.h" />
+    <ClInclude Include="io\PtsReader.h" />
+    <ClInclude Include="io\QfitReader.h" />
+    <ClInclude Include="io\RasterWriter.h" />
+    <ClInclude Include="io\SbetCommon.h" />
+    <ClInclude Include="io\SbetReader.h" />
+    <ClInclude Include="io\SbetWriter.h" />
+    <ClInclude Include="io\TerrasolidReader.h" />
+    <ClInclude Include="io\TextReader.h" />
+    <ClInclude Include="io\TextWriter.h" />
+    <ClInclude Include="io\TIndexReader.h" />
+    <ClInclude Include="kernels\ChamferKernel.h" />
+    <ClInclude Include="kernels\DeltaKernel.h" />
+    <ClInclude Include="kernels\DensityKernel.h" />
+    <ClInclude Include="kernels\EvalKernel.h" />
+    <ClInclude Include="kernels\GroundKernel.h" />
+    <ClInclude Include="kernels\HausdorffKernel.h" />
+    <ClInclude Include="kernels\InfoKernel.h" />
+    <ClInclude Include="kernels\MergeKernel.h" />
+    <ClInclude Include="kernels\PipelineKernel.h" />
+    <ClInclude Include="kernels\private\density\OGR.h" />
+    <ClInclude Include="kernels\RandomKernel.h" />
+    <ClInclude Include="kernels\SortKernel.h" />
+    <ClInclude Include="kernels\SplitKernel.h" />
+    <ClInclude Include="kernels\TileKernel.h" />
+    <ClInclude Include="kernels\TIndexKernel.h" />
+    <ClInclude Include="kernels\TranslateKernel.h" />
+    <ClInclude Include="pdal\Artifact.h" />
+    <ClInclude Include="pdal\ArtifactManager.h" />
+    <ClInclude Include="pdal\DimDetail.h" />
+    <ClInclude Include="pdal\Dimension.h" />
+    <ClInclude Include="pdal\DimType.h" />
+    <ClInclude Include="pdal\DimUtil.h" />
+    <ClInclude Include="pdal\Filter.h" />
+    <ClInclude Include="pdal\FlexWriter.h" />
+    <ClInclude Include="pdal\Geometry.h" />
+    <ClInclude Include="pdal\gitsha.h" />
+    <ClInclude Include="pdal\JsonFwd.h" />
+    <ClInclude Include="pdal\KDIndex.h" />
+    <ClInclude Include="pdal\Kernel.h" />
+    <ClInclude Include="pdal\Log.h" />
+    <ClInclude Include="pdal\Mesh.h" />
+    <ClInclude Include="pdal\Metadata.h" />
+    <ClInclude Include="pdal\Options.h" />
+    <ClInclude Include="pdal\pdal.h" />
+    <ClInclude Include="pdal\PDALUtils.h" />
+    <ClInclude Include="pdal\pdal_config.h" />
+    <ClInclude Include="pdal\pdal_export.h" />
+    <ClInclude Include="pdal\pdal_features.h" />
+    <ClInclude Include="pdal\pdal_internal.h" />
+    <ClInclude Include="pdal\pdal_types.h" />
+    <ClInclude Include="pdal\PipelineExecutor.h" />
+    <ClInclude Include="pdal\PipelineManager.h" />
+    <ClInclude Include="pdal\PipelineReaderJSON.h" />
+    <ClInclude Include="pdal\PipelineWriter.h" />
+    <ClInclude Include="pdal\PluginDirectory.h" />
+    <ClInclude Include="pdal\PluginHelper.h" />
+    <ClInclude Include="pdal\PluginInfo.h" />
+    <ClInclude Include="pdal\PluginManager.h" />
+    <ClInclude Include="pdal\PointContainer.h" />
+    <ClInclude Include="pdal\PointLayout.h" />
+    <ClInclude Include="pdal\PointRef.h" />
+    <ClInclude Include="pdal\PointTable.h" />
+    <ClInclude Include="pdal\PointView.h" />
+    <ClInclude Include="pdal\Polygon.h" />
+    <ClInclude Include="pdal\private\DynamicLibrary.h" />
+    <ClInclude Include="pdal\private\gdal\ErrorHandler.h" />
+    <ClInclude Include="pdal\private\gdal\GDALError.h" />
+    <ClInclude Include="pdal\private\gdal\GDALUtils.h" />
+    <ClInclude Include="pdal\private\gdal\GdalRaster.h" />
+    <ClInclude Include="pdal\private\gdal\SpatialRef.h" />
+    <ClInclude Include="pdal\private\KDImpl.h" />
+    <ClInclude Include="pdal\private\MathUtils.h" />
+    <ClInclude Include="pdal\private\Raster.h" />
+    <ClInclude Include="pdal\private\SrsTransform.h" />
+    <ClInclude Include="pdal\private\StageRunner.h" />
+    <ClInclude Include="pdal\QuadIndex.h" />
+    <ClInclude Include="pdal\QuickInfo.h" />
+    <ClInclude Include="pdal\Reader.h" />
+    <ClInclude Include="pdal\Scaling.h" />
+    <ClInclude Include="pdal\SpatialReference.h" />
+    <ClInclude Include="pdal\SrsBounds.h" />
+    <ClInclude Include="pdal\Stage.h" />
+    <ClInclude Include="pdal\StageExtensions.h" />
+    <ClInclude Include="pdal\StageFactory.h" />
+    <ClInclude Include="pdal\StageWrapper.h" />
+    <ClInclude Include="pdal\Streamable.h" />
+    <ClInclude Include="pdal\SubcommandKernel.h" />
+    <ClInclude Include="pdal\util\Algorithm.h" />
+    <ClInclude Include="pdal\util\Backtrace.h" />
+    <ClInclude Include="pdal\util\Bounds.h" />
+    <ClInclude Include="pdal\util\Charbuf.h" />
+    <ClInclude Include="pdal\util\Extractor.h" />
+    <ClInclude Include="pdal\util\FileUtils.h" />
+    <ClInclude Include="pdal\util\Georeference.h" />
+    <ClInclude Include="pdal\util\Inserter.h" />
+    <ClInclude Include="pdal\util\IStream.h" />
+    <ClInclude Include="pdal\util\NullOStream.h" />
+    <ClInclude Include="pdal\util\OStream.h" />
+    <ClInclude Include="pdal\util\endian.h" />
+    <ClInclude Include="pdal\util\ProgramArgs.h" />
+    <ClInclude Include="pdal\util\Random.h" />
+    <ClInclude Include="pdal\util\ThreadPool.h" />
+    <ClInclude Include="pdal\util\Utils.h" />
+    <ClInclude Include="pdal\util\Uuid.h" />
+    <ClInclude Include="pdal\Writer.h" />
+    <ClInclude Include="vendor\arbiter\arbiter.h" />
+    <ClInclude Include="vendor\nanoflann\nanoflann.h" />
+    <ClInclude Include="vendor\nlohmann\nlohmann\json.h" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\config.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\convenience.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\exception.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\fstream.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\operations.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\path.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\path_traits.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\filesystem\string_file.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\system\api_config.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\system\config.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\system\cygwin_error.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\system\error_code.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\system\linux_error.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\system\system_error.hpp" />
+    <ClInclude Include="vendor\pdalboost\boost\system\windows_error.hpp" />
+    <ClInclude Include="vendor\pdalboost\libs\filesystem\src\windows_file_codecvt.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="filters\ApproximateCoplanarFilter.cpp" />
+    <ClCompile Include="filters\AssignFilter.cpp" />
+    <ClCompile Include="filters\ChipperFilter.cpp" />
+    <ClCompile Include="filters\ClusterFilter.cpp" />
+    <ClCompile Include="filters\ColorinterpFilter.cpp" />
+    <ClCompile Include="filters\ColorizationFilter.cpp" />
+    <ClCompile Include="filters\CovarianceFeaturesFilter.cpp" />
+    <ClCompile Include="filters\CropFilter.cpp" />
+    <ClCompile Include="filters\CSFilter.cpp" />
+    <ClCompile Include="filters\DBSCANFilter.cpp" />
+    <ClCompile Include="filters\DecimationFilter.cpp" />
+    <ClCompile Include="filters\DelaunayFilter.cpp" />
+    <ClCompile Include="filters\DEMFilter.cpp" />
+    <ClCompile Include="filters\DividerFilter.cpp" />
+    <ClCompile Include="filters\EigenvaluesFilter.cpp" />
+    <ClCompile Include="filters\ELMFilter.cpp" />
+    <ClCompile Include="filters\EstimateRankFilter.cpp" />
+    <ClCompile Include="filters\FaceRasterFilter.cpp" />
+    <ClCompile Include="filters\FarthestPointSamplingFilter.cpp" />
+    <ClCompile Include="filters\FerryFilter.cpp" />
+    <ClCompile Include="filters\GpsTimeConvert.cpp" />
+    <ClCompile Include="filters\GreedyProjection.cpp" />
+    <ClCompile Include="filters\GroupByFilter.cpp" />
+    <ClCompile Include="filters\HagDelaunayFilter.cpp" />
+    <ClCompile Include="filters\HagDemFilter.cpp" />
+    <ClCompile Include="filters\HagNnFilter.cpp" />
+    <ClCompile Include="filters\HeadFilter.cpp" />
+    <ClCompile Include="filters\HexBinFilter.cpp" />
+    <ClCompile Include="filters\InfoFilter.cpp" />
+    <ClCompile Include="filters\IQRFilter.cpp" />
+    <ClCompile Include="filters\IterativeClosestPoint.cpp" />
+    <ClCompile Include="filters\LiTreeFilter.cpp" />
+    <ClCompile Include="filters\LloydKMeansFilter.cpp" />
+    <ClCompile Include="filters\LocateFilter.cpp" />
+    <ClCompile Include="filters\LOFFilter.cpp" />
+    <ClCompile Include="filters\MADFilter.cpp" />
+    <ClCompile Include="filters\MergeFilter.cpp" />
+    <ClCompile Include="filters\MiniballFilter.cpp" />
+    <ClCompile Include="filters\MongoExpressionFilter.cpp" />
+    <ClCompile Include="filters\MortonOrderFilter.cpp" />
+    <ClCompile Include="filters\NeighborClassifierFilter.cpp" />
+    <ClCompile Include="filters\NNDistanceFilter.cpp" />
+    <ClCompile Include="filters\NormalFilter.cpp" />
+    <ClCompile Include="filters\OptimalNeighborhoodFilter.cpp" />
+    <ClCompile Include="filters\OutlierFilter.cpp" />
+    <ClCompile Include="filters\OverlayFilter.cpp" />
+    <ClCompile Include="filters\PlaneFitFilter.cpp" />
+    <ClCompile Include="filters\PMFFilter.cpp" />
+    <ClCompile Include="filters\PoissonFilter.cpp" />
+    <ClCompile Include="filters\private\delaunator.cpp" />
+    <ClCompile Include="filters\private\DimRange.cpp" />
+    <ClCompile Include="filters\private\expr\AssignParser.cpp" />
+    <ClCompile Include="filters\private\expr\AssignStatement.cpp" />
+    <ClCompile Include="filters\private\expr\BaseParser.cpp" />
+    <ClCompile Include="filters\private\expr\ConditionalExpression.cpp" />
+    <ClCompile Include="filters\private\expr\ConditionalParser.cpp" />
+    <ClCompile Include="filters\private\expr\Expression.cpp" />
+    <ClCompile Include="filters\private\expr\IdentExpression.cpp" />
+    <ClCompile Include="filters\private\expr\Lexer.cpp" />
+    <ClCompile Include="filters\private\expr\MathExpression.cpp" />
+    <ClCompile Include="filters\private\expr\MathParser.cpp" />
+    <ClCompile Include="filters\private\hexer\Hexagon.cpp" />
+    <ClCompile Include="filters\private\hexer\HexGrid.cpp" />
+    <ClCompile Include="filters\private\hexer\HexerPath.cpp" />
+    <ClCompile Include="filters\private\hexer\Processor.cpp" />
+    <ClCompile Include="filters\private\hexer\Segment.cpp" />
+    <ClCompile Include="filters\private\Point.cpp" />
+    <ClCompile Include="filters\private\Segmentation.cpp" />
+    <ClCompile Include="filters\ProjPipelineFilter.cpp" />
+    <ClCompile Include="filters\RadialDensityFilter.cpp" />
+    <ClCompile Include="filters\RandomizeFilter.cpp" />
+    <ClCompile Include="filters\RangeFilter.cpp" />
+    <ClCompile Include="filters\ReciprocityFilter.cpp" />
+    <ClCompile Include="filters\RelaxationDartThrowing.cpp" />
+    <ClCompile Include="filters\ReprojectionFilter.cpp" />
+    <ClCompile Include="filters\ReturnsFilter.cpp" />
+    <ClCompile Include="filters\SampleFilter.cpp" />
+    <ClCompile Include="filters\SeparateScanLineFilter.cpp" />
+    <ClCompile Include="filters\ShellFilter.cpp" />
+    <ClCompile Include="filters\SkewnessBalancingFilter.cpp" />
+    <ClCompile Include="filters\SMRFilter.cpp" />
+    <ClCompile Include="filters\SortFilter.cpp" />
+    <ClCompile Include="filters\SplitterFilter.cpp" />
+    <ClCompile Include="filters\StatsFilter.cpp" />
+    <ClCompile Include="filters\StreamCallbackFilter.cpp" />
+    <ClCompile Include="filters\TailFilter.cpp" />
+    <ClCompile Include="filters\TransformationFilter.cpp" />
+    <ClCompile Include="filters\VoxelCenterNearestNeighborFilter.cpp" />
+    <ClCompile Include="filters\VoxelCentroidNearestNeighborFilter.cpp" />
+    <ClCompile Include="filters\VoxelDownsizeFilter.cpp" />
+    <ClCompile Include="filters\ZsmoothFilter.cpp" />
+    <ClCompile Include="io\BpfCompressor.cpp" />
+    <ClCompile Include="io\BpfHeader.cpp" />
+    <ClCompile Include="io\BpfReader.cpp" />
+    <ClCompile Include="io\BpfWriter.cpp" />
+    <ClCompile Include="io\EptAddonWriter.cpp" />
+    <ClCompile Include="io\EptReader.cpp" />
+    <ClCompile Include="io\FauxReader.cpp" />
+    <ClCompile Include="io\GDALReader.cpp" />
+    <ClCompile Include="io\GDALWriter.cpp" />
+    <ClCompile Include="io\GeotiffSupport.cpp" />
+    <ClCompile Include="io\GltfWriter.cpp" />
+    <ClCompile Include="io\LasHeader.cpp" />
+    <ClCompile Include="io\LasReader.cpp" />
+    <ClCompile Include="io\LasSummaryData.cpp" />
+    <ClCompile Include="io\LasUtils.cpp" />
+    <ClCompile Include="io\LasVLR.cpp" />
+    <ClCompile Include="io\LasWriter.cpp" />
+    <ClCompile Include="io\MemoryViewReader.cpp" />
+    <ClCompile Include="io\NullWriter.cpp" />
+    <ClCompile Include="io\ObjReader.cpp" />
+    <ClCompile Include="io\OGRWriter.cpp" />
+    <ClCompile Include="io\OptechReader.cpp" />
+    <ClCompile Include="io\PcdHeader.cpp" />
+    <ClCompile Include="io\PcdReader.cpp" />
+    <ClCompile Include="io\PcdWriter.cpp" />
+    <ClCompile Include="io\PlyReader.cpp" />
+    <ClCompile Include="io\PlyWriter.cpp" />
+    <ClCompile Include="io\private\ept\Addon.cpp" />
+    <ClCompile Include="io\private\ept\Connector.cpp" />
+    <ClCompile Include="io\private\ept\EptInfo.cpp" />
+    <ClCompile Include="io\private\ept\FixedPointLayout.cpp" />
+    <ClCompile Include="io\private\ept\TileContents.cpp" />
+    <ClCompile Include="io\private\GDALGrid.cpp" />
+    <ClCompile Include="io\PtsReader.cpp" />
+    <ClCompile Include="io\QfitReader.cpp" />
+    <ClCompile Include="io\RasterWriter.cpp" />
+    <ClCompile Include="io\SbetReader.cpp" />
+    <ClCompile Include="io\SbetWriter.cpp" />
+    <ClCompile Include="io\TerrasolidReader.cpp" />
+    <ClCompile Include="io\TextReader.cpp" />
+    <ClCompile Include="io\TextWriter.cpp" />
+    <ClCompile Include="io\TIndexReader.cpp" />
+    <ClCompile Include="kernels\ChamferKernel.cpp" />
+    <ClCompile Include="kernels\DeltaKernel.cpp" />
+    <ClCompile Include="kernels\DensityKernel.cpp" />
+    <ClCompile Include="kernels\EvalKernel.cpp" />
+    <ClCompile Include="kernels\GroundKernel.cpp" />
+    <ClCompile Include="kernels\HausdorffKernel.cpp" />
+    <ClCompile Include="kernels\InfoKernel.cpp" />
+    <ClCompile Include="kernels\MergeKernel.cpp" />
+    <ClCompile Include="kernels\PipelineKernel.cpp" />
+    <ClCompile Include="kernels\private\density\OGR.cpp" />
+    <ClCompile Include="kernels\RandomKernel.cpp" />
+    <ClCompile Include="kernels\SortKernel.cpp" />
+    <ClCompile Include="kernels\SplitKernel.cpp" />
+    <ClCompile Include="kernels\TileKernel.cpp" />
+    <ClCompile Include="kernels\TIndexKernel.cpp" />
+    <ClCompile Include="kernels\TranslateKernel.cpp" />
+    <ClCompile Include="pdal\ColumnPointTable.cpp" />
+    <ClCompile Include="pdal\DynamicLibrary.cpp" />
+    <ClCompile Include="pdal\Filter.cpp" />
+    <ClCompile Include="pdal\Geometry.cpp" />
+    <ClCompile Include="pdal\gitsha.cpp" />
+    <ClCompile Include="pdal\KDIndex.cpp" />
+    <ClCompile Include="pdal\Kernel.cpp" />
+    <ClCompile Include="pdal\Log.cpp" />
+    <ClCompile Include="pdal\Metadata.cpp" />
+    <ClCompile Include="pdal\Options.cpp" />
+    <ClCompile Include="pdal\PDALUtils.cpp" />
+    <ClCompile Include="pdal\pdal_config.cpp" />
+    <ClCompile Include="pdal\PipelineExecutor.cpp" />
+    <ClCompile Include="pdal\PipelineManager.cpp" />
+    <ClCompile Include="pdal\PipelineReaderJSON.cpp" />
+    <ClCompile Include="pdal\PipelineWriter.cpp" />
+    <ClCompile Include="pdal\PluginDirectory.cpp" />
+    <ClCompile Include="pdal\PluginManager.cpp" />
+    <ClCompile Include="pdal\PointLayout.cpp" />
+    <ClCompile Include="pdal\PointTable.cpp" />
+    <ClCompile Include="pdal\PointView.cpp" />
+    <ClCompile Include="pdal\Polygon.cpp" />
+    <ClCompile Include="pdal\private\gdal\BaseBand.cpp" />
+    <ClCompile Include="pdal\private\gdal\ErrorHandler.cpp" />
+    <ClCompile Include="pdal\private\gdal\GDALUtils.cpp" />
+    <ClCompile Include="pdal\private\gdal\GdalRaster.cpp" />
+    <ClCompile Include="pdal\private\gdal\SpatialRef.cpp" />
+    <ClCompile Include="pdal\private\MathUtils.cpp" />
+    <ClCompile Include="pdal\private\Raster.cpp" />
+    <ClCompile Include="pdal\private\SrsTransform.cpp" />
+    <ClCompile Include="pdal\private\StageRunner.cpp" />
+    <ClCompile Include="pdal\QuadIndex.cpp" />
+    <ClCompile Include="pdal\Reader.cpp" />
+    <ClCompile Include="pdal\Scaling.cpp" />
+    <ClCompile Include="pdal\SpatialReference.cpp" />
+    <ClCompile Include="pdal\SrsBounds.cpp" />
+    <ClCompile Include="pdal\Stage.cpp" />
+    <ClCompile Include="pdal\StageExtensions.cpp" />
+    <ClCompile Include="pdal\StageFactory.cpp" />
+    <ClCompile Include="pdal\Streamable.cpp" />
+    <ClCompile Include="pdal\SubcommandKernel.cpp" />
+    <ClCompile Include="pdal\util\Backtrace.cpp" />
+    <ClCompile Include="pdal\util\Bounds.cpp" />
+    <ClCompile Include="pdal\util\Charbuf.cpp" />
+    <ClCompile Include="pdal\util\FileUtils.cpp" />
+    <ClCompile Include="pdal\util\Georeference.cpp" />
+    <ClCompile Include="pdal\util\Random.cpp" />
+    <ClCompile Include="pdal\util\ThreadPool.cpp" />
+    <ClCompile Include="pdal\util\Utils.cpp" />
+    <ClCompile Include="pdal\Writer.cpp" />
+    <ClCompile Include="vendor\arbiter\arbiter.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\codecvt_error_category.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\operations.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\path.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\path_traits.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\portability.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\unique_path.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\utf8_codecvt_facet.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\filesystem\src\windows_file_codecvt.cpp" />
+    <ClCompile Include="vendor\pdalboost\libs\system\src\error_code.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

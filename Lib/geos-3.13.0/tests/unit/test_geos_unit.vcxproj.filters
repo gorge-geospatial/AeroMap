@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\AngleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\AreaTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\OrientationIsCCWTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\computeOrientationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\isPointInRingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\signedAreaTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\CentroidTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\CircularArcsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\ConvexHullTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\InteriorPointAreaTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\InterpolateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\IntersectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\LengthTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\LocatePointInRingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\MinimumAreaRectangleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\MinimumBoundingCircleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\MinimumDiameterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\OrientationIndexFailureTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\PointLocationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\PointLocatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\PolygonNodeTopologyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\RectangleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\RobustLineIntersectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\RobustLineIntersectorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\RobustLineIntersectorZTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\TrianglePredicateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\construct\LargestEmptyCircleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\construct\MaximumInscribedCircleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\distance\DiscreteFrechetDistanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\distance\DiscreteHausdorffDistanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\hull\ConcaveHullOfPolygonsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\hull\ConcaveHullTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\locate\IndexedPointInAreaLocatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\algorithm\locate\SimplePointInAreaLocatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSBoundaryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSBufferTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSBuildAreaTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCAPIDefinesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSClipByRectTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSConcaveHullOfPolygonsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSConcaveHullTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSConstrainedDelaunayTriangulationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSContainsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSContextTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSConvexHullTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCoordSeqTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCoverageIsValidTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCoverageSimplifyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCoverageUnionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCoveredByTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCoversTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSCrossesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDelaunayTriangulationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDensifyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDifferencePrecTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDifferenceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDisjointSubsetUnionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDisjointTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDistanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSDistanceWithinTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSEnvelopeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSEqualsIdenticalTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSEqualsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSFrechetDistanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomFromWKBTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomGeoJSONReadTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomGeoJSONWriteTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomGetNumPointsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomGetXYZMTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomToHEX_bufTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomToWKBTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomToWKB_bufTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomToWKTTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomTypeIdTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeomTypeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_cloneTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCircularStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCollectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCompoundCurveTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCurvePolygonTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createLineStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createPolygonTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createRectangleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_createTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_extentTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_extractUniquePointsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_getCoordSeqTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_getCoordinateDimensionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_getDimensionsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_setPrecisionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGeom_transformXYTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGetCentroidTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGetExteriorRingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGetGeometryNTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGetInteriorRingNTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSGetNumInteriorRingsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSHasZMTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSHausdorffDistanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSHilbertCodeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSInterpolateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSInterruptTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSIntersectionPrecTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSIntersectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSIntersectsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSLargestEmptyCircleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSLengthTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSLineMergeDirectedTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSLineMergeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSLineStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSLineSubstringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSMakeValidTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSMaximumInscribedCircleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSMinimumBoundingCircleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSMinimumClearanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSMinimumRotatedRectangleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSMinimumWidthTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSNearestPointsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSNodeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSOffsetCurveTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSOrientPolygonsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSOrientationIndexTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSOverlapsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSPointOnSurfaceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSPolygonHullSimplifyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSPolygonizeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSPreparedDistanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSPreparedDistanceWithinTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSPreparedGeometryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSPreparedNearestPointsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSProjectTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSRelateBoundaryNodeRuleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSRelatePatternMatchTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSRelatePatternTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSRelateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSRemoveRepeatedPointsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSReverseTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSTRtreeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSegmentIntersectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSetSRIDTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSharedPathsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSimplifyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSnapTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSymDifferencePrecTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSSymDifferenceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSTopologyPreserveSimplifyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSTouchesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSUnaryUnionPrecTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSUnaryUnionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSUnionCascadedTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSUnionPrecTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSUnionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSUserDataTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSVoronoiDiagramTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSWKBReaderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSWKBWriterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSWKTWriterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSWithinTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOS_printDoubleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSisClosedTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSisRingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSisSimpleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSisValidDetailTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSisValidReasonTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\capi\GEOSisValidTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\coverage\CoverageGapFinderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\coverage\CoveragePolygonValidatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\coverage\CoverageRingEdgesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\coverage\CoverageSimplifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\coverage\CoverageValidatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\coverage\TPVWSimplifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\edgegraph\EdgeGraphTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CircularArcTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CircularStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CompoundCurveTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CoordinateListTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CoordinateSequenceIteratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CoordinateSequenceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CoordinateSequencesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CoordinateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\CurvePolygonTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\DimensionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\EnvelopeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\cloneTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\coversTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\differenceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\equalsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\getCentroidTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\isRectangleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\normalizeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\toTextTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\Geometry\touchesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\GeometryCollectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\GeometryComponentFilterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\GeometryFactoryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\GeometryFilterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\HeuristicOverlayTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\IntersectionMatrixTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\LineSegmentTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\LineStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\LinearRingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\LocationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\MultiCurveTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\MultiLineStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\MultiPointTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\MultiPolygonTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\MultiSurfaceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\PointTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\PolygonTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\PrecisionModelTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\TriangleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\prep\PreparedGeometryFactoryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\prep\PreparedGeometryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\prep\PreparedGeometryTouchesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\util\GeometryCombinerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\util\GeometryExtracterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\util\GeometryFixerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\util\GeometryListerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geom\util\GeometryMapperTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geomgraph\TopologyLocationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\geos_unit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\index\VertexSequencePackedRtreeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\index\chain\MonotoneChainBuilderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\index\kdtree\KdTreeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\index\strtree\SIRtreeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\index\strtree\SimpleSTRtreeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\index\strtree\TemplateSTRtreeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\ByteOrderValuesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\GeoJSONFeatureTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\GeoJSONReaderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\GeoJSONValueTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\GeoJSONWriterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\WKBReaderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\WKBWriterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\WKTReaderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\WKTWriterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\io\WriterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\linearref\LengthIndexedLineTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\math\DDTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\BasicSegmentStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\NodedSegmentStringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\OrientedCoordinateArrayTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\SegmentNodeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\SegmentPointComparatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\snap\SnappingNoderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\snapround\HotPixelTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\snapround\MCIndexSnapRounderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\noding\snapround\SnapRoundingNoderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\BoundaryOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\buffer\BufferBuilderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\buffer\BufferOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\buffer\BufferParametersTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\buffer\OffsetCurveTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\cluster\ClusterFinderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\cluster\DisjointOperationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\cluster\GeometryFlattenerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\distance\DistanceOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\distance\IndexedFacetDistanceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\geounion\CascadedPolygonUnionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\geounion\CoverageUnionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\geounion\UnaryUnionOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\intersection\RectangleIntersectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\linemerge\LineMergerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\linemerge\LineSequencerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlay\OverlayOpUnionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlay\snap\GeometrySnapperTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlay\snap\LineStringSnapperTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlay\validate\FuzzyPointLocatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlay\validate\OffsetPointGeneratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlay\validate\OverlayResultValidatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\CoverageUnionNGTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\ElevationModelTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\LineLimiterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayGraphTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGFloatingNoderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGGeometryCollectionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGMixedPointsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGPointsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGRobustTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGSnappingNoderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGSnappingOneTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGStrictModeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGZTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\PrecisionReducerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\PrecisionUtilTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\RingClipperTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\overlayng\UnaryUnionNGTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\polygonize\PolygonizeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relate\RelateBoundaryNodeRuleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relate\RelateOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\AdjacentEdgeLocatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\LinearBoundaryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\PolygonNodeConverterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\RelateGeometryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\RelateNGBoundaryNodeRuleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\RelateNGGCTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\RelateNGRobustnessTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\RelateNGTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\RelatePointLocatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\relateng\RelatePredicateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\sharedpaths\SharedPathsOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\valid\IsSimpleOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\valid\IsValidOpTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\valid\MakeValidTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\valid\RepeatedPointRemoverTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\valid\ValidClosedRingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\operation\valid\ValidSelfTouchingRingFormingHoleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\precision\CommonBitsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\precision\GeometryPrecisionReducerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\precision\SimpleGeometryPrecisionReducerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\shape\fractal\HilbertCodeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\shape\fractal\HilbertEncoderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\shape\fractal\MortonCodeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\simplify\DouglasPeuckerSimplifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\simplify\PolygonHullSimplifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\simplify\TopologyPreservingSimplifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\DelaunayTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\VoronoiTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\polygon\ConstrainedDelaunayTriangulatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\polygon\PolygonHoleJoinerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\polygon\PolygonTriangulatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\quadedge\QuadEdgeSubdivisionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\quadedge\QuadEdgeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\triangulate\quadedge\VertexTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\util\NodingTestUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\util\UniqueCoordinateArrayFilterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\AeroMap\Lib\geos-3.13.0\tests\unit\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DD2137F4-727F-3664-8D6E-30BF7960143E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

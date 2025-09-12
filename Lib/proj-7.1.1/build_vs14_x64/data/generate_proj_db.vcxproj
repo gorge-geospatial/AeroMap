@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1EBBE00-5E99-32B8-BCE5-915B42173834}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>generate_proj_db</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\mark\Dev\Geo\Common\proj-7.1.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\CMakeFiles\681bee7e3342051cc9194d948fe13382\proj.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\mark\Dev\Geo\Common\sqlite\sqlite3.exe -init C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/all.sql.in C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db .quit
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\all.sql.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\mark\Dev\Geo\Common\sqlite\sqlite3.exe -init C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/all.sql.in C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db .quit
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\all.sql.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\mark\Dev\Geo\Common\sqlite\sqlite3.exe -init C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/all.sql.in C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db .quit
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\all.sql.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\mark\Dev\Geo\Common\sqlite\sqlite3.exe -init C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/all.sql.in C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db .quit
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/proj.db C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\all.sql.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\CMakeFiles\c0ee8a4951264ea81ecaa28a25f7740c\generate_proj_db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/mark/Dev/Geo/Common/proj-7.1.1/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mark/Dev/Geo/Common/proj-7.1.1 -BC:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64 --check-stamp-file C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\CH;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\GL27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2000;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2008;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2014;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad.lst;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad83;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\other.extra;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\proj.ini;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\sql_filelist.cmake;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\BETA2007.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\MD;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\alaska;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\conus;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_downsampled.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_uncompressed_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_extract.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_xy_extract.ct2;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_z_extract.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntf_r93.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv1_can.dat;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv2_0_downsampled.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_geocentric.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_projected.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\subset_of_gr3df97a.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_3d_grid_projected.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_big_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_degree.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_extra_ifd_with_other_info.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_little_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_lon_shift_first.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_positive_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_radian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_strip.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_two_level_of_subgrids_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_nodata.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_matrix.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_scale.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate_floatingpointpredictor.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_float64.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_in_second_channel.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_invalid_channel_type.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_nodata.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelisarea.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelispoint.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_single_strip_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16_with_scale_offset.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_unsupported_byte.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\us_noaa_geoid06_ak_subset_at_antimeridian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/mark/Dev/Geo/Common/proj-7.1.1/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mark/Dev/Geo/Common/proj-7.1.1 -BC:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64 --check-stamp-file C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\CH;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\GL27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2000;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2008;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2014;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad.lst;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad83;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\other.extra;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\proj.ini;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\sql_filelist.cmake;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\BETA2007.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\MD;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\alaska;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\conus;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_downsampled.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_uncompressed_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_extract.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_xy_extract.ct2;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_z_extract.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntf_r93.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv1_can.dat;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv2_0_downsampled.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_geocentric.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_projected.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\subset_of_gr3df97a.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_3d_grid_projected.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_big_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_degree.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_extra_ifd_with_other_info.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_little_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_lon_shift_first.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_positive_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_radian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_strip.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_two_level_of_subgrids_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_nodata.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_matrix.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_scale.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate_floatingpointpredictor.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_float64.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_in_second_channel.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_invalid_channel_type.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_nodata.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelisarea.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelispoint.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_single_strip_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16_with_scale_offset.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_unsupported_byte.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\us_noaa_geoid06_ak_subset_at_antimeridian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/mark/Dev/Geo/Common/proj-7.1.1/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mark/Dev/Geo/Common/proj-7.1.1 -BC:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64 --check-stamp-file C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\CH;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\GL27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2000;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2008;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2014;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad.lst;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad83;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\other.extra;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\proj.ini;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\sql_filelist.cmake;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\BETA2007.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\MD;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\alaska;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\conus;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_downsampled.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_uncompressed_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_extract.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_xy_extract.ct2;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_z_extract.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntf_r93.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv1_can.dat;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv2_0_downsampled.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_geocentric.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_projected.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\subset_of_gr3df97a.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_3d_grid_projected.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_big_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_degree.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_extra_ifd_with_other_info.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_little_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_lon_shift_first.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_positive_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_radian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_strip.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_two_level_of_subgrids_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_nodata.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_matrix.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_scale.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate_floatingpointpredictor.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_float64.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_in_second_channel.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_invalid_channel_type.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_nodata.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelisarea.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelispoint.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_single_strip_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16_with_scale_offset.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_unsupported_byte.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\us_noaa_geoid06_ak_subset_at_antimeridian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/mark/Dev/Geo/Common/proj-7.1.1/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mark/Dev/Geo/Common/proj-7.1.1 -BC:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64 --check-stamp-file C:/Users/mark/Dev/Geo/Common/proj-7.1.1/build_vs14_x64/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\CH;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\GL27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2000;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2008;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\ITRF2014;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad.lst;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad27;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\nad83;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\other.extra;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\proj.ini;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\sql_filelist.cmake;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\BETA2007.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\MD;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\alaska;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\conus;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_downsampled.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\egm96_15_uncompressed_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_extract.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_xy_extract.ct2;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\nkgrf03vel_realigned_z_extract.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntf_r93.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv1_can.dat;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\ntv2_0_downsampled.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_degree_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_geocentric.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_3d_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_horizontal.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_metre_vertical_grid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_polar.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_projected.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_east.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.json;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\simple_model_wrap_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\subset_of_gr3df97a.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_3d_grid_projected.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_big_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_degree.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_extra_ifd_with_other_info.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_little_endian.gsb;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_lon_shift_first.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_positive_west.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_radian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_strip.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_tiled_separate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_subgrid_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_hgrid_with_two_level_of_subgrids_no_grid_name.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_nodata.gtx;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigendian_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bigtiff.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_matrix.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_bottomup_with_scale.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_deflate_floatingpointpredictor.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_float64.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_in_second_channel.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_int32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_invalid_channel_type.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_nodata.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelisarea.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_pixelispoint.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_single_strip_truncated.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint16_with_scale_offset.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_uint32.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_unsupported_byte.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_overview.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\test_vgrid_with_subgrid.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\tests\us_noaa_geoid06_ak_subset_at_antimeridian.tif;C:\Users\mark\Dev\Geo\Common\proj-7.1.1\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\CMakeFiles\generate_proj_db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\ZERO_CHECK.vcxproj">
+      <Project>{34C64F0A-B173-3033-984D-463EFD85ACA5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\mark\Dev\Geo\Common\proj-7.1.1\build_vs14_x64\data\generate_all_sql_in.vcxproj">
+      <Project>{D1271836-0BE5-3EEE-83DB-FAB9E4DCEFBE}</Project>
+      <Name>generate_all_sql_in</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

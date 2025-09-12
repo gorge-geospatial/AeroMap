@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mark\Dev\Geo\Common\LASzip\build-vc140\CMakeFiles\10c069f1de617523899c94cd50768d5f\dist.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\mark\Dev\Geo\Common\LASzip\build-vc140\CMakeFiles\dist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B07E1AB7-85F7-3846-8477-4D1D8141100B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+﻿  Building Custom Rule C:/AeroMap/Lib/geos-3.13.0/tests/xmltester/CMakeLists.txt
+  tinyxml2.cpp
+  tinyxml2.vcxproj -> C:\AeroMap\Lib\geos-3.13.0\lib\Debug\tinyxml2.lib

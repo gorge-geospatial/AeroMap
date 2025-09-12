@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DF31B4F-1465-3D7E-90C5-FCDD62DFA649}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>test_geos_unit</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\DevLib\geos-3.13.0\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_geos_unit.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_geos_unit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\DevLib\geos-3.13.0\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_geos_unit.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_geos_unit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\DevLib\geos-3.13.0\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_geos_unit.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_geos_unit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\DevLib\geos-3.13.0\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_geos_unit.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_geos_unit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\geos.lib;..\..\lib\Debug\geos_c.lib;..\..\lib\Debug\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/AeroMap/Lib/geos-3.13.0/lib/Debug/test_geos_unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/AeroMap/Lib/geos-3.13.0/bin/Debug/test_geos_unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\geos.lib;..\..\lib\Release\geos_c.lib;..\..\lib\Release\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/AeroMap/Lib/geos-3.13.0/lib/Release/test_geos_unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/AeroMap/Lib/geos-3.13.0/bin/Release/test_geos_unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\geos.lib;..\..\lib\MinSizeRel\geos_c.lib;..\..\lib\MinSizeRel\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/AeroMap/Lib/geos-3.13.0/lib/MinSizeRel/test_geos_unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/AeroMap/Lib/geos-3.13.0/bin/MinSizeRel/test_geos_unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_UNSTABLE_GEOS_CPP_API;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\DevLib\geos-3.13.0\tests\unit;C:\DevLib\geos-3.13.0\doxygen;C:\DevLib\geos-3.13.0\include;C:\DevLib\geos-3.13.0\src\deps;C:\DevLib\geos-3.13.0\capi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\geos.lib;..\..\lib\RelWithDebInfo\geos_c.lib;..\..\lib\RelWithDebInfo\geos.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/AeroMap/Lib/geos-3.13.0/lib/RelWithDebInfo/test_geos_unit.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/AeroMap/Lib/geos-3.13.0/bin/RelWithDebInfo/test_geos_unit.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\DevLib\geos-3.13.0\tests\unit\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/AeroMap/Lib/geos-3.13.0 -BC:/AeroMap/Lib/geos-3.13.0 --check-stamp-file C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\DevLib\geos-3.13.0\tests\unit\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/AeroMap/Lib/geos-3.13.0 -BC:/AeroMap/Lib/geos-3.13.0 --check-stamp-file C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\DevLib\geos-3.13.0\tests\unit\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/AeroMap/Lib/geos-3.13.0 -BC:/AeroMap/Lib/geos-3.13.0 --check-stamp-file C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\DevLib\geos-3.13.0\tests\unit\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/AeroMap/Lib/geos-3.13.0 -BC:/AeroMap/Lib/geos-3.13.0 --check-stamp-file C:/AeroMap/Lib/geos-3.13.0/tests/unit/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\DevLib\geos-3.13.0\tests\unit\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\AngleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\AreaTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\OrientationIsCCWTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\computeOrientationTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\isPointInRingTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\CGAlgorithms\signedAreaTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\CentroidTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\CircularArcsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\ConvexHullTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\InteriorPointAreaTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\InterpolateTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\IntersectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\LengthTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\LocatePointInRingTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\MinimumAreaRectangleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\MinimumBoundingCircleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\MinimumDiameterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\OrientationIndexFailureTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\PointLocationTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\PointLocatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\PolygonNodeTopologyTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\RectangleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\RobustLineIntersectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\RobustLineIntersectorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\RobustLineIntersectorZTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\TrianglePredicateTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\construct\LargestEmptyCircleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\construct\MaximumInscribedCircleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\distance\DiscreteFrechetDistanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\distance\DiscreteHausdorffDistanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\hull\ConcaveHullOfPolygonsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\hull\ConcaveHullTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\locate\IndexedPointInAreaLocatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\algorithm\locate\SimplePointInAreaLocatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSBoundaryTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSBufferTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSBuildAreaTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCAPIDefinesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSClipByRectTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSConcaveHullOfPolygonsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSConcaveHullTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSConstrainedDelaunayTriangulationTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSContainsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSContextTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSConvexHullTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCoordSeqTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCoverageIsValidTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCoverageSimplifyTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCoverageUnionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCoveredByTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCoversTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSCrossesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDelaunayTriangulationTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDensifyTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDifferencePrecTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDifferenceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDisjointSubsetUnionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDisjointTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDistanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSDistanceWithinTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSEnvelopeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSEqualsIdenticalTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSEqualsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSFrechetDistanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomFromWKBTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomGeoJSONReadTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomGeoJSONWriteTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomGetNumPointsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomGetXYZMTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomToHEX_bufTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomToWKBTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomToWKB_bufTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomToWKTTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomTypeIdTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeomTypeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_cloneTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCircularStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCollectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCompoundCurveTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createCurvePolygonTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createLineStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createPolygonTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createRectangleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_createTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_extentTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_extractUniquePointsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_getCoordSeqTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_getCoordinateDimensionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_getDimensionsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_setPrecisionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGeom_transformXYTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGetCentroidTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGetExteriorRingTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGetGeometryNTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGetInteriorRingNTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSGetNumInteriorRingsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSHasZMTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSHausdorffDistanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSHilbertCodeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSInterpolateTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSInterruptTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSIntersectionPrecTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSIntersectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSIntersectsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSLargestEmptyCircleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSLengthTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSLineMergeDirectedTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSLineMergeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSLineStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSLineSubstringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSMakeValidTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSMaximumInscribedCircleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSMinimumBoundingCircleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSMinimumClearanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSMinimumRotatedRectangleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSMinimumWidthTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSNearestPointsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSNodeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSOffsetCurveTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSOrientPolygonsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSOrientationIndexTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSOverlapsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSPointOnSurfaceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSPolygonHullSimplifyTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSPolygonizeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSPreparedDistanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSPreparedDistanceWithinTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSPreparedGeometryTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSPreparedNearestPointsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSProjectTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSRelateBoundaryNodeRuleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSRelatePatternMatchTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSRelatePatternTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSRelateTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSRemoveRepeatedPointsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSReverseTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSTRtreeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSegmentIntersectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSetSRIDTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSharedPathsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSimplifyTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSnapTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSymDifferencePrecTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSSymDifferenceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSTopologyPreserveSimplifyTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSTouchesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSUnaryUnionPrecTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSUnaryUnionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSUnionCascadedTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSUnionPrecTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSUnionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSUserDataTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSVoronoiDiagramTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSWKBReaderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSWKBWriterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSWKTWriterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSWithinTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOS_printDoubleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSisClosedTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSisRingTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSisSimpleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSisValidDetailTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSisValidReasonTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\capi\GEOSisValidTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\coverage\CoverageGapFinderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\coverage\CoveragePolygonValidatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\coverage\CoverageRingEdgesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\coverage\CoverageSimplifierTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\coverage\CoverageValidatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\coverage\TPVWSimplifierTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\edgegraph\EdgeGraphTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CircularArcTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CircularStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CompoundCurveTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CoordinateListTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CoordinateSequenceIteratorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CoordinateSequenceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CoordinateSequencesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CoordinateTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\CurvePolygonTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\DimensionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\EnvelopeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\cloneTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\coversTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\differenceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\equalsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\getCentroidTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\isRectangleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\normalizeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\toTextTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\Geometry\touchesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\GeometryCollectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\GeometryComponentFilterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\GeometryFactoryTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\GeometryFilterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\HeuristicOverlayTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\IntersectionMatrixTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\LineSegmentTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\LineStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\LinearRingTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\LocationTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\MultiCurveTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\MultiLineStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\MultiPointTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\MultiPolygonTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\MultiSurfaceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\PointTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\PolygonTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\PrecisionModelTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\TriangleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\prep\PreparedGeometryFactoryTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\prep\PreparedGeometryTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\prep\PreparedGeometryTouchesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\util\GeometryCombinerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\util\GeometryExtracterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\util\GeometryFixerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\util\GeometryListerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geom\util\GeometryMapperTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geomgraph\TopologyLocationTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\geos_unit.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\index\VertexSequencePackedRtreeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\index\chain\MonotoneChainBuilderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\index\kdtree\KdTreeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\index\strtree\SIRtreeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\index\strtree\SimpleSTRtreeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\index\strtree\TemplateSTRtreeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\ByteOrderValuesTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\GeoJSONFeatureTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\GeoJSONReaderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\GeoJSONValueTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\GeoJSONWriterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\WKBReaderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\WKBWriterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\WKTReaderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\WKTWriterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\io\WriterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\linearref\LengthIndexedLineTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\math\DDTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\BasicSegmentStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\NodedSegmentStringTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\OrientedCoordinateArrayTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\SegmentNodeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\SegmentPointComparatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\snap\SnappingNoderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\snapround\HotPixelTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\snapround\MCIndexSnapRounderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\noding\snapround\SnapRoundingNoderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\BoundaryOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\buffer\BufferBuilderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\buffer\BufferOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\buffer\BufferParametersTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\buffer\OffsetCurveTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\cluster\ClusterFinderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\cluster\DisjointOperationTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\cluster\GeometryFlattenerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\distance\DistanceOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\distance\IndexedFacetDistanceTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\geounion\CascadedPolygonUnionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\geounion\CoverageUnionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\geounion\UnaryUnionOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\intersection\RectangleIntersectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\linemerge\LineMergerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\linemerge\LineSequencerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlay\OverlayOpUnionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlay\snap\GeometrySnapperTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlay\snap\LineStringSnapperTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlay\validate\FuzzyPointLocatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlay\validate\OffsetPointGeneratorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlay\validate\OverlayResultValidatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\CoverageUnionNGTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\ElevationModelTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\LineLimiterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayGraphTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGFloatingNoderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGGeometryCollectionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGMixedPointsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGPointsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGRobustTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGSnappingNoderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGSnappingOneTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGStrictModeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\OverlayNGZTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\PrecisionReducerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\PrecisionUtilTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\RingClipperTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\overlayng\UnaryUnionNGTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\polygonize\PolygonizeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relate\RelateBoundaryNodeRuleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relate\RelateOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\AdjacentEdgeLocatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\LinearBoundaryTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\PolygonNodeConverterTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\RelateGeometryTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\RelateNGBoundaryNodeRuleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\RelateNGGCTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\RelateNGRobustnessTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\RelateNGTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\RelatePointLocatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\relateng\RelatePredicateTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\sharedpaths\SharedPathsOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\valid\IsSimpleOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\valid\IsValidOpTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\valid\MakeValidTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\valid\RepeatedPointRemoverTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\valid\ValidClosedRingTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\operation\valid\ValidSelfTouchingRingFormingHoleTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\precision\CommonBitsTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\precision\GeometryPrecisionReducerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\precision\SimpleGeometryPrecisionReducerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\shape\fractal\HilbertCodeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\shape\fractal\HilbertEncoderTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\shape\fractal\MortonCodeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\simplify\DouglasPeuckerSimplifierTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\simplify\PolygonHullSimplifierTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\simplify\TopologyPreservingSimplifierTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\DelaunayTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\VoronoiTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\polygon\ConstrainedDelaunayTriangulatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\polygon\PolygonHoleJoinerTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\polygon\PolygonTriangulatorTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\quadedge\QuadEdgeSubdivisionTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\quadedge\QuadEdgeTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\triangulate\quadedge\VertexTest.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\util\NodingTestUtil.cpp" />
+    <ClCompile Include="C:\DevLib\geos-3.13.0\tests\unit\util\UniqueCoordinateArrayFilterTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\DevLib\geos-3.13.0\ZERO_CHECK.vcxproj">
+      <Project>{A60D8929-9ABE-3135-92A6-A5C1B9815578}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\DevLib\geos-3.13.0\geos.vcxproj">
+      <Project>{6130ABE2-32F8-3EC0-B492-D88FE4F55388}</Project>
+      <Name>geos</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\DevLib\geos-3.13.0\geos_c.vcxproj">
+      <Project>{EBA2EE98-6596-319C-AB00-6F6BE7EA159C}</Project>
+      <Name>geos_c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\DevLib\geos-3.13.0\src\deps\ryu.vcxproj">
+      <Project>{20E40208-64A8-3A6F-918C-8D953A01074C}</Project>
+      <Name>ryu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

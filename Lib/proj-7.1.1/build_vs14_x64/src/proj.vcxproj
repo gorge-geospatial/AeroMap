@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB5851C1-74C7-3E58-A2DC-6BFA94B33C7B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>proj</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">proj_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">proj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\build_vs14_x64\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">proj.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">proj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\build_vs14_x64\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">proj.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">proj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NOMINMAX;TIFF_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB="C:/DevLib/proj-7.1.1/build_vs14_x64/data";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;TIFF_ENABLED;CURL_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB=\"C:/Program Files (x86)/PROJ/share/proj\";CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;TIFF_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB="C:/DevLib/proj-7.1.1/build_vs14_x64/data";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;TIFF_ENABLED;CURL_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB=\"C:/Program Files (x86)/PROJ/share/proj\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;TIFF_ENABLED;CURL_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB="C:/Program Files (x86)/PROJ/share/proj";CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;TIFF_ENABLED;CURL_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB=\"C:/Program Files (x86)/PROJ/share/proj\";CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;TIFF_ENABLED;CURL_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB="C:/Program Files (x86)/PROJ/share/proj";CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;TIFF_ENABLED;CURL_ENABLED;_CRT_SECURE_NO_WARNINGS;MUTEX_win32;PROJ_LIB=\"C:/Program Files (x86)/PROJ/share/proj\";CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;..\..\build_vs14_x64\src;..\..\..\sqlite;..\..\..\tiff-4.7.0\libtiff;..\..\..\curl\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\4D_api.cpp" />
+    <ClCompile Include="..\..\src\aasincos.cpp" />
+    <ClCompile Include="..\..\src\adjlon.cpp" />
+    <ClCompile Include="..\..\src\auth.cpp" />
+    <ClCompile Include="..\..\src\ctx.cpp" />
+    <ClCompile Include="..\..\src\datum_set.cpp" />
+    <ClCompile Include="..\..\src\datums.cpp" />
+    <ClCompile Include="..\..\src\deriv.cpp" />
+    <ClCompile Include="..\..\src\dmstor.cpp" />
+    <ClCompile Include="..\..\src\ell_set.cpp" />
+    <ClCompile Include="..\..\src\ellps.cpp" />
+    <ClCompile Include="..\..\src\errno.cpp" />
+    <ClCompile Include="..\..\src\factors.cpp" />
+    <ClCompile Include="..\..\src\fileapi.cpp" />
+    <ClCompile Include="..\..\src\fwd.cpp" />
+    <ClCompile Include="..\..\src\gauss.cpp" />
+    <ClCompile Include="..\..\src\generic_inverse.cpp" />
+    <ClCompile Include="..\..\src\geodesic.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\src\init.cpp" />
+    <ClCompile Include="..\..\src\initcache.cpp" />
+    <ClCompile Include="..\..\src\internal.cpp">
+      <ObjectFileName>$(IntDir)/internal.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\inv.cpp" />
+    <ClCompile Include="..\..\src\list.cpp" />
+    <ClCompile Include="..\..\src\log.cpp" />
+    <ClCompile Include="..\..\src\malloc.cpp" />
+    <ClCompile Include="..\..\src\mlfn.cpp" />
+    <ClCompile Include="..\..\src\msfn.cpp" />
+    <ClCompile Include="..\..\src\mutex.cpp" />
+    <ClCompile Include="..\..\src\param.cpp" />
+    <ClCompile Include="..\..\src\phi2.cpp" />
+    <ClCompile Include="..\..\src\pipeline.cpp" />
+    <ClInclude Include="..\..\src\pj_list.h" />
+    <ClCompile Include="..\..\src\pr_list.cpp" />
+    <ClInclude Include="..\..\src\proj_internal.h" />
+    <ClCompile Include="..\..\src\proj_mdist.cpp" />
+    <ClCompile Include="..\..\src\qsfn.cpp" />
+    <ClCompile Include="..\..\src\release.cpp" />
+    <ClCompile Include="..\..\src\rtodms.cpp" />
+    <ClCompile Include="..\..\src\strerrno.cpp" />
+    <ClCompile Include="..\..\src\strtod.cpp" />
+    <ClCompile Include="..\..\src\transform.cpp" />
+    <ClCompile Include="..\..\src\tsfn.cpp" />
+    <ClCompile Include="..\..\src\units.cpp" />
+    <ClCompile Include="..\..\src\utils.cpp" />
+    <ClCompile Include="..\..\src\wkt1_generated_parser.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="..\..\src\wkt1_generated_parser.h" />
+    <ClCompile Include="..\..\src\wkt1_parser.cpp" />
+    <ClInclude Include="..\..\src\wkt1_parser.h" />
+    <ClCompile Include="..\..\src\wkt2_generated_parser.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="..\..\src\wkt2_generated_parser.h" />
+    <ClCompile Include="..\..\src\wkt2_parser.cpp" />
+    <ClInclude Include="..\..\src\wkt2_parser.h" />
+    <ClCompile Include="..\..\src\wkt_parser.cpp" />
+    <ClInclude Include="..\..\src\wkt_parser.hpp" />
+    <ClCompile Include="..\..\src\zpoly1.cpp" />
+    <ClInclude Include="..\..\src\proj_json_streaming_writer.hpp" />
+    <ClCompile Include="..\..\src\proj_json_streaming_writer.cpp" />
+    <ClCompile Include="..\..\src\tracing.cpp" />
+    <ClInclude Include="..\..\src\grids.hpp" />
+    <ClCompile Include="..\..\src\grids.cpp" />
+    <ClInclude Include="..\..\src\filemanager.hpp" />
+    <ClCompile Include="..\..\src\filemanager.cpp" />
+    <ClCompile Include="..\..\src\networkfilemanager.cpp" />
+    <ClInclude Include="..\..\src\sqlite3_utils.hpp" />
+    <ClCompile Include="..\..\src\sqlite3_utils.cpp" />
+    <ClInclude Include="..\..\build_vs14_x64\src\proj_config.h" />
+    <ClCompile Include="..\..\src\conversions\axisswap.cpp" />
+    <ClCompile Include="..\..\src\conversions\cart.cpp" />
+    <ClCompile Include="..\..\src\conversions\geoc.cpp" />
+    <ClCompile Include="..\..\src\conversions\geocent.cpp" />
+    <ClCompile Include="..\..\src\conversions\noop.cpp" />
+    <ClCompile Include="..\..\src\conversions\set.cpp" />
+    <ClCompile Include="..\..\src\conversions\unitconvert.cpp" />
+    <ClCompile Include="..\..\src\projections\aeqd.cpp" />
+    <ClCompile Include="..\..\src\projections\adams.cpp" />
+    <ClCompile Include="..\..\src\projections\gnom.cpp" />
+    <ClCompile Include="..\..\src\projections\laea.cpp" />
+    <ClCompile Include="..\..\src\projections\mod_ster.cpp" />
+    <ClCompile Include="..\..\src\projections\nsper.cpp" />
+    <ClCompile Include="..\..\src\projections\nzmg.cpp" />
+    <ClCompile Include="..\..\src\projections\ortho.cpp" />
+    <ClCompile Include="..\..\src\projections\stere.cpp" />
+    <ClCompile Include="..\..\src\projections\sterea.cpp" />
+    <ClCompile Include="..\..\src\projections\aea.cpp" />
+    <ClCompile Include="..\..\src\projections\bipc.cpp" />
+    <ClCompile Include="..\..\src\projections\bonne.cpp" />
+    <ClCompile Include="..\..\src\projections\eqdc.cpp" />
+    <ClCompile Include="..\..\src\projections\isea.cpp" />
+    <ClCompile Include="..\..\src\projections\ccon.cpp" />
+    <ClCompile Include="..\..\src\projections\imw_p.cpp" />
+    <ClCompile Include="..\..\src\projections\krovak.cpp" />
+    <ClCompile Include="..\..\src\projections\lcc.cpp" />
+    <ClCompile Include="..\..\src\projections\poly.cpp" />
+    <ClCompile Include="..\..\src\projections\rpoly.cpp" />
+    <ClCompile Include="..\..\src\projections\sconics.cpp" />
+    <ClCompile Include="..\..\src\projections\rouss.cpp" />
+    <ClCompile Include="..\..\src\projections\cass.cpp" />
+    <ClCompile Include="..\..\src\projections\cc.cpp" />
+    <ClCompile Include="..\..\src\projections\cea.cpp" />
+    <ClCompile Include="..\..\src\projections\eqc.cpp" />
+    <ClCompile Include="..\..\src\projections\gall.cpp" />
+    <ClCompile Include="..\..\src\projections\labrd.cpp" />
+    <ClCompile Include="..\..\src\projections\lsat.cpp" />
+    <ClCompile Include="..\..\src\projections\misrsom.cpp" />
+    <ClCompile Include="..\..\src\projections\merc.cpp" />
+    <ClCompile Include="..\..\src\projections\mill.cpp" />
+    <ClCompile Include="..\..\src\projections\ocea.cpp" />
+    <ClCompile Include="..\..\src\projections\omerc.cpp" />
+    <ClCompile Include="..\..\src\projections\somerc.cpp" />
+    <ClCompile Include="..\..\src\projections\tcc.cpp" />
+    <ClCompile Include="..\..\src\projections\tcea.cpp" />
+    <ClCompile Include="..\..\src\projections\times.cpp" />
+    <ClCompile Include="..\..\src\projections\tmerc.cpp" />
+    <ClCompile Include="..\..\src\projections\tobmerc.cpp" />
+    <ClCompile Include="..\..\src\projections\airy.cpp" />
+    <ClCompile Include="..\..\src\projections\aitoff.cpp" />
+    <ClCompile Include="..\..\src\projections\august.cpp" />
+    <ClCompile Include="..\..\src\projections\bacon.cpp" />
+    <ClCompile Include="..\..\src\projections\bertin1953.cpp" />
+    <ClCompile Include="..\..\src\projections\chamb.cpp" />
+    <ClCompile Include="..\..\src\projections\hammer.cpp" />
+    <ClCompile Include="..\..\src\projections\lagrng.cpp" />
+    <ClCompile Include="..\..\src\projections\larr.cpp" />
+    <ClCompile Include="..\..\src\projections\lask.cpp" />
+    <ClCompile Include="..\..\src\projections\latlong.cpp" />
+    <ClCompile Include="..\..\src\projections\nicol.cpp" />
+    <ClCompile Include="..\..\src\projections\ob_tran.cpp" />
+    <ClCompile Include="..\..\src\projections\oea.cpp" />
+    <ClCompile Include="..\..\src\projections\tpeqd.cpp" />
+    <ClCompile Include="..\..\src\projections\vandg.cpp" />
+    <ClCompile Include="..\..\src\projections\vandg2.cpp" />
+    <ClCompile Include="..\..\src\projections\vandg4.cpp" />
+    <ClCompile Include="..\..\src\projections\wag7.cpp" />
+    <ClCompile Include="..\..\src\projections\lcca.cpp" />
+    <ClCompile Include="..\..\src\projections\geos.cpp" />
+    <ClCompile Include="..\..\src\projections\boggs.cpp" />
+    <ClCompile Include="..\..\src\projections\collg.cpp" />
+    <ClCompile Include="..\..\src\projections\comill.cpp" />
+    <ClCompile Include="..\..\src\projections\crast.cpp" />
+    <ClCompile Include="..\..\src\projections\denoy.cpp" />
+    <ClCompile Include="..\..\src\projections\eck1.cpp" />
+    <ClCompile Include="..\..\src\projections\eck2.cpp" />
+    <ClCompile Include="..\..\src\projections\eck3.cpp" />
+    <ClCompile Include="..\..\src\projections\eck4.cpp" />
+    <ClCompile Include="..\..\src\projections\eck5.cpp" />
+    <ClCompile Include="..\..\src\projections\fahey.cpp" />
+    <ClCompile Include="..\..\src\projections\fouc_s.cpp" />
+    <ClCompile Include="..\..\src\projections\gins8.cpp" />
+    <ClCompile Include="..\..\src\projections\gstmerc.cpp" />
+    <ClCompile Include="..\..\src\projections\gn_sinu.cpp" />
+    <ClCompile Include="..\..\src\projections\goode.cpp" />
+    <ClCompile Include="..\..\src\projections\igh.cpp" />
+    <ClCompile Include="..\..\src\projections\igh_o.cpp" />
+    <ClCompile Include="..\..\src\projections\hatano.cpp" />
+    <ClCompile Include="..\..\src\projections\loxim.cpp" />
+    <ClCompile Include="..\..\src\projections\mbt_fps.cpp" />
+    <ClCompile Include="..\..\src\projections\mbtfpp.cpp" />
+    <ClCompile Include="..\..\src\projections\mbtfpq.cpp" />
+    <ClCompile Include="..\..\src\projections\moll.cpp" />
+    <ClCompile Include="..\..\src\projections\nell.cpp" />
+    <ClCompile Include="..\..\src\projections\nell_h.cpp" />
+    <ClCompile Include="..\..\src\projections\patterson.cpp" />
+    <ClCompile Include="..\..\src\projections\putp2.cpp" />
+    <ClCompile Include="..\..\src\projections\putp3.cpp" />
+    <ClCompile Include="..\..\src\projections\putp4p.cpp" />
+    <ClCompile Include="..\..\src\projections\putp5.cpp" />
+    <ClCompile Include="..\..\src\projections\putp6.cpp" />
+    <ClCompile Include="..\..\src\projections\qsc.cpp" />
+    <ClCompile Include="..\..\src\projections\robin.cpp" />
+    <ClCompile Include="..\..\src\projections\sch.cpp" />
+    <ClCompile Include="..\..\src\projections\sts.cpp" />
+    <ClCompile Include="..\..\src\projections\urm5.cpp" />
+    <ClCompile Include="..\..\src\projections\urmfps.cpp" />
+    <ClCompile Include="..\..\src\projections\wag2.cpp" />
+    <ClCompile Include="..\..\src\projections\wag3.cpp" />
+    <ClCompile Include="..\..\src\projections\wink1.cpp" />
+    <ClCompile Include="..\..\src\projections\wink2.cpp" />
+    <ClCompile Include="..\..\src\projections\healpix.cpp" />
+    <ClCompile Include="..\..\src\projections\natearth.cpp" />
+    <ClCompile Include="..\..\src\projections\natearth2.cpp" />
+    <ClCompile Include="..\..\src\projections\calcofi.cpp" />
+    <ClCompile Include="..\..\src\projections\eqearth.cpp" />
+    <ClCompile Include="..\..\src\transformations\affine.cpp" />
+    <ClCompile Include="..\..\src\transformations\deformation.cpp" />
+    <ClCompile Include="..\..\src\transformations\helmert.cpp" />
+    <ClCompile Include="..\..\src\transformations\hgridshift.cpp" />
+    <ClCompile Include="..\..\src\transformations\horner.cpp" />
+    <ClCompile Include="..\..\src\transformations\molodensky.cpp" />
+    <ClCompile Include="..\..\src\transformations\vgridshift.cpp" />
+    <ClCompile Include="..\..\src\transformations\xyzgridshift.cpp" />
+    <ClCompile Include="..\..\src\transformations\defmodel.cpp" />
+    <ClCompile Include="..\..\src\iso19111\static.cpp" />
+    <ClCompile Include="..\..\src\iso19111\util.cpp" />
+    <ClCompile Include="..\..\src\iso19111\metadata.cpp" />
+    <ClCompile Include="..\..\src\iso19111\common.cpp" />
+    <ClCompile Include="..\..\src\iso19111\crs.cpp" />
+    <ClCompile Include="..\..\src\iso19111\datum.cpp" />
+    <ClCompile Include="..\..\src\iso19111\coordinatesystem.cpp" />
+    <ClCompile Include="..\..\src\iso19111\coordinateoperation.cpp" />
+    <ClCompile Include="..\..\src\iso19111\io.cpp" />
+    <ClCompile Include="..\..\src\iso19111\internal.cpp">
+      <ObjectFileName>$(IntDir)/iso19111/internal.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\iso19111\factory.cpp" />
+    <ClCompile Include="..\..\src\iso19111\c_api.cpp" />
+    <ClInclude Include="..\..\src\proj_api.h" />
+    <ClInclude Include="..\..\src\proj.h" />
+    <ClInclude Include="..\..\src\proj_experimental.h" />
+    <ClInclude Include="..\..\src\proj_constants.h" />
+    <ClInclude Include="..\..\src\geodesic.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
