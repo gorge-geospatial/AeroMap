@@ -1,0 +1,56 @@
+lasinfo (190507) report for 'fusa-1.1_1.las'
+reporting all LAS header entries:
+  file signature:             'LASF'
+  file source ID:             0
+  global_encoding:            0
+  project ID GUID data 1-4:   00000000-0000-0000-0000-000000000000
+  version major.minor:        1.1
+  system identifier:          'LAStools (c) by Martin Isenburg'
+  generating software:        'lasclassify (110920) unlicensed'
+  file creation day/year:     40/2010
+  header size:                227
+  offset to point data:       321
+  number var. length records: 1
+  point data format:          1
+  point data record length:   28
+  number of point records:    277573
+  number of points by return: 263413 13879 281 0 0
+  scale factor x y z:         0.01 0.01 0.01
+  offset x y z:               0 0 0
+  min x y z:                  277750.00 6122250.00 42.21
+  max x y z:                  277999.99 6122499.99 64.35
+variable length header record 1 of 1:
+  reserved             43707
+  user ID              'LASF_Projection'
+  record ID            34735
+  length after header  40
+  description          'by LAStools of Martin Isenburg'
+    GeoKeyDirectoryTag version 1.1.0 number of keys 4
+      key 1024 tiff_tag_location 0 count 1 value_offset 1 - GTModelTypeGeoKey: ModelTypeProjected
+      key 3072 tiff_tag_location 0 count 1 value_offset 32754 - ProjectedCSTypeGeoKey: WGS 84 / UTM 54S
+      key 3076 tiff_tag_location 0 count 1 value_offset 9001 - ProjLinearUnitsGeoKey: Linear_Meter
+      key 4099 tiff_tag_location 0 count 1 value_offset 9001 - VerticalUnitsGeoKey: Linear_Meter
+reporting minimum and maximum for all LAS point record entries ...
+  X            27775000   27799999
+  Y           612225000  612249999
+  Z                4221       6435
+  intensity          10      62293
+  return_number       1          3
+  number_of_returns   1          3
+  edge_of_flight_line 0          0
+  scan_direction_flag 0          0
+  classification      1          6
+  scan_angle_rank    79        103
+  user_data           0        197
+  point_source_ID     1          1
+  gps_time 5880.963028 5886.739738
+number of first returns:        263413
+number of intermediate returns: 283
+number of last returns:         263370
+number of single returns:       249493
+overview over number of returns of given pulse: 249493 27232 848 0 0 0 0
+histogram of classification of points:
+           17553  unclassified (1)
+          180868  ground (2)
+           37030  high vegetation (5)
+           42122  building (6)

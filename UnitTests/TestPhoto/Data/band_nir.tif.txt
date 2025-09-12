@@ -1,0 +1,119 @@
+     - ExifTool Version Number         : 12.97
+     - File Name                       : band_nir.tif
+     - Directory                       : .
+     - File Size                       : 2.5 MB
+     - Zone Identifier                 : Exists
+     - File Modification Date/Time     : 2025:08:29 16:08:29-07:00
+     - File Access Date/Time           : 2025:09:03 09:44:13-07:00
+     - File Creation Date/Time         : 2025:09:03 09:43:59-07:00
+     - File Permissions                : -rw-rw-rw-
+     - File Type                       : TIFF
+     - File Type Extension             : tif
+     - MIME Type                       : image/tiff
+     - Exif Byte Order                 : Little-endian (Intel, II)
+0x0100 Image Width                     : 1280
+0x0101 Image Height                    : 960
+0x0102 Bits Per Sample                 : 16
+0x0103 Compression                     : Uncompressed
+0x0106 Photometric Interpretation      : BlackIsZero
+0x010e Image Description               : 790 nm
+0x010f Make                            : Parrot
+0x0110 Camera Model Name               : Sequoia
+0x0111 Strip Offsets                   : 8
+0x0112 Orientation                     : Horizontal (normal)
+0x0115 Samples Per Pixel               : 1
+0x0117 Strip Byte Counts               : 2457600
+0x0118 Min Sample Value                : 0
+0x011c Planar Configuration            : Chunky
+0x0131 Software                        : v1.6.0
+0x0132 Modify Date                     : 2018:05:18 13:08:57
+     - Rig Name                        : Sequoia
+     - Rig Camera Index                : 3
+     - Yaw                             : -145.543701
+     - Pitch                           : 11.773726
+     - Roll                            : -6.239881
+     - Band Gain                       : 1.000000
+     - Sensor Temperature              : 41.363647
+     - Line Readout Time               : 23076
+     - Rig Relatives                   : -0.423835808702058,-0.255836818887446,0.00220366094960625
+     - Principal Point                 : 2.522478,1.917964
+     - Model Type                      : fisheye
+     - Fisheye Affine Symmetric        : 1
+     - Fisheye Affine Matrix           : 1671.702318528,0,0,1671.702318528
+     - Fisheye Polynomial              : 0,1,0.013062057,-0.153569183
+     - GPSXY Accuracy                  : 1.040861
+     - GPSZ Accuracy                   : 0.962000
+     - Flight UUID                     : 94689862BD556DDE0E42ADC1D4ADAA2D
+     - Capture UUID                    : 0900EB3C0598921532B04A6C40340E0C
+     - Sunshine Serial Number          : PI040379BB7D003303
+     - Irradiance Calibration Measurement: 0,600,41,20,1,600,998,521,2,600,16544,8449,3,600,65535,65535
+     - Calibration Measurement         : 1,0.00427350427350427,527
+     - Calibration Picture             : 0
+     - Irradiance Calibration Measurement Golden: 0,600,38,19.,1,600,947,486.,2,600,15769,7882.,3,600,65535,65535
+     - Irradiance Sensitivities Golden : 614.221848,312.698984
+     - Irradiance Unit Scale           : 1.7873713395012918
+     - Sensor Model                    : 301637.13488868374,4983.88700627549,3024.242597042834.
+     - Band Name                       : NIR
+     - Central Wavelength              : 790.000000
+     - Wavelength FWHM                 : 40.000000
+     - Black Current                   : 73.000000
+     - Vignetting Polynomial 2D Name   : 0,0,1,0,2,0,3,0,4,0,0,1,0,2,0,3,0,4,1,1,1,2,1,3,2,1,2,2,3,1
+     - Vignetting Polynomial 2D        : 0.7034088694800099,1.1985223503200289,-2.1811091245689846,1.9640576372001757,-0.8774301597983620,0.4835719667798891,-0.7082775423980993,0.4452891846918513,-0.2295741450754836,-1.0596656090391841,0.9837171809349055,0.0466136320055904,1.0092075414498325,-1.0523959681009492,0.0817021232035513
+     - Invalid Pixel                   : 178,528,1117,623,1230,780,790,876
+     - Irradiance List                 : .zTR0DgAAAACKBd4CAQBkAIBTxMGEPm9AKW2gwF0+dw4AAAAAhQXcAgEAZAATkMfB8t9PQJno0sC2UHoOAAAAAH0F1wIBAGQAcUXRwaJmvkBm+tzAEVl9DgAAAAB9BdcCAQBkAJin4sFc0QdB4tW+wHJsgA4AAAAAdAXTAgEAZADm5OzBhiDeQG4WmcDSdYMOAAAAAHEF0QIBAGQARP/mwbCX6kCHnXPAmICGDgAAAAB0BdMCAQBkAPNQ3cHOCRxBVJU6vzGSiQ4AAAAAdAXTAgEAZAB1fNHBSqwtQSLVLL99l4wOAAAAAH4F1wIBAGQA2eTNwRB+MkH1RwA+GqqPDgAAAACDBdoCAQBkABzd4cF4GEdBMcSiPiSrkg4AAAAAiwXeAgEAZABHFwTCEB4/QdBmRUD0tpUOAAAAAI4F4AIBAGQAYxMcwpjEJ0HrzWtA8sSYDgAAAACRBeICAQBkAJ/KKsIiiCVBNeiNQMfSmw4AAAAAogXqAgEAZABpDDfCtS0JQSIjAEFG4p4OAAAAAJ0F6AIBAGQAR+1EwobtCEGVj6BAKOyhDgAAAAClBewCAQBkANMJUMIllfpA9BBtQBH4pA4AAAAAngXoAgEAZAABYlfCpuQNQaa8B8ANDKgOAAAAAKYF7AIBAGQARH1ZwiXMAEE2Us3AzherDgAAAACkBesCAQBkABN9WsJxwh9BraQ6wHomrg4AAAAAnQXoAgEAZAClLmXCE6b4QPNKj8BCM7EOAAAAAJ4F5wIBAGQAIAp3wndCK0HkWufA5ka0DgAAAACSBeICAQBkAIpHhMITib5AFi/FwBxatw4AAAAAiQXdAgEAZABqsIvCzb0ZQWZo6cB/ZLoOAAAAAIwF3gIBAGQAgt+Qwkgvj0CYyBLBHna9DgAAAACQBeECAQBkAGoHkMKn3/tAtkw7wcl+wA4AAAAAoQXpAgEAZAB+p43CziGcQKtM0L+WjcMOAAAAAKEF6gIBAGQAdjeWwiWTokAtrkrBuJnGDgAAAACTBeICAQBkAHICocKL8N9ACck+wbCnyQ4AAAAAfwXYAgEAZACkiq3CJCEIQZBvOcGktswOAAAAAHYF1AIBAGQAJ3q2wtUyH0EHr0rBM8PPDgAAAABbBcUCAQBkAJ+MvcJdXUJBeSMxwdjQ0g4AAAAAUgXCAgEAZACQAMXCSjI6QZafDsG+3NUOAAAAAEoFvQIBAGQA+k3VwndJTUGHhj3Bk+bYDgAAAAA4BbQCAQBkAKPh7MJH7zBBhIVPwfL92w4AAAAAEAWfAgEAZADbNgbDV/VKQaJiWMG5At8OAAAAAN0EhQIBAGQATOwVw6p/h0HRzGjBVhHiDgAAAACvBG4CAQBkAOl7IcMHSa9BBSFDwVse5Q4AAAAAvAR0AgEAZAAQOC3DRLW3QQylz8DDLOgOAAAAAMoEewIBAGQAKhQxQwS9qkHQJpu/lEDrDgAAAAAaBaQCAQBkACPBKENX+GRBVKFIQcVE7g4AAAAAfwXYAgEAZABJQCFDoFsPQfQ/nUH+UvEOAAAAALAF8QIBAGQALwMfQ1U2ukA/NKRBf2T0DgAAAAC9BfgCAQBkAMEaIkMu61M/jUFlQVlu9w4AAAAAuQX2AgEAZADGDypDmaI0QJXf/0Dzf/oOAAAAAKoF7gIBAGQA+cwwQ9yf0kC68DY+a3j9DgAAAACjBeoCAQBkAHA1M0OZe6tAtGaYwBOGAA8AAAAArgXwAgEAZAB+5jND5xI4QCy0qcCalAMPAAAAALIF8gIBAGQArUIzw4yUGEAHmerAY6EGDwAAAAC1BfQCAQBkAMOPL8NTkqg/EjM1wZGzCQ8AAAAAtwX1AgEAZACMvSvDnY5Bv9S25cAauwwPAAAAALcF9QIBAGQAT2kpw+K6GsB+udDA.
+0x829a Exposure Time                   : 1/2063
+0x829d F Number                        : 2.2
+0x8824 Spectral Sensitivity            : 790 nm
+0x8827 ISO                             : 100
+0x9003 Date/Time Original              : 2018:05:18 13:08:57
+0x9004 Create Date                     : 1970:01:01 00:04:12
+0x9201 Shutter Speed Value             : 1/2063
+0x9202 Aperture Value                  : 2.2
+0x9205 Max Aperture Value              : 2.2
+0x920a Focal Length                    : 4.0 mm
+0x9211 Image Number                    : 0
+0x927c Maker Note Unknown Text         : 0.2
+0x9290 Sub Sec Time                    : 480708
+0x9291 Sub Sec Time Original           : 480708
+0x9292 Sub Sec Time Digitized          : 603490
+0xa002 Exif Image Width                : 1280
+0xa003 Exif Image Height               : 960
+0xa20e Focal Plane X Resolution        : 266.6666559
+0xa20f Focal Plane Y Resolution        : 266.6666559
+0xa210 Focal Plane Resolution Unit     : mm
+0xa402 Exposure Mode                   : Auto
+0xa405 Focal Length In 35mm Format     : 30 mm
+0xa420 Image Unique ID                 : A8923DEFB95DE6F3E408E0B94AE5822C
+0xa431 Serial Number                   : PI040378AD7D003111
+0x0000 GPS Version ID                  : 2.2.0.0
+0x0001 GPS Latitude Ref                : North
+0x0003 GPS Longitude Ref               : East
+0x0005 GPS Altitude Ref                : Above Sea Level
+0x0007 GPS Time Stamp                  : 13:08:55.429003
+0x0009 GPS Status                      : Measurement Active
+0x000c GPS Speed Ref                   : km/h
+0x000d GPS Speed                       : 43.36605997
+0x0012 GPS Map Datum                   : WGS-84
+0x001d GPS Date Stamp                  : 2018:05:18
+0xc619 Black Level Repeat Dim          : 2 2
+0xc61a Black Level                     : 5052 5059 5056 5059
+0xc62f Camera Serial Number            : PI040378AD7D003111
+0xc68b Original Raw File Name          : IMG_180518_130857_0000_NIR.TIF
+     - Aperture                        : 2.2
+     - Image Size                      : 1280x960
+     - Megapixels                      : 1.2
+     - Scale Factor To 35 mm Equivalent: 7.5
+     - Shutter Speed                   : 1/2063
+     - Create Date                     : 1970:01:01 00:04:12.603490
+     - Date/Time Original              : 2018:05:18 13:08:57.480708
+     - Modify Date                     : 2018:05:18 13:08:57.480708
+     - GPS Altitude                    : 130.5 m Above Sea Level
+     - GPS Date/Time                   : 2018:05:18 13:08:55.42900302Z
+     - GPS Latitude                    : 54 deg 10' 45.21" N
+     - GPS Longitude                   : 12 deg 18' 41.55" E
+     - Circle Of Confusion             : 0.004 mm
+     - Field Of View                   : 61.9 deg
+     - Focal Length                    : 4.0 mm (35 mm equivalent: 30.0 mm)
+     - GPS Position                    : 54 deg 10' 45.21" N, 12 deg 18' 41.55" E
+     - Hyperfocal Distance             : 1.81 m
+     - Light Value                     : 13.3

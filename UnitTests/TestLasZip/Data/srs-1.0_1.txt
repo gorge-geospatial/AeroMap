@@ -1,0 +1,76 @@
+lasinfo (190507) report for 'srs-1.0_1.las'
+reporting all LAS header entries:
+  file signature:             'LASF'
+  file source ID:             0
+  global_encoding:            0
+  project ID GUID data 1-4:   00000000-0000-0000-0000-000000000000
+  version major.minor:        1.0
+  system identifier:          'MODIFIED'
+  generating software:        'TerraScan'
+  file creation day/year:     0/0
+  header size:                227
+  offset to point data:       759
+  number var. length records: 3
+  point data format:          1
+  point data record length:   28
+  number of point records:    10
+  number of points by return: 10 0 0 0 0
+  scale factor x y z:         0.01 0.01 0.01
+  offset x y z:               0 0 0
+  min x y z:                  289814.15 4320978.61 170.58
+  max x y z:                  289818.50 4320980.59 170.76
+variable length header record 1 of 3:
+  reserved             43707
+  user ID              'LASF_Projection'
+  record ID            34735
+  length after header  72
+  description          ''
+    GeoKeyDirectoryTag version 1.1.0 number of keys 8
+      key 1024 tiff_tag_location 0 count 1 value_offset 1 - GTModelTypeGeoKey: ModelTypeProjected
+      key 1025 tiff_tag_location 0 count 1 value_offset 1 - GTRasterTypeGeoKey: RasterPixelIsArea
+      key 3072 tiff_tag_location 0 count 1 value_offset 32617 - ProjectedCSTypeGeoKey: WGS 84 / UTM 17N
+      key 3076 tiff_tag_location 0 count 1 value_offset 9001 - ProjLinearUnitsGeoKey: Linear_Meter
+      key 0 tiff_tag_location 0 count 0 value_offset 0 - key ID 0 not implemented
+      key 0 tiff_tag_location 0 count 0 value_offset 0 - key ID 0 not implemented
+      key 0 tiff_tag_location 0 count 0 value_offset 0 - key ID 0 not implemented
+      key 0 tiff_tag_location 0 count 0 value_offset 0 - key ID 0 not implemented
+variable length header record 2 of 3:
+  reserved             43707
+  user ID              'LASF_Projection'
+  record ID            34736
+  length after header  40
+  description          ''
+    GeoDoubleParamsTag (number of doubles 5)
+      0 0 0 0 0
+variable length header record 3 of 3:
+  reserved             43707
+  user ID              'LASF_Projection'
+  record ID            34737
+  length after header  256
+  description          ''
+    GeoAsciiParamsTag (number of characters 256)
+                                                                                                                                    
+the header is followed by 2 user-defined bytes
+reporting minimum and maximum for all LAS point record entries ...
+  X            28981415   28981850
+  Y           432097861  432098059
+  Z               17058      17076
+  intensity         240        280
+  return_number       0          0
+  number_of_returns   6          6
+  edge_of_flight_line 0          0
+  scan_direction_flag 0          0
+  classification      2          2
+  scan_angle_rank     0          0
+  user_data           0          0
+  point_source_ID     0          0
+  gps_time 499450.805994 499450.806120
+number of first returns:        10
+number of intermediate returns: 0
+number of last returns:         0
+number of single returns:       0
+WARNING: for return 1 real number of points by return (0) is different from header entry (10).
+WARNING: there are 10 points with return number 0
+overview over number of returns of given pulse: 0 0 0 0 0 10 0
+histogram of classification of points:
+              10  ground (2)

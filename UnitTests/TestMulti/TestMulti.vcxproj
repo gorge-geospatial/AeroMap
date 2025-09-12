@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93529365-4CA2-4BF2-B5A2-2A17C5CAC473}</ProjectGuid>
+    <RootNamespace>TestMulti</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\AeroMap;..\..\Common;..\..\Lib;..\..\Lib\tiff-4.7.0\libtiff;..\..\Lib\glm-0.9.7.2;..\..\Lib\glew-2.2.0\include;..\..\Lib\gdal-3.2.1\gcore;..\..\Lib\gdal-3.2.1\port;..\..\Lib\gdal-3.2.1\ogr;..\..\Lib\gdal-3.2.1\ogr\vector_frmts;..\..\Lib\gdal-3.2.1\alg;..\..\Lib\pdal-2.3;..\..\Lib\pdal-2.3\vendor\nlohmann;..\..\Lib\laszip\src;..\..\Lib\laslib\inc;$(OPENCV_PATH)\build\include;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QT_CORE_LIB;WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\Lib\CppUnitLite/$(Platform)/$(Configuration)\CppUnitLite.lib;..\..\Lib\tiff-4.7.0\libtiff\$(Configuration)\tiffd.lib;..\..\Lib\gdal-3.2.1\$(Platform)\$(Configuration)\gdal.lib;..\..\Lib\proj-7.1.1\build_vs14_x64\src\$(Platform)\$(Configuration)\proj_d.lib;..\..\Lib\sqlite\sqlite3.lib;..\..\Lib\geos-3.13.0\lib\$(Configuration)\geos_c.lib;..\..\Lib\geos-3.13.0\lib\$(Configuration)\geos.lib;..\..\Lib\laslib\$(Platform)\$(Configuration)\laslib.lib;..\..\Lib\laszip\$(Platform)\$(Configuration)\laszip3.lib;$(OPENCV_PATH)\build\$(Platform)\vc16\\lib\opencv_world4100d.lib;$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\Qt5Cored.lib;$(QTDIR)\lib\Qt5OpenGLd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Svgd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(ProjectDir)$(Platform)\$(Configuration)\$(ProjectName)</Command>
+      <Message>Execute $(ProjectName)</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\AeroMap;..\..\Common;..\..\Lib;..\..\Lib\tiff-4.7.0\libtiff;..\..\Lib\glm-0.9.7.2;..\..\Lib\glew-2.2.0\include;..\..\Lib\gdal-3.2.1\gcore;..\..\Lib\gdal-3.2.1\port;..\..\Lib\gdal-3.2.1\ogr;..\..\Lib\gdal-3.2.1\ogr\vector_frmts;..\..\Lib\gdal-3.2.1\alg;..\..\Lib\pdal-2.3;..\..\Lib\pdal-2.3\vendor\nlohmann;..\..\Lib\laszip\src;..\..\Lib\laslib\inc;$(OPENCV_PATH)\build\include;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QT_CORE_LIB;WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\Lib\CppUnitLite/$(Platform)/$(Configuration)\CppUnitLite.lib;..\..\Lib\tiff-4.7.0\libtiff\$(Configuration)\tiff.lib;..\..\Lib\gdal-3.2.1\$(Platform)\$(Configuration)\gdal.lib;..\..\Lib\proj-7.1.1\build_vs14_x64\src\$(Platform)\$(Configuration)\proj.lib;..\..\Lib\sqlite\sqlite3.lib;..\..\Lib\laslib\$(Platform)\$(Configuration)\laslib.lib;..\..\Lib\laszip\$(Platform)\$(Configuration)\laszip3.lib;$(OPENCV_PATH)\build\$(Platform)\vc16\\lib\opencv_world4100.lib;$(QTDIR)\lib\qtmain.lib;$(QTDIR)\lib\Qt5Core.lib;$(QTDIR)\lib\Qt5OpenGL.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Svg.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\AeroMap\AeroLib.cpp" />
+    <ClCompile Include="..\..\AeroMap\GcpFile.cpp" />
+    <ClCompile Include="..\..\AeroMap\Multispectral.cpp" />
+    <ClCompile Include="..\..\AeroMap\Photo.cpp" />
+    <ClCompile Include="..\..\AeroMap\Project.cpp" />
+    <ClCompile Include="..\..\AeroMap\Reconstruction.cpp" />
+    <ClCompile Include="..\..\Common\Calc.cpp" />
+    <ClCompile Include="..\..\Common\exif.cpp" />
+    <ClCompile Include="..\..\Common\Gis.cpp" />
+    <ClCompile Include="..\..\Common\LasFile.cpp" />
+    <ClCompile Include="..\..\Common\Logger.cpp" />
+    <ClCompile Include="..\..\Common\MarkLib.cpp" />
+    <ClCompile Include="..\..\Common\TextFile.cpp" />
+    <ClCompile Include="..\..\Common\TinyEXIF.cpp" />
+    <ClCompile Include="..\..\Common\TinyXML2.cpp" />
+    <ClCompile Include="Debug\moc_Project.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_Project.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestMulti.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\AeroMap\AeroLib.h" />
+    <ClInclude Include="..\..\AeroMap\GcpFile.h" />
+    <ClInclude Include="..\..\AeroMap\Multispectral.h" />
+    <ClInclude Include="..\..\AeroMap\Photo.h" />
+    <CustomBuild Include="..\..\AeroMap\Project.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_SVG_LIB -D%(PreprocessorDefinitions) "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\pdal-2.3" "-I..\Lib\LASzip\src" "-I..\Lib\LasLib\inc" "-I..\Lib\tiff-4.0.10\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.0.10\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\AeroMap\Reconstruction.h" />
+    <ClInclude Include="..\..\Common\Calc.h" />
+    <ClInclude Include="..\..\Common\exif.h" />
+    <ClInclude Include="..\..\Common\Gis.h" />
+    <ClInclude Include="..\..\Common\LasFile.h" />
+    <ClInclude Include="..\..\Common\Logger.h" />
+    <ClInclude Include="..\..\Common\MarkLib.h" />
+    <ClInclude Include="..\..\Common\MarkTypes.h" />
+    <ClInclude Include="..\..\Common\TextFile.h" />
+    <ClInclude Include="..\..\Common\TinyEXIF.h" />
+    <ClInclude Include="..\..\Common\TinyXML2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lib\CppUnitLite\CppUnitLite.vcxproj">
+      <Project>{b13bda56-9331-4e08-a4a3-9eef19a05458}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Lib\gdal-3.2.1\gdal.vcxproj">
+      <Project>{7a215d8d-de1a-4cd4-8e9a-5ec2181c227d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

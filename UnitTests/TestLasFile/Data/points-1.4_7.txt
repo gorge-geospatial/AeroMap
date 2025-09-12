@@ -1,0 +1,84 @@
+lasinfo (190507) report for 'points-1.4_7.las'
+reporting all LAS header entries:
+  file signature:             'LASF'
+  file source ID:             0
+  global_encoding:            0
+  project ID GUID data 1-4:   00000000-0000-0000-0000-000000000000
+  version major.minor:        1.4
+  system identifier:          'LAStools (c) by rapidlasso GmbH'
+  generating software:        'las2las (version 180706)'
+  file creation day/year:     53/2019
+  header size:                375
+  offset to point data:       1332
+  number var. length records: 3
+  point data format:          7
+  point data record length:   36
+  number of point records:    0
+  number of points by return: 0 0 0 0 0
+  scale factor x y z:         0.01 0.01 0.01
+  offset x y z:               0 0 0
+  min x y z:                  966876.74 1438530.46 78.08
+  max x y z:                  967303.01 1438949.99 223.20
+  start of waveform data packet record: 0
+  start of first extended variable length record: 0
+  number of extended_variable length records: 0
+  extended number of point records: 114200
+  extended number of points by return: 93148 18578 2383 91 0 0 0 0 0 0 0 0 0 0 0
+variable length header record 1 of 3:
+  reserved             43707
+  user ID              'LASF_Projection'
+  record ID            34735
+  length after header  64
+  description          'GeoTIFF GeoKeyDirectoryTag'
+    GeoKeyDirectoryTag version 1.1.0 number of keys 7
+      key 1024 tiff_tag_location 0 count 1 value_offset 1 - GTModelTypeGeoKey: ModelTypeProjected
+      key 1025 tiff_tag_location 0 count 1 value_offset 1 - GTRasterTypeGeoKey: RasterPixelIsArea
+      key 1026 tiff_tag_location 34737 count 28 value_offset 0 - GTCitationGeoKey: NAD83 / Oregon Lambert (ft)
+      key 2049 tiff_tag_location 34737 count 6 value_offset 28 - GeogCitationGeoKey: NAD83
+      key 2054 tiff_tag_location 0 count 1 value_offset 9102 - GeogAngularUnitsGeoKey: Angular_Degree
+      key 3072 tiff_tag_location 0 count 1 value_offset 2992 - ProjectedCSTypeGeoKey: NAD83 / Oregon GIC Lambert (ft)
+      key 3076 tiff_tag_location 0 count 1 value_offset 9002 - ProjLinearUnitsGeoKey: Linear_Foot
+variable length header record 2 of 3:
+  reserved             43707
+  user ID              'LASF_Projection'
+  record ID            34737
+  length after header  34
+  description          'GeoTIFF GeoAsciiParamsTag'
+    GeoAsciiParamsTag (number of characters 34)
+      NAD83 / Oregon Lambert (ft)|NAD83|
+variable length header record 3 of 3:
+  reserved             43707
+  user ID              'liblas'
+  record ID            2112
+  length after header  697
+  description          'OGR variant of OpenGIS WKT SRS'
+reporting minimum and maximum for all LAS point record entries ...
+  X            96687674   96730301
+  Y           143853046  143894999
+  Z                7808      22320
+  intensity           0        255
+  return_number       1          4
+  number_of_returns   1          4
+  edge_of_flight_line 0          0
+  scan_direction_flag 0          1
+  classification      1          2
+  scan_angle_rank   -15         13
+  user_data         141        255
+  point_source_ID 15006      15009
+  gps_time 87603.905174 89184.181665
+  Color R 0 0
+        G 0 0
+        B 0 0
+  extended_return_number          1      4
+  extended_number_of_returns      1      4
+  extended_classification         1      2
+  extended_scan_angle         -2500   2167
+  extended_scanner_channel        0      0
+number of first returns:        93148
+number of intermediate returns: 2821
+number of last returns:         92229
+number of single returns:       73998
+overview over extended number of returns of given pulse: 73998 32376 7242 584 0 0 0 0 0 0 0 0 0 0 0
+histogram of classification of points:
+           91051  unclassified (1)
+           23149  ground (2)

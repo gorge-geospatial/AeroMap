@@ -1,0 +1,64 @@
+L3DT water body list
+
+ID:	1
+nPxls:	54610
+Type:	10
+Level:	0.00
+x:	480
+y:	32
+
+ID:	2
+nPxls:	297
+Type:	30
+Level:	460.66
+x:	128
+y:	7
+
+ID:	3
+nPxls:	1876
+Type:	30
+Level:	241.97
+x:	2
+y:	76
+
+ID:	4
+nPxls:	5470
+Type:	30
+Level:	283.70
+x:	21
+y:	128
+
+ID:	6
+nPxls:	1057
+Type:	30
+Level:	154.64
+x:	0
+y:	320
+
+ID:	7
+nPxls:	9065
+Type:	30
+Level:	13.19
+x:	159
+y:	345
+
+ID:	8
+nPxls:	3564
+Type:	30
+Level:	9.92
+x:	475
+y:	381
+
+ID:	9
+nPxls:	2088
+Type:	30
+Level:	159.52
+x:	19
+y:	474
+
+ID:	10
+nPxls:	15069
+Type:	30
+Level:	34.35
+x:	205
+y:	449

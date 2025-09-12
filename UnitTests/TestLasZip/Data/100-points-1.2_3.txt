@@ -1,0 +1,94 @@
+---------------------------------------------------------
+  Header Summary
+---------------------------------------------------------
+
+  Version:                     1.2
+  Source ID:                   0
+  Reserved:                    0
+  Project ID/GUID:             '00000000-0000-0000-0000-000000000000'
+  System ID:                   'PDAL'
+  Generating Software:         'PDAL 1.5.0 (284af8)'
+  File Creation Day/Year:      114/2017
+  Header Byte Size             227
+  Data Offset:                 227
+  Header Padding:              0
+  Number Var. Length Records:  None
+  Point Data Format:           3
+  Number of Point Records:     100
+  Compressed:                  False
+  Number of Points by Return:  89 10 1 0 0 
+  Scale Factor X Y Z:          0.01000000000000 0.01000000000000 0.01000000000000
+  Offset X Y Z:                0.00 0.00 0.00
+  Min X Y Z:                   635717.85 848953.74 409.19
+  Max X Y Z:                   638944.95 853483.30 530.61
+  Spatial Reference:           None
+
+---------------------------------------------------------
+  Schema Summary
+---------------------------------------------------------
+  Point Format ID:             3
+  Number of dimensions:        16
+  Custom schema?:              false
+  Size in bytes:               34
+
+  Dimensions
+---------------------------------------------------------
+  'X'                            --  size: 32 offset: 0
+  'Y'                            --  size: 32 offset: 4
+  'Z'                            --  size: 32 offset: 8
+  'Intensity'                    --  size: 16 offset: 12
+  'Return Number'                --  size: 3 offset: 14
+  'Number of Returns'            --  size: 3 offset: 14
+  'Scan Direction'               --  size: 1 offset: 14
+  'Flightline Edge'              --  size: 1 offset: 14
+  'Classification'               --  size: 8 offset: 15
+  'Scan Angle Rank'              --  size: 8 offset: 16
+  'User Data'                    --  size: 8 offset: 17
+  'Point Source ID'              --  size: 16 offset: 18
+  'Time'                         --  size: 64 offset: 20
+  'Red'                          --  size: 16 offset: 28
+  'Green'                        --  size: 16 offset: 30
+  'Blue'                         --  size: 16 offset: 32
+  
+---------------------------------------------------------
+  Point Inspection Summary
+---------------------------------------------------------
+  Header Point Count: 100
+  Actual Point Count: 100
+
+  Minimum and Maximum Attributes (min,max)
+---------------------------------------------------------
+  Min X, Y, Z: 		635717.85, 848953.74, 409.19
+  Max X, Y, Z: 		638944.95, 853483.30, 530.61
+  Bounding Box:		635717.85, 848953.74, 638944.95, 853483.30
+  Time:			245373.137868, 249780.998201
+  Return Number:	1, 3
+  Return Count:		1, 3
+  Flightline Edge:	0, 0
+  Intensity:		1, 233
+  Scan Direction Flag:	0, 1
+  Scan Angle Rank:	-14, 15
+  Classification:	1, 2
+  Point Source Id:	7326, 7334
+  User Data:		120, 145
+  Minimum Color (RGB):	52 64 66 
+  Maximum Color (RGB):	229 219 227 
+
+  Number of Points by Return
+---------------------------------------------------------
+	(1) 89	(2) 10	(3) 1
+
+  Number of Returns by Pulse
+---------------------------------------------------------
+	(1) 78	(2) 17	(3) 5
+
+  Point Classifications
+---------------------------------------------------------
+	73 Unclassified (1) 
+	27 Ground (2) 
+  -------------------------------------------------------
+  	0 withheld
+  	0 keypoint
+  	0 synthetic
+  -------------------------------------------------------
+

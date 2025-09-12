@@ -1,0 +1,23 @@
+L3DT Map Group File
+Version:	1.3
+Terrain size:	512 x 512
+Texture size:	1024 x 1024
+Terrain grid spacing (m):	10.00
+Wrapping:	NO
+
+
+** Maps in group **
+
+DM:	"512xA_DM.dmf"
+HF:	"512xA_HF.hff"
+WM:	"512xA_WM.wmf"
+WS:	"512xA_WS.hff"
+AM:	"512xA_AM.amf"
+TN:	"512xA_TN.jpg"
+LM:	"512xA_LM.jpg"
+TX:	"512xA_TX.jpg"
+
+
+** Climate list **
+
+0	"Temperate"	"C:\L3DT\L3DT data path\Resources\Climates\Temperate22.cli"

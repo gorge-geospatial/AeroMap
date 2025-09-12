@@ -1,0 +1,184 @@
+     - ExifTool Version Number         : 12.97
+     - File Name                       : rgb_image.jpg
+     - Directory                       : .
+     - File Size                       : 7.9 MB
+     - Zone Identifier                 : Exists
+     - File Modification Date/Time     : 2025:08:29 09:14:19-07:00
+     - File Access Date/Time           : 2025:09:03 09:55:11-07:00
+     - File Creation Date/Time         : 2025:09:03 09:43:06-07:00
+     - File Permissions                : -rw-rw-rw-
+     - File Type                       : JPEG
+     - File Type Extension             : jpg
+     - MIME Type                       : image/jpeg
+     - Exif Byte Order                 : Little-endian (Intel, II)
+0x000b Processing Software             : eMotion 2.4.10
+0x010e Image Description               : 
+0x010f Make                            : SONY
+0x0110 Camera Model Name               : DSC-WX220
+0x011a X Resolution                    : 350
+0x011b Y Resolution                    : 350
+0x0128 Resolution Unit                 : inches
+0x0131 Software                        : eBee
+0x0132 Modify Date                     : 2016:06:29 10:47:04
+0x0213 Y Cb Cr Positioning             : Co-sited
+0x829a Exposure Time                   : 1/250
+0x829d F Number                        : 3.3
+0x8827 ISO                             : 100
+0x8830 Sensitivity Type                : Recommended Exposure Index
+0x8832 Recommended Exposure Index      : 100
+0x9000 Exif Version                    : 0230
+0x9003 Date/Time Original              : 2016:06:29 10:47:04
+0x9004 Create Date                     : 2016:06:29 10:47:04
+0x9101 Components Configuration        : Y, Cb, Cr, -
+0x9102 Compressed Bits Per Pixel       : 3
+0x9203 Brightness Value                : 7.53671875
+0x9204 Exposure Compensation           : 0
+0x9205 Max Aperture Value              : 3.3
+0x9207 Metering Mode                   : Multi-segment
+0x9208 Light Source                    : Unknown
+0x9209 Flash                           : Off, Did not fire
+0x920a Focal Length                    : 4.5 mm
+0x2002 Rating                          : 0
+0x2007 Brightness                      : 0
+0x2008 Long Exposure Noise Reduction   : On (unused)
+0x2009 High ISO Noise Reduction        : Normal
+0x200a HDR                             : Off; Uncorrected image
+0x2014 WB Shift AB GM                  : 0 0
+0x0002 Face Info Offset                : 94
+0x0006 Sony Date Time                  : 2016:06:29 10:47:04
+0x001a Sony Image Height               : 3672
+0x001c Sony Image Width                : 4896
+0x0030 Faces Detected                  : 0
+0x0032 Face Info Length                : 37
+0x0034 Meta Version                    : DC7303320222000
+0xb020 Creative Style                  : Standard
+0xb021 Color Temperature               : Auto
+0xb022 Color Compensation Filter       : 0
+0xb023 Scene Mode                      : High Sensitivity
+0xb024 Zone Matching                   : ISO Setting Used
+0xb025 Dynamic Range Optimizer         : Auto
+0xb026 Image Stabilization             : On
+0xb029 Color Mode                      : Standard
+0xb02b Full Image Size                 : 4896x3672
+0xb02c Preview Image Size              : 1440x1080
+0xb000 File Format                     : ARW 2.3.1
+0x0102 Quality                         : Fine
+0x0104 Flash Exposure Compensation     : 0
+0x0112 White Balance Fine Tune         : 0
+0x0115 White Balance                   : Auto
+0xb001 Sony Model ID                   : Unknown (0)
+0x200b Multi Frame Noise Reduction     : Off
+0x200e Picture Effect                  : Off
+0x200f Soft Skin Effect                : Off
+0x2011 Vignetting Correction           : n/a
+0x2012 Lateral Chromatic Aberration    : n/a
+0x2013 Distortion Correction Setting   : n/a
+0xb02a Lens Spec                       : 25-250mm F3.3-5.9
+0x2016 Auto Portrait Framed            : No
+0x2017 Flash Action                    : Did not fire
+0x201a Electronic Front Curtain Shutter: Off
+0x2023 Multi Frame NR Effect           : Normal
+0xb040 Macro                           : Off
+0xb044 AF Illuminator                  : Off
+0xb047 JPEG Quality                    : Fine
+0xb048 Flash Level                     : Normal
+0xb049 Release Mode                    : Normal
+0xb04a Sequence Number                 : Single
+0xb04b Anti-Blur                       : On (Shooting)
+0xb04e Focus Mode                      : AF-S
+0xb050 High ISO Noise Reduction 2      : Normal
+0x0009 Release Mode 2                  : Normal
+0x000a Shot Number Since Power Up      : 1
+0x0012 Sequence Image Number           : 1
+0x001a Sequence File Number            : 1
+0x001e Sequence Length                 : 1 file
+0x0029 Camera Orientation              : Horizontal (normal)
+0x002a Quality 2                       : JPEG
+0x0053 Model Release Year              : 2014
+0x0000 ISO Setting                     : Auto
+0x0002 ISO Auto Min                    : Auto
+0x0004 ISO Auto Max                    : Auto
+0x0004 Ambient Temperature             : 23 C
+0x0017 AF Area Mode                    : Multi
+0x0005 Camera Temperature              : 25 C
+0x000c Exposure Program                : High Sensitivity
+0x000e Intelligent Auto                : Off
+0x001e Lens Zoom Position              : 0%
+0x0004 Sony ISO                        : 110
+0x0006 Base ISO                        : 100
+0x000a Stops Above Base ISO            : 0.1
+0x000e Sony Exposure Time 2            : 1/251
+0x0016 Sony Max Aperture Value         : 3.4
+0x003e Sony Image Width Max            : 4920
+0x0040 Sony Image Height Max           : 3708
+0x0046 Picture Effect 2                : Off
+0x005b Distortion Correction           : Applied
+0x020c Release Mode 3                  : Normal
+0x0218 Self Timer                      : Off
+0x021c Flash Mode                      : Flash Off
+0x022c HDR Setting                     : Off
+0x0246 Picture Profile                 : Gamma Still - Standard/Neutral (PP2)
+0x0264 WB RGB Levels                   : 482 256 513
+0x032e Min Focal Length                : 4.5 mm
+0x0330 Max Focal Length                : 44.5 mm
+0x1958 Aspect Ratio                    : 4:3
+0x9286 User Comment                    : 
+0xa000 Flashpix Version                : 0100
+0xa001 Color Space                     : sRGB
+0xa002 Exif Image Width                : 4896
+0xa003 Exif Image Height               : 3672
+0x0001 Interoperability Index          : R98 - DCF basic file (sRGB)
+0x0002 Interoperability Version        : 0100
+0xa300 File Source                     : Digital Camera
+0xa301 Scene Type                      : Directly photographed
+0xa401 Custom Rendered                 : Normal
+0xa402 Exposure Mode                   : Auto
+0xa404 Digital Zoom Ratio              : 1
+0xa406 Scene Capture Type              : Standard
+0xa408 Contrast                        : Normal
+0xa409 Saturation                      : Normal
+0xa40a Sharpness                       : Normal
+0xa432 Lens Info                       : 4.45-44.5mm f/3.3-5.9
+0x0001 GPS Latitude Ref                : North
+0x0003 GPS Longitude Ref               : West
+0x0006 GPS Altitude                    : 346.315 m
+     - PrintIM Version                 : 0300
+0x0103 Compression                     : JPEG (old-style)
+0x0112 Orientation                     : Horizontal (normal)
+0x0201 Thumbnail Offset                : 32052
+0x0202 Thumbnail Length                : 10753
+     - XMP Toolkit                     : XMP Core 4.4.0-Exiv2
+     - GPSXY Accuracy                  : 1.442
+     - GPSZ Accuracy                   : 3.124
+     - Pitch                           : -1.30889
+     - Roll                            : 9.35696
+     - Yaw                             : -3.71895
+     - Cam Id                          : 21
+0xb000 MPF Version                     : 0100
+0xb001 Number Of Images                : 2
+0x0000 MP Image Flags                  : Dependent child image
+0x0000 MP Image Format                 : JPEG
+0x0000 MP Image Type                   : Large Thumbnail (full HD equivalent)
+0x0004 MP Image Length                 : 826460
+0x0008 MP Image Start                  : 7070374
+0x000c Dependent Image 1 Entry Number  : 0
+0x000e Dependent Image 2 Entry Number  : 0
+     - Image Width                     : 4896
+     - Image Height                    : 3672
+     - Encoding Process                : Baseline DCT, Huffman coding
+     - Bits Per Sample                 : 8
+     - Color Components                : 3
+     - Y Cb Cr Sub Sampling            : YCbCr4:2:2 (2 1)
+     - Aperture                        : 3.3
+     - Blue Balance                    : 2.003906
+     - Image Size                      : 4896x3672
+     - Megapixels                      : 18.0
+     - Red Balance                     : 1.882813
+     - Shutter Speed                   : 1/250
+     - Thumbnail Image                 : (Binary data 10753 bytes, use -b option to extract)
+     - GPS Latitude                    : 41 deg 18' 13.76" N
+     - GPS Longitude                   : 81 deg 45' 1.68" W
+     - Preview Image                   : (Binary data 826460 bytes, use -b option to extract)
+     - Focal Length                    : 4.5 mm
+     - GPS Position                    : 41 deg 18' 13.76" N, 81 deg 45' 1.68" W
+     - Light Value                     : 11.4

@@ -1,0 +1,22 @@
+512xA
+	Description 	A simple 512×512 heightfield with a 1024 × 1024 texture.
+	Date 			1st of July 2005
+	File size 		1.47 Mb
+	Preview 		512xA.jpg
+
+Mt. St. Helens, Washington, USA
+	Description 	A cropped (943×1369 pixel) DEM of the region surrounding Mt St Helens at 
+					10m-resolution, in the HFZ format.
+					This map file requires L3DT 2.5c or later. Note georeferencing may be slightly 
+					askew due to cropping.
+	Date 			1st of May 2008
+	File size 		1.06 Mb
+	Preview 		MtStHelens_10m_demo.png
+	
+Japan and Eastern China
+	Description 	A georeferenced 2048×2048 pixel heightfield of Japan and eastern China at ~3km 
+					resolution, in the HF2.GZ format.
+					This map file requires L3DT 2.5 or later.
+	Date 			12th of April 2007
+	File size 		1.92 Mb
+	Preview 		japan-screen.jpg
