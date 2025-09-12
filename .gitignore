@@ -4,6 +4,10 @@
 *.user
 *.vcxproj.FileListAbsolute.txt
 
+AeroMap/x64
+AeroMap/Debug
+AeroMap/Release
+
 UnitTests/TestBmpFile/x64
 UnitTests/TestCalc/x64
 UnitTests/TestCamera/x64
