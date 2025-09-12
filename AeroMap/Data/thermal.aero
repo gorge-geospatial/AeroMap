@@ -1,0 +1,6 @@
+project
+	name=
+drone
+	input = D:/test_aero/thermal/images
+	output = D:/test_aero/thermal/output
+lidar

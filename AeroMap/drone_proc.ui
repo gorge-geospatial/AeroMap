@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DroneProcDlg</class>
+ <widget class="QDialog" name="DroneProcDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Process Drone Imagery</string>
+  </property>
+  <widget class="QPushButton" name="cmdRun">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>312</y>
+     <width>111</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCancel">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>312</y>
+     <width>111</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>8</y>
+     <width>473</width>
+     <height>297</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tabGeneral">
+    <attribute name="title">
+     <string>General</string>
+    </attribute>
+    <widget class="QDoubleSpinBox" name="spinDemGapFillSteps">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>88</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of steps used to fill areas with gaps. Set to 0 to disable gap filling. Starting with a radius equal to the output resolution, N different DEMs are generated with progressively bigger radius using the inverse distance weighted (IDW) algorithm and merged together. Remaining gaps are then merged using nearest neighbor interpolation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinOrthoResolution">
+     <property name="geometry">
+      <rect>
+       <x>376</x>
+       <y>64</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Orthophoto resolution in cm / pixel. Note that this value is capped by a ground sampling distance (GSD) estimate.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>64</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DEM Resolution:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>88</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DEM Gap Fill Steps:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>24</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Initial Stage:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>248</x>
+       <y>64</y>
+       <width>129</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Orthophoto Resolution:</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinDemResolution">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>64</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DSM/DTM resolution in cm/pixel. Note that this value is capped by a ground sampling distance (GSD) estimate.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>192</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Outputs:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cboInitStage">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>24</y>
+       <width>145</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>112</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DEM Decimation:</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinDemDecimation">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>112</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Decimate the points before generating the DEM. 1 is no decimation (full quality). 100 decimates ~99% of the points. Useful for speeding up generation of DEM results in very large datasets. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinCrop">
+     <property name="geometry">
+      <rect>
+       <x>376</x>
+       <y>88</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Automatically crop image outputs by creating a smooth buffer around the dataset boundaries, shrunk by N meters. Use 0 to disable cropping.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>248</x>
+       <y>88</y>
+       <width>129</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Crop Buffer:</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="chkDSM">
+     <property name="geometry">
+      <rect>
+       <x>96</x>
+       <y>212</y>
+       <width>271</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string extracomment="Surface points (highest returns)">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create a DSM (Digital Surface Model, ground + objects).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>DSM - Digital Surface Model (canopy)</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="chkDTM">
+     <property name="geometry">
+      <rect>
+       <x>96</x>
+       <y>192</y>
+       <width>271</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string extracomment="Ground points (lowest returns)">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create a DTM (Digital Terrain Model, ground only).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>DTM - Digital Terrain Model (ground)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabPointCloud">
+    <attribute name="title">
+     <string>Point Cloud</string>
+    </attribute>
+    <widget class="QComboBox" name="cboPointCloudQuality">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>24</y>
+       <width>145</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Set point cloud quality. Higher quality generates better, denser point clouds, but requires more memory and takes longer. Each step up in quality increases processing time roughly by a factor of 4x.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>24</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Quality:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>56</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filter:</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinPointCloudFilter">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>56</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filters the point cloud by removing points that deviate more than N standard deviations from the local mean. Set to 0 to disable filtering.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>88</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sample:</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinPointCloudSample">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>88</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filters the point cloud by keeping only a single point around a radius N (in meters). This can be useful to limit the output resolution of the point cloud and remove duplicate points. Set to 0 to disable sampling.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabSFM">
+    <attribute name="title">
+     <string>SFM</string>
+    </attribute>
+    <widget class="QComboBox" name="cboFeatureType">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>24</y>
+       <width>145</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>56</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SIFT Peak Threshold:</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinSiftEdgeThreshold">
+     <property name="geometry">
+      <rect>
+       <x>176</x>
+       <y>88</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>24</y>
+       <width>73</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Feature Type:</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="spinSiftPeakThreshold">
+     <property name="geometry">
+      <rect>
+       <x>176</x>
+       <y>56</y>
+       <width>62</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="maximum">
+      <double>1000.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>88</y>
+       <width>113</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SIFT Edge Threshold:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabDev">
+    <attribute name="title">
+     <string>Dev</string>
+    </attribute>
+    <widget class="QCheckBox" name="chkDevSFM">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>24</y>
+       <width>185</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Experimental SFM Pipeline</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>cboInitStage</tabstop>
+  <tabstop>spinDemResolution</tabstop>
+  <tabstop>spinDemGapFillSteps</tabstop>
+  <tabstop>spinDemDecimation</tabstop>
+  <tabstop>spinOrthoResolution</tabstop>
+  <tabstop>spinCrop</tabstop>
+  <tabstop>chkDTM</tabstop>
+  <tabstop>chkDSM</tabstop>
+  <tabstop>cmdRun</tabstop>
+  <tabstop>cmdCancel</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

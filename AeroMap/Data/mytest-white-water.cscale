@@ -1,0 +1,8 @@
+Desc=Color scale that uses white for water
+Band= 0, 0,7,254
+Band= 25, 46,254,0
+Band= 50, 254,239,0
+Band= 75, 254,121,0
+Band= 100, 254,0,0
+Water= 255,255,255
+

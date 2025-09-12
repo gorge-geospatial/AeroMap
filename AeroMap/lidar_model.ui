@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LidarModelDlg</class>
+ <widget class="QDialog" name="LidarModelDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>538</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create DTM/DSM</string>
+  </property>
+  <widget class="QPushButton" name="cmdCreate">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>310</y>
+     <width>111</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCancel">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>310</y>
+     <width>111</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Source File:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtSourceFile">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdSourceFile">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>75</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>browse ..</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Outputs:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkDTM">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>271</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string extracomment="Ground points (lowest returns)"/>
+   </property>
+   <property name="text">
+    <string>DTM - Digital Terrain Model (ground)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkDSM">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>70</y>
+     <width>271</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string extracomment="Surface points (highest returns)"/>
+   </property>
+   <property name="text">
+    <string>DSM - Digital Surface Model (canopy)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtOutputFolder">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>130</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdOutputFolder">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>130</y>
+     <width>75</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>browse ..</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Output Folder:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Resolution:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinResolution">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>62</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="maximum">
+    <double>1000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(Source file units)</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

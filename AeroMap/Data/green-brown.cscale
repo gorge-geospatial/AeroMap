@@ -1,0 +1,7 @@
+Desc=Basic grenn to white scale.
+Band= 0, 55,55,64
+Band= 20, 0,100,0
+Band= 40, 0,182,0
+Band= 65, 200,100,50
+Band= 100, 255,255,255
+

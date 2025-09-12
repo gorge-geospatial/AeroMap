@@ -1,0 +1,7 @@
+Desc=Color Brewer 5-band purple (single hue)
+Band= 0, 84,39,143
+Band= 25, 117,107,177
+Band= 50, 158,154,200
+Band= 75, 203,201,226
+Band= 100, 242,240,247
+

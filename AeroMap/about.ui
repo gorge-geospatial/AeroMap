@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutDlg</class>
+ <widget class="QDialog" name="AboutDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>496</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>About AeroMap</string>
+  </property>
+  <widget class="QPushButton" name="cmdClose">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>192</y>
+     <width>121</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>88</y>
+     <width>471</width>
+     <height>97</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka Text</family>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;The following libraries or tools are used in the development of AeroMap:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt, &lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://gdal.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;GDAL, &lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;http://pdal.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;PDAL, &lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://proj.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Proj, &lt;/span&gt;&lt;/a&gt;&lt;a href=&quot; https://rapidlasso.com/lastools&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;LasTools&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Some color scales based on ColorBrewer by Cynthia Brewer.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="margin">
+    <number>4</number>
+   </property>
+   <property name="indent">
+    <number>-1</number>
+   </property>
+   <property name="openExternalLinks">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>20</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka Text</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;AeroMap&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labVersion">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>40</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka Text</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Version: ---&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labLogo">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>8</y>
+     <width>73</width>
+     <height>73</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka Text</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="AeroMap.qrc">:/Images/logo-109x106.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="AeroMap.qrc"/>
+ </resources>
+ <connections/>
+</ui>

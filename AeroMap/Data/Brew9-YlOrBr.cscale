@@ -1,0 +1,11 @@
+Desc=Color Brewer 9 band yellow/orange/brown (multi-hue)
+Band= 0, 102,37,6
+Band= 12, 153,52,4
+Band= 25, 204,76,2
+Band= 37, 236,112,20
+Band= 50, 254,153,41
+Band= 62, 254,196,79
+Band= 75, 254,227,145
+Band= 87, 255,247,188
+Band= 100, 255,255,229
+

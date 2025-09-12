@@ -1,0 +1,7 @@
+Desc=Gray scale
+Band= 0, 0,0,0
+Band= 20, 0,60,0
+Band= 40, 0,120,0
+Band= 60, 0,180,0
+Band= 100, 0,250,0
+

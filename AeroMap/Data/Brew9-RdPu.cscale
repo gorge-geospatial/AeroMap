@@ -1,0 +1,10 @@
+Desc=Color Brewer 9 band red purple (multi-hue)
+Band=0,73,0,106
+Band=12,122,1,119
+Band=25,174,1,126
+Band=37,221,52,151
+Band=50,247,104,161
+Band=62,250,159,181
+Band=75,252,197,192
+Band=87, 253,224,221
+Band=100, 255,247,243

@@ -1,0 +1,7 @@
+Desc=Color Brewer 5-band orange red (multi-hue)
+Band= 0, 179,0,0
+Band= 25, 227,74,51
+Band= 50, 252,141,89
+Band= 75, 253,204,138
+Band= 100, 254,240,217
+

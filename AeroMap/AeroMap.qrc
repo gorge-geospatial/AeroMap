@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/arrow32.png</file>
+        <file>Images/new.png</file>
+        <file>Images/open.png</file>
+        <file>Images/save.png</file>
+        <file>Images/rotateview32.png</file>
+        <file>Images/meas-area32.png</file>
+        <file>Images/meas-distance32.png</file>
+        <file>Images/panview.png</file>
+        <file>Images/panview32.png</file>
+        <file>Images/zoomin32.png</file>
+        <file>Images/zoomout32.png</file>
+        <file>Images/home32.png</file>
+        <file>Images/light.png</file>
+        <file>Images/elev32.png</file>
+        <file>Images/profile32.png</file>
+        <file>Images/select32.png</file>
+        <file>Images/run32.png</file>
+        <file>Images/stop32.png</file>
+        <file>Images/raster32.png</file>
+        <file>Images/export32.png</file>
+        <file>Images/zoomview32.png</file>
+        <file>Images/contour32.png</file>
+        <file>Images/dxm32.png</file>
+        <file>Images/AeroMap.ico</file>
+        <file>Images/drone-proc32.png</file>
+        <file>Images/logo-109x106.jpg</file>
+    </qresource>
+</RCC>

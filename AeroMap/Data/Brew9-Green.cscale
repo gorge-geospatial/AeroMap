@@ -1,0 +1,11 @@
+Desc=Color Brewer 9-band Green (single hue)
+Band= 0, 0,68,27
+Band= 12, 0,109,44
+Band= 25, 35,139,69
+Band= 37, 65,171,93
+Band= 50, 116,196,118
+Band= 62, 161,217,155
+Band= 75, 199,233,192
+Band= 87, 229,245,224
+Band= 100, 247,252,245
+

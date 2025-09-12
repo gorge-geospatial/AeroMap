@@ -1,0 +1,97 @@
+2025-09-08 07:13:49: Log file 'C:/AeroMap/AeroMap/Data/AeroMap.log' created.
+2025-09-08 07:13:50: Loading C:/AeroMap/AeroMap/Data/thermal.aero ...
+2025-09-08 07:13:50: C:/AeroMap/AeroMap/Data/thermal.aero loaded
+2025-09-08 07:13:50: DroneWindow::initializeGL - Using GLEW: 2.2.0
+2025-09-08 07:13:50: GLManager::Initialize - 
+2025-09-08 07:13:50: DroneWindow::initializeGL - GLU_VERSION: 1.2.2.0 Microsoft Corporation
+2025-09-08 07:13:50: DroneWindow::initializeGL - GLU_EXTENSIONS: GL_EXT_bgra
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_ATTRIB_STACK_DEPTH: 16
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_CLIENT_ATTRIB_STACK_DEPTH: 16
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_CLIP_PLANES: 8
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_EVAL_ORDER: 8
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_LIGHTS: 8
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_MODELVIEW_STACK_DEPTH: 32
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_NAME_STACK_DEPTH: 128
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_PIXEL_MAP_TABLE: 65536
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_PROJECTION_STACK_DEPTH: 4
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_TEXTURE_SIZE: 16384
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_TEXTURE_STACK_DEPTH: 10
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL_MAX_VIEWPORT_DIMS: 16384x16384
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL Vendor    : NVIDIA Corporation
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL Renderer  : NVIDIA GeForce GTX 745/PCIe/SSE2
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL Version   : 4.6.0 NVIDIA 560.94
+2025-09-08 07:13:50: DroneWindow::initializeGL - GL Version   : 4.6
+2025-09-08 07:13:50: DroneWindow::initializeGL - GLSL Version : 4.60 NVIDIA
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  Shader: SS
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  Location | Name
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  0        | ProjectionMatrix
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  Shader: SS
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  Index | Name
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  1     | VertexColor
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  0     | VertexPosition
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  Shader: Image
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  Location | Name
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  0        | ProjectionMatrix
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  1        | xoff
+2025-09-08 07:13:50: ShaderGL::PrintActiveUniforms -  2        | yoff
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  Shader: Image
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  Index | Name
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  1     | VertexColor
+2025-09-08 07:13:50: ShaderGL::PrintActiveAttribs -  0     | VertexPosition
+2025-09-08 07:14:28: Loading C:/AeroMap/AeroMap/Data/test.aero ...
+2025-09-08 07:14:28: GLManager::Shutdown - 
+2025-09-08 07:14:28: DroneWindow::initializeGL - Using GLEW: 2.2.0
+2025-09-08 07:14:28: GLManager::Initialize - 
+2025-09-08 07:14:28: DroneWindow::initializeGL - GLU_VERSION: 1.2.2.0 Microsoft Corporation
+2025-09-08 07:14:28: DroneWindow::initializeGL - GLU_EXTENSIONS: GL_EXT_bgra
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_ATTRIB_STACK_DEPTH: 16
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_CLIENT_ATTRIB_STACK_DEPTH: 16
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_CLIP_PLANES: 8
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_EVAL_ORDER: 8
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_LIGHTS: 8
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_MODELVIEW_STACK_DEPTH: 32
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_NAME_STACK_DEPTH: 128
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_PIXEL_MAP_TABLE: 65536
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_PROJECTION_STACK_DEPTH: 4
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_TEXTURE_SIZE: 16384
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_TEXTURE_STACK_DEPTH: 10
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL_MAX_VIEWPORT_DIMS: 16384x16384
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL Vendor    : NVIDIA Corporation
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL Renderer  : NVIDIA GeForce GTX 745/PCIe/SSE2
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL Version   : 4.6.0 NVIDIA 560.94
+2025-09-08 07:14:28: DroneWindow::initializeGL - GL Version   : 4.6
+2025-09-08 07:14:28: DroneWindow::initializeGL - GLSL Version : 4.60 NVIDIA
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  Shader: SS
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  Location | Name
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  0        | ProjectionMatrix
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  Shader: SS
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  Index | Name
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  1     | VertexColor
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  0     | VertexPosition
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  Shader: Image
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  Location | Name
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  0        | ProjectionMatrix
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  1        | xoff
+2025-09-08 07:14:28: ShaderGL::PrintActiveUniforms -  2        | yoff
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  Shader: Image
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  Index | Name
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs - ------------------------------------------------
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  1     | VertexColor
+2025-09-08 07:14:28: ShaderGL::PrintActiveAttribs -  0     | VertexPosition
+2025-09-08 07:14:29: C:/AeroMap/AeroMap/Data/test.aero loaded
+2025-09-08 07:14:30: GLManager::Shutdown - 

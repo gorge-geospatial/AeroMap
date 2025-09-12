@@ -1,0 +1,815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FABFD3C0-65BD-421A-9FBA-881B6035EDC3}</ProjectGuid>
+    <RootNamespace>AeroMap</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>AeroMap</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <OutputDirectory>debug\debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>AeroMap</PrimaryOutput>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolSet>v142</PlatformToolSet>
+    <OutputDirectory>release\debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>AeroMap</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AeroMap</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AeroMap</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(ProjectDir)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)\$(Platform)\$(Configuration)\</OutDir>
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(ProjectDir)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)\$(Platform)\$(Configuration)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.\;.\Stages;..\Common;..\Lib\gdal-3.2.1\gcore;..\Lib\gdal-3.2.1\port;..\Lib\gdal-3.2.1\ogr;..\Lib\gdal-3.2.1\ogr\vector_frmts;..\Lib\gdal-3.2.1\alg;..\Lib\pdal-2.3;..\Lib\pdal-2.3\vendor\nlohmann;..\Lib\laszip\src;..\Lib\laslib\inc;..\Lib\tiff-4.7.0\libtiff;..\Lib\libpng-1.6.20;..\Lib\zlib;..\Lib\jpeg-9a;..\Lib\glm-0.9.7.2;..\Lib\glew-2.2.0/include;$(OPENCV_PATH)\build\include;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>QT_CORE_LIB;_CRT_SECURE_NO_WARNINGS;_WINDOWS;UNICODE;WIN32;WIN64;QT_SVG_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\Lib\glew-2.2.0\lib\Release\$(Platform)\glew32.lib;..\Lib\jpeg-9a\$(Platform)\release\jpeg.lib;..\Lib\libpng-1.6.20\$(Platform)\$(Configuration)\libpng.lib;..\Lib\zlib\$(Platform)\$(Configuration)\zlib.lib;..\Lib\tiff-4.7.0\libtiff\$(Configuration)\tiffd.lib;..\Lib\sqlite\sqlite3.lib;..\Lib\proj-7.1.1\build_vs14_x64\src\$(Platform)\$(Configuration)\proj_d.lib;..\Lib\gdal-3.2.1\$(Platform)\$(Configuration)\gdal.lib;..\Lib\geos-3.13.0\lib\$(Configuration)\geos.lib;..\Lib\geos-3.13.0\lib\$(Configuration)\geos_c.lib;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\pdal.lib;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\InfoKernel.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\PipelineKernel.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\InfoFilter.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\StatsFilter.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\RangeFilter.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\LasReader.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\GdalWriter.obj;..\Lib\laslib\$(Platform)\$(Configuration)\laslib.lib;..\Lib\laszip\$(Platform)\$(Configuration)\laszip3.lib;$(OPENCV_PATH)\build\$(Platform)\vc16\\lib\opencv_world4100d.lib;$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\Qt5Cored.lib;$(QTDIR)\lib\Qt5OpenGLd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Svgd.lib;glu32.lib;opengl32.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27"  /SUBSYSTEM:WINDOWS /OPT:NOLBR %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\AeroMap.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <ShowProgress>NotSet</ShowProgress>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir)\$(TargetFileName) $(HOMEPATH)\Desktop\$(TargetName)$(TargetExt)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying output file to desktop...</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.\;.\Stages;..\Common;..\Lib\libgeotiff-1.6.0;..\Lib\libgeotiff-1.6.0/libxtiff;..\Lib\gdal-3.2.1\gcore;..\Lib\gdal-3.2.1\port;..\Lib\gdal-3.2.1\ogr;..\Lib\gdal-3.2.1\ogr\vector_frmts;..\Lib\gdal-3.2.1\alg;..\Lib\pdal-2.3;..\Lib\pdal-2.3\vendor\nlohmann;..\Lib\laszip\src;..\Lib\laslib\inc;..\Lib\tiff-4.7.0\libtiff;..\Lib\libpng-1.6.20;..\Lib\zlib;..\Lib\jpeg-9a;..\Lib\glm-0.9.7.2;..\Lib\glew-2.2.0/include;$(OPENCV_PATH)\build\include;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_CORE_LIB;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;QT_NO_DEBUG;UNICODE;UNICODE;WIN32;WIN32;WIN64;QT_SVG_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\Lib\tiff-4.7.0\libtiff\$(Configuration)\tiff.lib;..\Lib\LasLib\$(Platform)\$(Configuration)\laslib.lib;..\Lib\LasZip\$(Platform)\$(Configuration)\laszip3.lib;..\Lib\sqlite\sqlite3.lib;..\Lib\proj-7.1.1\build_vs14_x64\src\$(Platform)\$(Configuration)\proj.lib;..\Lib\gdal-3.2.1\$(Platform)\$(Configuration)\gdal.lib;..\Lib\geos-3.13.0\lib\$(Configuration)\geos.lib;..\Lib\geos-3.13.0\lib\$(Configuration)\geos_c.lib;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\pdal.lib;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\InfoKernel.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\PipelineKernel.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\InfoFilter.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\StatsFilter.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\RangeFilter.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\LasReader.obj;..\Lib\pdal-2.3\$(Platform)\$(Configuration)\GdalWriter.obj;..\Lib\glew-2.2.0\lib\Release\$(Platform)\glew32.lib;..\Lib\jpeg-9a\$(Platform)\release\jpeg.lib;..\Lib\libpng-1.6.20\$(Platform)\$(Configuration)\libpng.lib;..\Lib\zlib\$(Platform)\$(Configuration)\zlib.lib;$(OPENCV_PATH)\build\$(Platform)\vc16\\lib\opencv_world4100.lib;$(QTDIR)\lib\qtmain.lib;$(QTDIR)\lib\Qt5Core.lib;$(QTDIR)\lib\Qt5OpenGL.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Svg.lib;glu32.lib;opengl32.lib;gdi32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27"  /SUBSYSTEM:WINDOWS %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\AeroMap.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir)\$(TargetFileName) $(HOMEPATH)\Desktop\$(TargetName)" - Release"$(TargetExt)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\BmpFile.cpp" />
+    <ClCompile Include="..\Common\Calc.cpp" />
+    <ClCompile Include="..\Common\Camera.cpp" />
+    <ClCompile Include="..\Common\exif.cpp" />
+    <ClCompile Include="..\Common\Gis.cpp" />
+    <ClCompile Include="..\Common\GLManager.cpp" />
+    <ClCompile Include="..\Common\ImageFile.cpp" />
+    <ClCompile Include="..\Common\JpegFile.cpp" />
+    <ClCompile Include="..\Common\LasFile.cpp" />
+    <ClCompile Include="..\Common\Light.cpp" />
+    <ClCompile Include="..\Common\Material.cpp" />
+    <ClCompile Include="..\Common\Model.cpp" />
+    <ClCompile Include="..\Common\Model_3DS.cpp" />
+    <ClCompile Include="..\Common\Model_AC.cpp" />
+    <ClCompile Include="..\Common\Model_OBJ.cpp" />
+    <ClCompile Include="..\Common\Model_X.cpp" />
+    <ClCompile Include="..\Common\PngFile.cpp" />
+    <ClCompile Include="..\Common\Primitive.cpp" />
+    <ClCompile Include="..\Common\RasterFile.cpp" />
+    <ClCompile Include="..\Common\ShaderGL.cpp" />
+    <ClCompile Include="..\Common\ShapeFile.cpp" />
+    <ClCompile Include="..\Common\Sphere.cpp" />
+    <ClCompile Include="..\Common\SvgFile.cpp" />
+    <ClCompile Include="..\Common\TextFile.cpp" />
+    <ClCompile Include="..\Common\TextureGL.cpp" />
+    <ClCompile Include="..\Common\TinyEXIF.cpp" />
+    <ClCompile Include="..\Common\TinyXML2.cpp" />
+    <ClCompile Include="..\Common\VertexBufferGL.cpp" />
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="AeroLib.cpp" />
+    <ClCompile Include="ConfigSFM.cpp" />
+    <ClCompile Include="ContourDlg.cpp" />
+    <ClCompile Include="Cropper.cpp" />
+    <ClCompile Include="Debug\moc_AboutDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_DroneProc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_DroneProcDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_DroneWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_ElevationDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_LidarModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_LidarModelDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_LidarWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_AeroMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_OrthoWindow.cpp" />
+    <ClCompile Include="Debug\moc_ProfileWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_Project.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_TerrainWindow.cpp" />
+    <ClCompile Include="DEM.cpp" />
+    <ClCompile Include="DroneProc.cpp" />
+    <ClCompile Include="DroneProcDlg.cpp" />
+    <ClCompile Include="DroneWindow.cpp" />
+    <ClCompile Include="ElevationDlg.cpp" />
+    <ClCompile Include="GcpFile.cpp" />
+    <ClCompile Include="Gsd.cpp" />
+    <ClCompile Include="LidarModel.cpp" />
+    <ClCompile Include="LidarModelDlg.cpp" />
+    <ClCompile Include="LidarWindow.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Multispectral.cpp" />
+    <ClCompile Include="Orthophoto.cpp" />
+    <ClCompile Include="OrthoWindow.cpp" />
+    <ClCompile Include="Photo.cpp" />
+    <ClCompile Include="PointCloud.cpp" />
+    <ClCompile Include="ProfileWindow.cpp" />
+    <ClCompile Include="Project.cpp" />
+    <ClCompile Include="Reconstruction.cpp" />
+    <ClCompile Include="Release\moc_AboutDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_DroneProc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_DroneProcDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_DroneWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_ElevationDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_LidarModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_LidarModelDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_LidarWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_AeroMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_ProfileWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_Project.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Sfm\Features.cpp" />
+    <ClCompile Include="Sfm\Matching.cpp" />
+    <ClCompile Include="Sfm\PairSelect.cpp" />
+    <ClCompile Include="Sfm\Tracking.cpp" />
+    <ClCompile Include="ShaderLib.cpp" />
+    <ClCompile Include="Shots.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="Debug\moc_ContourDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_LightWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_ProjectWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_ScaleColorDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_ScaleColorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_Tool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_AeroMap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_MetaDataDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ConfigDlg.cpp" />
+    <ClCompile Include="Debug\moc_ConfigDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_OutputWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\Logger.cpp" />
+    <ClCompile Include="LightWindow.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="..\Common\MarkLib.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="AeroMap.cpp" />
+    <ClCompile Include="MetaDataDlg.cpp" />
+    <ClCompile Include="ProjectWindow.cpp" />
+    <ClCompile Include="Release\moc_ContourDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_LightWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_MetaDataDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_OutputWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_ProjectWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_ScaleColorDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_ScaleColorWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_Tool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ScaleColor.cpp" />
+    <ClCompile Include="ScaleColorDlg.cpp" />
+    <ClCompile Include="ScaleColorWidget.cpp" />
+    <ClCompile Include="Stages\Stage.cpp" />
+    <ClCompile Include="Stages\StageDataset.cpp" />
+    <ClCompile Include="Stages\StageDEM.cpp" />
+    <ClCompile Include="Stages\StageFilter.cpp" />
+    <ClCompile Include="Stages\StageGeoref.cpp" />
+    <ClCompile Include="Stages\StageMesh.cpp" />
+    <ClCompile Include="Stages\StageMVS.cpp" />
+    <ClCompile Include="Stages\StageOrtho.cpp" />
+    <ClCompile Include="Stages\StageReport.cpp" />
+    <ClCompile Include="Stages\StageSFM.cpp" />
+    <ClCompile Include="Stages\StageTexture.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="TerrainGL.cpp" />
+    <ClCompile Include="TerrainWindow.cpp" />
+    <ClCompile Include="Thermal.cpp" />
+    <ClCompile Include="Tool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\BmpFile.h" />
+    <ClInclude Include="..\Common\Calc.h" />
+    <ClInclude Include="..\Common\Camera.h" />
+    <ClInclude Include="..\Common\exif.h" />
+    <ClInclude Include="..\Common\Gis.h" />
+    <ClInclude Include="..\Common\GLManager.h" />
+    <ClInclude Include="..\Common\ImageFile.h" />
+    <ClInclude Include="..\Common\JpegFile.h" />
+    <ClInclude Include="..\Common\LasFile.h" />
+    <ClInclude Include="..\Common\Light.h" />
+    <ClInclude Include="..\Common\Material.h" />
+    <ClInclude Include="..\Common\Model.h" />
+    <ClInclude Include="..\Common\Model_3DS.h" />
+    <ClInclude Include="..\Common\Model_AC.h" />
+    <ClInclude Include="..\Common\Model_OBJ.h" />
+    <ClInclude Include="..\Common\Model_X.h" />
+    <ClInclude Include="..\Common\Primitive.h" />
+    <ClInclude Include="..\Common\RasterFile.h" />
+    <ClInclude Include="..\Common\ShaderGL.h" />
+    <ClInclude Include="..\Common\ShapeFile.h" />
+    <ClInclude Include="..\Common\Sphere.h" />
+    <ClInclude Include="..\Common\SvgFile.h" />
+    <ClInclude Include="..\Common\TextFile.h" />
+    <ClInclude Include="..\Common\TextureGL.h" />
+    <ClInclude Include="..\Common\TinyEXIF.h" />
+    <ClInclude Include="..\Common\TinyXML2.h" />
+    <ClInclude Include="..\Common\VertexBufferGL.h" />
+    <CustomBuild Include="DroneWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="AeroLib.h" />
+    <CustomBuild Include="DroneProcDlg.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="ConfigSFM.h" />
+    <ClInclude Include="Cropper.h" />
+    <ClInclude Include="DEM.h" />
+    <ClInclude Include="GcpFile.h" />
+    <ClInclude Include="GeneratedFiles\ui_drone_proc.h" />
+    <ClInclude Include="GeneratedFiles\ui_lidar_model.h" />
+    <ClInclude Include="Gsd.h" />
+    <CustomBuild Include="LidarModel.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="LidarModelDlg.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="LidarWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Multispectral.h" />
+    <ClInclude Include="Orthophoto.h" />
+    <CustomBuild Include="OrthoWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="Photo.h" />
+    <ClInclude Include="PointCloud.h" />
+    <ClInclude Include="Reconstruction.h" />
+    <CustomBuild Include="ContourDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ElevationDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="AboutDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_SVG_LIB -D%(PreprocessorDefinitions) "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\pdal-2.3" "-I..\Lib\LASzip\src" "-I..\Lib\LasLib\inc" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -DQT_SVG_LIB -D%(PreprocessorDefinitions) "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\pdal-2.3" "-I..\Lib\LASzip\src" "-I..\Lib\LasLib\inc" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSvg"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_about.h" />
+    <ClInclude Include="GeneratedFiles\ui_elevation.h" />
+    <CustomBuild Include="Project.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ProfileWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="Sfm\Features.h" />
+    <ClInclude Include="Sfm\Matching.h" />
+    <ClInclude Include="Sfm\PairSelect.h" />
+    <ClInclude Include="Sfm\Tracking.h" />
+    <ClInclude Include="ShaderLib.h" />
+    <ClInclude Include="Shots.h" />
+    <ClInclude Include="SkyBox.h" />
+    <CustomBuild Include="Tool.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_contour.h" />
+    <CustomBuild Include="LightWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_light.h" />
+    <ClInclude Include="Stages\Stage.h" />
+    <ClInclude Include="Stages\StageDataset.h" />
+    <ClInclude Include="Stages\StageDEM.h" />
+    <ClInclude Include="Stages\StageFilter.h" />
+    <ClInclude Include="Stages\StageGeoref.h" />
+    <ClInclude Include="Stages\StageMesh.h" />
+    <ClInclude Include="Stages\StageMVS.h" />
+    <ClInclude Include="Stages\StageOrtho.h" />
+    <ClInclude Include="Stages\StageReport.h" />
+    <ClInclude Include="Stages\StageSFM.h" />
+    <ClInclude Include="Stages\StageTexture.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="TerrainGL.h" />
+    <CustomBuild Include="TerrainWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="Thermal.h" />
+    <ClInclude Include="Version.h" />
+    <CustomBuild Include="DroneProc.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ProjectWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_scalecolor.h" />
+    <CustomBuild Include="AeroMap.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <ClInclude Include="ScaleColor.h" />
+    <CustomBuild Include="ScaleColorDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ScaleColorWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_metadata.h" />
+    <CustomBuild Include="MetaDataDlg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing MetaDataDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing MetaDataDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <ClInclude Include="resource.h" />
+    <CustomBuild Include="OutputWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ConfigDlg.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ConfigDlg.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ConfigDlg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="..\Common\Logger.h" />
+    <CustomBuild Include="MainWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -DQT_CORE_LIB -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I$(DEV_PATH)\Common" "-I..\Lib\libgeotiff-1.6.0" "-I..\Lib\libgeotiff-1.6.0\libxtiff" "-I..\Lib\LASlib\inc" "-I..\Lib\LASzip\src" "-I..\Lib\gdal-3.2.1\gcore" "-I..\Lib\gdal-3.2.1\port" "-I..\Lib\gdal-3.2.1\ogr" "-I..\Lib\gdal-3.2.1\ogr\vector_frmts" "-I..\Lib\gdal-3.2.1\alg" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(OPENCV_PATH)\opencv\include" "-I$(OPENCV_PATH)\opencv\build-vc140" "-I$(OPENCV_PATH)\opencv\modules\core\include" "-I$(OPENCV_PATH)\opencv\modules\calib3d\include" "-I$(OPENCV_PATH)\opencv\modules\dnn\include" "-I$(OPENCV_PATH)\opencv\modules\features2d\include" "-I$(OPENCV_PATH)\opencv\modules\flann\include" "-I$(OPENCV_PATH)\opencv\modules\highgui\include" "-I$(OPENCV_PATH)\opencv\modules\imgcodecs\include" "-I$(OPENCV_PATH)\opencv\modules\imgproc\include" "-I$(OPENCV_PATH)\opencv\modules\objdetect\include" "-I$(OPENCV_PATH)\opencv\modules\ml\include" "-I$(OPENCV_PATH)\opencv\modules\photo\include" "-I$(OPENCV_PATH)\opencv_contrib\modules\xfeatures2d\include" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_CRT_SECURE_NO_WARNINGS -D_WINDOWS -DNDEBUG -DQT_NO_DEBUG -DUNICODE -DWIN32 -DWIN64 -D%(PreprocessorDefinitions)  "-I.\GeneratedFiles" "-I." "-I.\..\..\Common" "-I.\..\..\..\Common" "-I.\Formats" "-I..\Lib\tiff-4.7.0\libtiff" "-I..\Lib\libpng-1.6.20" "-I..\Lib\zlib" "-I..\Lib\jpeg-9a" "-I..\Lib\glm-0.9.7.2" "-I..\Lib\glew-2.2.0\include" "-I$(QTDIR)\include"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="..\Common\MarkLib.h" />
+    <ClInclude Include="..\Common\MarkTypes.h" />
+    <ClInclude Include="GeneratedFiles\ui_config.h" />
+    <ClInclude Include="..\Common\XString.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OutputWindow.cpp" />
+    <ClCompile Include="Release\moc_ConfigDlg.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="config.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="metadata.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="AeroMap.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);.\Images\arrow.png;.\Images\copy.png;.\Images\cut.png;.\Images\new.png;.\Images\open.png;.\Images\paste.png;.\Images\save.png;.\Images\panview.png;.\Images\rotateview.png;.\Images\zoomview.png;.\Images\meas-area.png;.\Images\meas-distance.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);.\Images\arrow.png;.\Images\copy.png;.\Images\cut.png;.\Images\new.png;.\Images\open.png;.\Images\paste.png;.\Images\save.png;.\Images\panview.png;.\Images\rotateview.png;.\Images\zoomview.png;.\Images\meas-area.png;.\Images\meas-distance.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <CustomBuild Include="scalecolor.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Images\AeroMap.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AeroMap.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="contour.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="light.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="elevation.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\AeroMap.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="about.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="lidar_model.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="drone_proc.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_x64="QT15_2" RccDir=".\GeneratedFiles" UicDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

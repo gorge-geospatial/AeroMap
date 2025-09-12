@@ -1,0 +1,7 @@
+Desc=Color Brewer 5-band blue purple (multi-hue)
+Band= 0, 129,15,124
+Band= 25, 136,86,167
+Band= 50, 140,150,198
+Band= 75, 179,205,227
+Band= 100, 237,248,251
+

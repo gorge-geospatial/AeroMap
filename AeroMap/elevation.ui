@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ElevationDlg</class>
+ <widget class="QDialog" name="ElevationDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>212</width>
+    <height>171</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Change Elevation</string>
+  </property>
+  <widget class="QPushButton" name="cmdClose">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>120</y>
+     <width>91</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdApply">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>91</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinDelta">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>50</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="decimals">
+    <number>1</number>
+   </property>
+   <property name="minimum">
+    <double>-1000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>10.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>100.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinScale">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="decimals">
+    <number>2</number>
+   </property>
+   <property name="minimum">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>16.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="optDelta">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fixed Delta:</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="optScale">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scale Factor:</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="optSmooth">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Smooth</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>optScale</tabstop>
+  <tabstop>spinScale</tabstop>
+  <tabstop>optDelta</tabstop>
+  <tabstop>spinDelta</tabstop>
+  <tabstop>optSmooth</tabstop>
+  <tabstop>cmdApply</tabstop>
+  <tabstop>cmdClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
