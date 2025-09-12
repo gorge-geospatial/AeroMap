@@ -1,0 +1,359 @@
+[INFO]    DTM is turned on, automatically turning on point cloud classification
+[INFO]    Initializing ODM 3.2.0 - Wed Oct 16 11:10:23  2024
+[INFO]    ==============
+[INFO]    3d_tiles: False
+[INFO]    align: None
+[INFO]    auto_boundary: False
+[INFO]    auto_boundary_distance: 0
+[INFO]    bg_removal: False
+[INFO]    boundary: {}
+[INFO]    build_overviews: False
+[INFO]    camera_lens: auto
+[INFO]    cameras: {}
+[INFO]    cog: False
+[INFO]    copy_to: None
+[INFO]    crop: 3
+[INFO]    dem_decimation: 1
+[INFO]    dem_euclidean_map: False
+[INFO]    dem_gapfill_steps: 3
+[INFO]    dem_resolution: 5
+[INFO]    dsm: True
+[INFO]    dtm: True
+[INFO]    end_with: odm_postprocess
+[INFO]    fast_orthophoto: False
+[INFO]    feature_quality: high
+[INFO]    feature_type: sift
+[INFO]    force_gps: False
+[INFO]    gcp: None
+[INFO]    geo: None
+[INFO]    gltf: False
+[INFO]    gps_accuracy: 10
+[INFO]    ignore_gsd: False
+[INFO]    mark_debug: False
+[INFO]    matcher_neighbors: 0
+[INFO]    matcher_order: 0
+[INFO]    matcher_type: flann
+[INFO]    max_concurrency: 16
+[INFO]    merge: all
+[INFO]    mesh_octree_depth: 11
+[INFO]    mesh_size: 200000
+[INFO]    min_num_features: 10000
+[INFO]    name: d:\test_odm
+[INFO]    no_gpu: False
+[INFO]    optimize_disk_space: False
+[INFO]    orthophoto_compression: DEFLATE
+[INFO]    orthophoto_cutline: False
+[INFO]    orthophoto_kmz: False
+[INFO]    orthophoto_no_tiled: False
+[INFO]    orthophoto_png: False
+[INFO]    orthophoto_resolution: 5
+[INFO]    pc_classify: True
+[INFO]    pc_copc: False
+[INFO]    pc_csv: False
+[INFO]    pc_ept: False
+[INFO]    pc_filter: 2.5
+[INFO]    pc_las: False
+[INFO]    pc_quality: medium
+[INFO]    pc_rectify: False
+[INFO]    pc_sample: 0
+[INFO]    pc_skip_geometric: False
+[INFO]    primary_band: auto
+[INFO]    project_path: /
+[INFO]    radiometric_calibration: none
+[INFO]    rerun: None
+[INFO]    rerun_all: False
+[INFO]    rerun_from: None
+[INFO]    rolling_shutter: False
+[INFO]    rolling_shutter_readout: 0
+[INFO]    sfm_algorithm: incremental
+[INFO]    sfm_no_partial: False
+[INFO]    skip_3dmodel: False
+[INFO]    skip_band_alignment: False
+[INFO]    skip_orthophoto: False
+[INFO]    skip_report: False
+[INFO]    sky_removal: False
+[INFO]    sm_cluster: None
+[INFO]    sm_no_align: False
+[INFO]    smrf_scalar: 1.25
+[INFO]    smrf_slope: 0.15
+[INFO]    smrf_threshold: 0.5
+[INFO]    smrf_window: 18.0
+[INFO]    split: 999999
+[INFO]    split_image_groups: None
+[INFO]    split_overlap: 150
+[INFO]    texturing_keep_unseen_faces: False
+[INFO]    texturing_single_material: False
+[INFO]    texturing_skip_global_seam_leveling: False
+[INFO]    texturing_skip_local_seam_leveling: False
+[INFO]    tiles: False
+[INFO]    use_3dmesh: False
+[INFO]    use_exif: False
+[INFO]    use_fixed_camera_params: False
+[INFO]    use_hybrid_bundle_adjustment: False
+[INFO]    video_limit: 500
+[INFO]    video_resolution: 4000
+[INFO]    ===================================================================================================
+[INFO]    Stage: Load Dataset
+[INFO]    ===================================================================================================
+[INFO]    Loading dataset from: d:\test_odm\images
+[INFO]    Loading 68 images
+[INFO]    Wrote images database: d:\test_odm\images.json
+[INFO]    Found 68 usable images
+[INFO]    ===================================================================================================
+[INFO]    Stage: Split
+[INFO]    ===================================================================================================
+[INFO]    Normal dataset, will process all at once.
+[INFO]    ===================================================================================================
+[INFO]    Stage: Merge
+[INFO]    ===================================================================================================
+[INFO]    Normal dataset, nothing to merge.
+[INFO]    ===================================================================================================
+[INFO]    Stage: OpenSFM
+[INFO]    ===================================================================================================
+[INFO]    Maximum photo dimensions: 4000px
+[INFO]    Photo dimensions for feature extraction: 2000px
+[INFO]    CUDA drivers detected
+[INFO]    Using GPU for extracting SIFT features
+[INFO]    Altitude data detected, enabling it for GPS alignment
+[INFO]    ['use_exif_size: no', 'flann_algorithm: KDTREE', 'feature_process_size: 2000', 'feature_min_frames: 10000', 'processes: 16', 'matching_gps_neighbors: 0', 'matching_gps_distance: 0', 'matching_graph_rounds: 50', 'optimize_camera_parameters: yes', 'reconstruction_algorithm: incremental', 'undistorted_image_format: tif', 'bundle_outlier_filtering_type: AUTO', 'sift_peak_threshold: 0.066', 'align_orientation_prior: vertical', 'triangulation_type: ROBUST', 'retriangulation_ratio: 2', 'matcher_type: FLANN', 'feature_type: SIFT_GPU', 'use_altitude_tag: yes', 'align_method: auto', 'local_bundle_radius: 0']
+[INFO]    Wrote reference_lla.json
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" detect_features "d:\test_odm\opensfm"
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" match_features "d:\test_odm\opensfm"
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" create_tracks "d:\test_odm\opensfm"
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" reconstruct "d:\test_odm\opensfm"
+[INFO]    Export reconstruction stats
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" compute_statistics --diagram_max_points 100000 "d:\test_odm\opensfm"
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" export_geocoords --reconstruction --proj "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs +type=crs" --offset-x 322263.0 --offset-y 5157982.0 "d:\test_odm\opensfm"
+[INFO]    Updating d:\test_odm\opensfm\config.yaml
+[INFO]    undistorted_image_max_size: 4000
+[INFO]    Undistorting d:\test_odm\opensfm ...
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" export_visualsfm --points "d:\test_odm\opensfm"
+[INFO]    ===================================================================================================
+[INFO]    Stage: OpenMVS
+[INFO]    ===================================================================================================
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\opensfm\bin\opensfm" export_openmvs "d:\test_odm\opensfm"
+[INFO]    Depthmap resolution set to: 500px
+[INFO]    Estimating depthmaps
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\OpenMVS\DensifyPointCloud" "d:\test_odm\opensfm\undistorted\openmvs\scene.mvs"  --resolution-level 3 --dense-config-file "d:\test_odm\opensfm\undistorted\openmvs\Densify.ini" --max-resolution 4000 --max-threads 16 --number-views-fuse 2 --sub-resolution-levels 2 --archive-type 3 -w "d:\test_odm\opensfm\undistorted\openmvs\depthmaps" -v 0 --cuda-device -1
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\OpenMVS\DensifyPointCloud" --filter-point-cloud -20 -i "d:\test_odm\opensfm\undistorted\openmvs\scene_dense.mvs" -v 0 --cuda-device -1
+[INFO]    ===================================================================================================
+[INFO]    Stage: Filter Points
+[INFO]    ===================================================================================================
+[INFO]    Filtering d:\test_odm\opensfm\undistorted\openmvs\scene_dense_dense_filtered.ply (statistical, meanK 16, standard deviation 2.5)
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\FPCFilter" --input "d:\test_odm\opensfm\undistorted\openmvs\scene_dense_dense_filtered.ply" --output "d:\test_odm\odm_filterpoints\point_cloud.ply" --concurrency 16 --meank 16 --std 2.5 --stats "d:\test_odm\odm_filterpoints\point_cloud_stats.json"
+[INFO]    ===================================================================================================
+[INFO]    Stage: Mesh
+[INFO]    ===================================================================================================
+[INFO]    Writing ODM Mesh file in: d:\test_odm\odm_meshing\odm_mesh.ply
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\PoissonRecon" --in "d:\test_odm\odm_filterpoints\point_cloud.ply" --out "d:\test_odm\odm_meshing\odm_mesh.dirty.ply" --depth 11 --pointWeight 4.0 --samplesPerNode 1.0 --threads 15 --bType 2 --linearFit 
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\OpenMVS\ReconstructMesh" -i "d:\test_odm\odm_meshing\odm_mesh.dirty.ply" -o "d:\test_odm\odm_meshing\odm_mesh.ply" --archive-type 3 --remove-spikes 0 --remove-spurious 20 --smooth 0 --target-face-num 400000 -v 0
+[INFO]    Writing ODM 2.5D Mesh file in: d:\test_odm\odm_meshing\odm_25dmesh.ply
+[INFO]    ODM 2.5D DSM resolution: 0.07
+[INFO]    Created temporary directory: d:\test_odm\odm_meshing\tmp
+[INFO]    Creating DSM for 2.5D mesh
+[INFO]    running pdal info "d:\test_odm\odm_filterpoints\point_cloud.ply" > "C:\Users\xmark\AppData\Local\Temp\tmpk5txuw9p.json"
+[INFO]    Point cloud bounds are [minx: -363.8178406, maxx: 355.2000427] [miny: -308.0976868, maxy: 260.4310303]
+[INFO]    DEM resolution is (8122, 10272), max tile size is 4096, will split DEM generation into 9 tiles
+
+These 2 lines for each tile:
+[INFO]    Generating d:\test_odm\odm_meshing\tmp\mesh_dsm_r0.21991148575128558_x0_y0.tif (max, radius: 0.21991148575128558, resolution: 0.07)
+[INFO]    running pdal pipeline -i "C:\Users\xmark\AppData\Local\Temp\tmpncjno1ll.json"
+
+
+[INFO]    running gdalbuildvrt -input_file_list "d:\test_odm\odm_meshing\tmp\tiles_list.txt" "d:\test_odm\odm_meshing\tmp\tiles.vrt" 
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 34.85% "d:\test_odm\odm_meshing\tmp\tiles.vrt" "d:\test_odm\odm_meshing\tmp\tiles.tmp.tif"
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 34.85% -outsize 10% 0 "d:\test_odm\odm_meshing\tmp\tiles.tmp.tif" "d:\test_odm\odm_meshing\tmp\tiles.small.tif"
+[INFO]    running gdalbuildvrt -resolution highest -r bilinear "d:\test_odm\odm_meshing\tmp\merged.vrt" "d:\test_odm\odm_meshing\tmp\tiles.small_filled.tif" "d:\test_odm\odm_meshing\tmp\tiles.tmp.tif"
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 34.85% "d:\test_odm\odm_meshing\tmp\merged.vrt" "d:\test_odm\odm_meshing\tmp\tiles.tif"
+[INFO]    Starting smoothing...
+[INFO]    Smoothing iteration 1
+[INFO]    Completed smoothing to create d:\test_odm\odm_meshing\tmp\mesh_dsm.tif in 0:00:05.660485
+[INFO]    Completed mesh_dsm.tif in 0:01:12.337811
+[INFO]    Creating mesh from DSM: d:\test_odm\odm_meshing\tmp\mesh_dsm.tif
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\dem2mesh" -inputFile "d:\test_odm\odm_meshing\tmp\mesh_dsm.tif" -outputFile "d:\test_odm\odm_meshing\odm_25dmesh.dirty.ply" -maxTileLength 2000 -maxVertexCount 200000 -maxConcurrency 16 -edgeSwapThreshold 0.15 -verbose 
+Raster Size is 10272x8123
+Extent is (-363.817841, 355.222159), (-308.128542, 260.481458)
+NoData value: -9999
+Description: 
+Reading raster...
+Total vertices before simplification: 83439456
+Blocks depth: 3
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\OpenMVS\ReconstructMesh" -i "d:\test_odm\odm_meshing\odm_25dmesh.dirty.ply" -o "d:\test_odm\odm_meshing\odm_25dmesh.ply" --archive-type 3 --remove-spikes 0 --remove-spurious 0 --smooth 0 --target-face-num 400000 -v 0
+[INFO]    ===================================================================================================
+[INFO]    Stage: Texture
+[INFO]    ===================================================================================================
+[INFO]    Writing MVS Textured file in: d:\test_odm\odm_texturing\odm_textured_model_geo.obj
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\texrecon" "d:\test_odm\opensfm\undistorted/reconstruction.nvm" "d:\test_odm\odm_meshing\odm_mesh.ply" "d:\test_odm\odm_texturing\odm_textured_model_geo" -d gmi -o gauss_clamping -t none --no_intermediate_results      --max_texture_size=8192 
+[INFO]    Writing MVS Textured file in: d:\test_odm\odm_texturing_25d\odm_textured_model_geo.obj
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\texrecon" "d:\test_odm\opensfm\undistorted/reconstruction.nvm" "d:\test_odm\odm_meshing\odm_25dmesh.ply" "d:\test_odm\odm_texturing_25d\odm_textured_model_geo" -d gmi -o gauss_clamping -t none --no_intermediate_results    --nadir_mode  --max_texture_size=8192 
+[INFO]    ===================================================================================================
+[INFO]    Stage: Georeference
+[INFO]    ===================================================================================================
+[INFO]    Georeferencing point cloud
+[INFO]    running pdal translate -i "d:\test_odm\odm_filterpoints\point_cloud.ply" -o "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" ferry transformation --filters.ferry.dimensions="views => UserData" --filters.transformation.matrix="1 0 0 322263.0 0 1 0 5157982.0 0 0 1 0 0 0 0 1" --writers.las.offset_x=322263.0 --writers.las.offset_y=5157982.0 --writers.las.scale_x=0.001 --writers.las.scale_y=0.001 --writers.las.scale_z=0.001 --writers.las.offset_z=0 --writers.las.a_srs="+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs +type=crs"
+[INFO]    Calculating cropping area and generating bounds shapefile from point cloud
+[INFO]    running pdal translate -i "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" -o "d:\test_odm\odm_georeferencing\odm_georeferenced_model.decimated.las" decimation --filters.decimation.step=40 
+[INFO]    running pdal info --boundary --filters.hexbin.edge_size=1 --filters.hexbin.threshold=0 "d:\test_odm\odm_georeferencing\odm_georeferenced_model.decimated.las" > "d:\test_odm\odm_georeferencing\odm_georeferenced_model.boundary.json"
+[INFO]    running pdal info --summary "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" > "d:\test_odm\odm_georeferencing\odm_georeferenced_model.summary.json"
+[INFO]    running ogr2ogr -overwrite -f GPKG -a_srs "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs" "d:\test_odm\odm_georeferencing\odm_georeferenced_model.bounds.gpkg" "d:\test_odm\odm_georeferencing\odm_georeferenced_model.bounds.geojson"
+[INFO]    ===================================================================================================
+[INFO]    Stage: DEM
+[INFO]    ===================================================================================================
+[INFO]    Classify: True
+[INFO]    Create DSM: True
+[INFO]    Create DTM: True
+[INFO]    DEM input file d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz found: True
+[INFO]    Classifying d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz using Simple Morphological Filter (1/2)
+[INFO]    running pdal translate -i d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz -o d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz smrf --filters.smrf.scalar=1.25 --filters.smrf.slope=0.15 --filters.smrf.threshold=0.5 --filters.smrf.window=18.0
+[INFO]    Created d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz in 0:00:11.062321
+[INFO]    Classifying d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz using OpenPointClass (2/2)
+[INFO]    running pcclassify "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" "d:\test_odm\odm_georeferencing\odm_georeferenced_model.classified.laz" "C:\ProgramData\ODM\storage\models\openpointclass\v1_0_0\model.bin" -u -s 2,64
+Model: Gradient Boosted Trees
+Loading C:\ProgramData\ODM\storage\models\openpointclass\v1_0_0\model.bin
+Reading points from d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz
+Number of points: 9912702
+Label dimension: Classification
+Starting resolution: 0.2
+Init scale 0 at 0.2 ...
+Init scale 1 at 0.2 ...
+Init scale 4 at 1.6 ...
+Init scale 3 at 0.8 ...
+Init scale 5 at 3.2 ...
+Init scale 2 at 0.4 ...
+Init scale 6 at 6.4 ...
+Building scale 1 (3311877 points) ...
+Building scale 2 (1374928 points) ...
+Building scale 3 (454825 points) ...
+Building scale 4 (120855 points) ...
+Building scale 5 (30828 points) ...
+Building scale 6 (7416 points) ...
+Features: 126
+Classifying...
+Local smoothing...
+Wrote d:\test_odm\odm_georeferencing\odm_georeferenced_model.classified.laz
+[INFO]    running pdal info --summary "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" > "C:\Users\xmark\AppData\Local\Temp\tmpj0zsibzr.json"
+[INFO]    Point cloud bounds are [minx: 321899.18, maxx: 322618.2] [miny: 5157673.9, maxy: 5158242.43]
+[INFO]    DEM resolution is (11371, 14381), max tile size is 4096, will split DEM generation into 16 tiles
+
+These 2 lines for each tile:
+[INFO]    Generating d:\test_odm\odm_dem\dsm_r0.14_x0_y0.tif (max, radius: 0.14, resolution: 0.05)
+[INFO]    running pdal pipeline -i "C:\Users\xmark\AppData\Local\Temp\tmpvzt8i1vn.json"
+[INFO]    running gdalbuildvrt -input_file_list "d:\test_odm\odm_dem\tiles_list.txt" "d:\test_odm\odm_dem\tiles.vrt" 
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 34.65% "d:\test_odm\odm_dem\tiles.vrt" "d:\test_odm\odm_dem\tiles.tmp.tif"
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 34.65% -outsize 10% 0 "d:\test_odm\odm_dem\tiles.tmp.tif" "d:\test_odm\odm_dem\tiles.small.tif"
+[INFO]    running gdalbuildvrt -resolution highest -r bilinear "d:\test_odm\odm_dem\merged.vrt" "d:\test_odm\odm_dem\tiles.small_filled.tif" "d:\test_odm\odm_dem\tiles.tmp.tif"
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 34.65% "d:\test_odm\odm_dem\merged.vrt" "d:\test_odm\odm_dem\tiles.tif"
+[INFO]    Starting smoothing...
+[INFO]    Smoothing iteration 1
+[INFO]    Completed smoothing to create d:\test_odm\odm_dem\dsm.tif in 0:00:09.847311
+[INFO]    Completed dsm.tif in 0:01:10.488161
+[INFO]    Cropping d:\test_odm\odm_dem\dsm.tif
+[INFO]    running gdalwarp -cutline "d:\test_odm\odm_georeferencing\odm_georeferenced_model.bounds.gpkg" -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co BIGTIFF=IF_SAFER -co NUM_THREADS=16  "d:\test_odm\odm_dem\dsm.original.tif" "d:\test_odm\odm_dem\dsm.tif" --config GDAL_CACHEMAX 35.4%
+Creating output file that is 14126P x 11257L.
+Processing d:\test_odm\odm_dem\dsm.original.tif [1/1] : 0Using internal nodata values (e.g. -9999) for image d:\test_odm\odm_dem\dsm.original.tif.
+Copying nodata values from source d:\test_odm\odm_dem\dsm.original.tif to destination d:\test_odm\odm_dem\dsm.tif.
+[INFO]    running pdal info --summary "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" > "C:\Users\xmark\AppData\Local\Temp\tmp2h9801wc.json"
+[INFO]    Point cloud bounds are [minx: 321899.18, maxx: 322618.2] [miny: 5157673.9, maxy: 5158242.43]
+[INFO]    DEM resolution is (11371, 14381), max tile size is 4096, will split DEM generation into 16 tiles
+
+These 2 lines for each tile:
+[INFO]    Generating d:\test_odm\odm_dem\dtm_r0.14_x0_y0.tif (idw, radius: 0.14, resolution: 0.05)
+[INFO]    running pdal pipeline -i "C:\Users\xmark\AppData\Local\Temp\tmpzczee68s.json"
+
+[INFO]    running gdalbuildvrt -input_file_list "d:\test_odm\odm_dem\tiles_list.txt" "d:\test_odm\odm_dem\tiles.vrt" 
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 34.55% "d:\test_odm\odm_dem\tiles.vrt" "d:\test_odm\odm_dem\tiles.tmp.tif"
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 34.55% -outsize 10% 0 "d:\test_odm\odm_dem\tiles.tmp.tif" "d:\test_odm\odm_dem\tiles.small.tif"
+[INFO]    running gdalbuildvrt -resolution highest -r bilinear "d:\test_odm\odm_dem\merged.vrt" "d:\test_odm\odm_dem\tiles.small_filled.tif" "d:\test_odm\odm_dem\tiles.tmp.tif"
+[INFO]    running gdal_translate -co NUM_THREADS=16 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 34.55% "d:\test_odm\odm_dem\merged.vrt" "d:\test_odm\odm_dem\tiles.tif"
+[INFO]    Starting smoothing...
+[INFO]    Smoothing iteration 1
+[INFO]    Completed smoothing to create d:\test_odm\odm_dem\dtm.tif in 0:00:10.895990
+[INFO]    Completed dtm.tif in 0:01:07.605777
+[INFO]    Cropping d:\test_odm\odm_dem\dtm.tif
+[INFO]    running gdalwarp -cutline "d:\test_odm\odm_georeferencing\odm_georeferenced_model.bounds.gpkg" -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co BIGTIFF=IF_SAFER -co NUM_THREADS=16  "d:\test_odm\odm_dem\dtm.original.tif" "d:\test_odm\odm_dem\dtm.tif" --config GDAL_CACHEMAX 35.35%
+Creating output file that is 14126P x 11257L.
+Processing d:\test_odm\odm_dem\dtm.original.tif [1/1] : 0Using internal nodata values (e.g. -9999) for image d:\test_odm\odm_dem\dtm.original.tif.
+Copying nodata values from source d:\test_odm\odm_dem\dtm.original.tif to destination d:\test_odm\odm_dem\dtm.tif.
+[INFO]    ===================================================================================================
+[INFO]    Stage: Orthophoto
+[INFO]    ===================================================================================================
+[INFO]    Creating GeoTIFF
+[INFO]    running "C:\ODM-3.2.0\SuperBuild\install\bin\odm_orthophoto" -inputFiles "d:\test_odm\odm_texturing_25d\odm_textured_model_geo.obj" -logFile "d:\test_odm\odm_orthophoto\odm_orthophoto_log.txt" -outputFile "d:\test_odm\odm_orthophoto\odm_orthophoto.tif" -resolution 20.0 -verbose -outputCornerFile "d:\test_odm\odm_orthophoto\odm_orthophoto_corners.txt"   -inpaintThreshold 1.0 -utm_north_offset 5157982.0 -utm_east_offset 322263.0 -a_srs "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs +type=crs" -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=16 --config GDAL_CACHEMAX 11983939584.0 
+Inpaint threshold was set to: 1
+
+Reading mesh file... d:\test_odm\odm_texturing_25d\odm_textured_model_geo.obj
+Found material0000
+Loading odm_textured_model_geo_material0000_map_Kd.png
+Found material0001
+.. clip ..
+Found material0008
+Loading odm_textured_model_geo_material0008_map_Kd.png
+Mesh file read.
+
+Boundary points:
+Point 1: -363.818 -307.849
+Point 2: -363.818 260.481
+Point 3: 355.152 260.481
+Point 4: 355.152 -307.849
+
+Model bounds x : -363.818 -> 355.152
+Model bounds y : -307.849 -> 260.481
+Model area : 408612m2
+Model resolution, width x height : 14380x11367
+Translating and scaling mesh...
+Rendering the ortho photo...
+Texture channels: 3
+Texture depth: 8bit
+Rendering material0000 ... done
+Rendering material0001 ... done
+Rendering material0002 ... done
+Rendering material0003 ... done
+Rendering material0004 ... done
+Rendering material0005 ... done
+Rendering material0006 ... done
+Rendering material0007 ... done
+Rendering material0008 ... done
+... model rendered
+
+Edge inpainting
+Writing ortho photo to d:\test_odm\odm_orthophoto\odm_orthophoto.tif
+Writing corner coordinates to d:\test_odm\odm_orthophoto\odm_orthophoto_corners.txt
+Orthophoto generation done.
+[INFO]    Cropping d:\test_odm\odm_orthophoto\odm_orthophoto.tif
+[INFO]    running gdalwarp -cutline "d:\test_odm\odm_georeferencing\odm_georeferenced_model.bounds.gpkg" -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=16 -dstalpha "d:\test_odm\odm_orthophoto\odm_orthophoto.original.tif" "d:\test_odm\odm_orthophoto\odm_orthophoto.tif" --config GDAL_CACHEMAX 35.25%
+Using band 4 of source image as alpha.
+Creating output file that is 14127P x 11257L.
+Processing d:\test_odm\odm_orthophoto\odm_orthophoto.original.tif
+[INFO]    ===================================================================================================
+[INFO]    Stage: Report
+[INFO]    ===================================================================================================
+[INFO]    Exporting shots.geojson
+[INFO]    Wrote d:\test_odm\odm_report\shots.geojson
+[INFO]    running pdal info --dimensions "X,Y,Z" "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" > "d:\test_odm\odm_georeferencing\odm_georeferenced_model.info.json"
+[INFO]    running pdal translate -i "d:\test_odm\odm_georeferencing\odm_georeferenced_model.laz" -o "d:\test_odm\opensfm\stats\overlap.tif" --writer gdal --writers.gdal.resolution=0.5135857142857276 --writers.gdal.data_type=uint8_t --writers.gdal.dimension=UserData --writers.gdal.output_type=max --writers.gdal.radius=0.7263198825839495 
+[INFO]    Cropping d:\test_odm\opensfm\stats\overlap.tif
+[INFO]    running gdalwarp -cutline "d:\test_odm\odm_georeferencing\odm_georeferenced_model.bounds.gpkg" -crop_to_cutline -co TILED=YES -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co NUM_THREADS=16  "d:\test_odm\opensfm\stats\overlap.original.tif" "d:\test_odm\opensfm\stats\overlap.tif" --config GDAL_CACHEMAX 35.55%
+Creating output file that is 1374P x 1095L.
+Processing d:\test_odm\opensfm\stats\overlap.original.tif [1/1] : 0Using internal nodata values (e.g. 255) for image d:\test_odm\opensfm\stats\overlap.original.tif.
+Copying nodata values from source d:\test_odm\opensfm\stats\overlap.original.tif to destination d:\test_odm\opensfm\stats\overlap.tif.
+[INFO]    running gdaldem color-relief "d:\test_odm\opensfm\stats\overlap.tif" "C:\ODM-3.2.0\opendm\report\overlap_color_map.txt" "d:\test_odm\opensfm\stats\overlap.png" -of PNG -alpha
+[INFO]    running gdal_translate -of png "d:\test_odm\odm_orthophoto\odm_orthophoto.tif" "d:\test_odm\opensfm\stats\ortho.png" -outsize 1400 0  --config GDAL_CACHEMAX 35.55% 
+[INFO]    running gdal_translate -outsize 1400 0 "d:\test_odm\odm_dem\dsm.tif" "d:\test_odm\odm_dem\dsm.preview.tif" --config GDAL_CACHEMAX 35.55%
+[INFO]    Computing raster stats for d:\test_odm\odm_dem\dsm.preview.tif
+[INFO]    running gdaldem color-relief "d:\test_odm\odm_dem\dsm.preview.tif" "C:\ODM-3.2.0\opendm\tiles\color_relief.txt" "d:\test_odm\odm_dem\dsm.previewcolor.tif" -alpha -co ALPHA=YES
+[INFO]    running gdaldem hillshade "d:\test_odm\odm_dem\dsm.preview.tif" "d:\test_odm\odm_dem\dsm.previewhillshade.tif" -z 1.0 -s 1.0 -az 315.0 -alt 45.0
+[INFO]    running C:\ODM-3.2.0\venv\Scripts\python.exe "C:\ODM-3.2.0\opendm\tiles\hsv_merge.py" "d:\test_odm\odm_dem\dsm.previewcolor.tif" "d:\test_odm\odm_dem\dsm.previewhillshade.tif" "d:\test_odm\odm_dem\dsm.previewcolored_hillshade.tif"
+[INFO]    running gdal_translate -outsize 1400 0 -of png "d:\test_odm\odm_dem\dsm.previewcolored_hillshade.tif" "d:\test_odm\opensfm\stats\dsm.png" --config GDAL_CACHEMAX 35.5%
+[INFO]    running gdal_translate -outsize 1400 0 "d:\test_odm\odm_dem\dtm.tif" "d:\test_odm\odm_dem\dtm.preview.tif" --config GDAL_CACHEMAX 35.55%
+[INFO]    Computing raster stats for d:\test_odm\odm_dem\dtm.preview.tif
+[INFO]    running gdaldem color-relief "d:\test_odm\odm_dem\dtm.preview.tif" "C:\ODM-3.2.0\opendm\tiles\color_relief.txt" "d:\test_odm\odm_dem\dtm.previewcolor.tif" -alpha -co ALPHA=YES
+[INFO]    running gdaldem hillshade "d:\test_odm\odm_dem\dtm.preview.tif" "d:\test_odm\odm_dem\dtm.previewhillshade.tif" -z 1.0 -s 1.0 -az 315.0 -alt 45.0
+[INFO]    running C:\ODM-3.2.0\venv\Scripts\python.exe "C:\ODM-3.2.0\opendm\tiles\hsv_merge.py" "d:\test_odm\odm_dem\dtm.previewcolor.tif" "d:\test_odm\odm_dem\dtm.previewhillshade.tif" "d:\test_odm\odm_dem\dtm.previewcolored_hillshade.tif"
+[INFO]    running gdal_translate -outsize 1400 0 -of png "d:\test_odm\odm_dem\dtm.previewcolored_hillshade.tif" "d:\test_odm\opensfm\stats\dtm.png" --config GDAL_CACHEMAX 35.5%
+[INFO]    Exporting report to d:\test_odm\odm_report\report.pdf
+[INFO]    ===================================================================================================
+[INFO]    Stage: Post Process
+[INFO]    ===================================================================================================
+[INFO]    Finished odm_postprocess stage
+
+[INFO]    ODM app finished - Wed Oct 16 11:36:23  2024

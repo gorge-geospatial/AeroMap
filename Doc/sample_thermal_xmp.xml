@@ -1,0 +1,34 @@
+<?xpacket begin="∩╗┐" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<rdf:Description rdf:about="DJI Meta Data"
+		xmlns:drone-dji="http://www.dji.com/drone-dji/1.0/"
+		xmlns:FLIR="http://www.dji.com/FLIR/1.0/"
+		drone-dji:AbsoluteAltitude="318.358826"
+		drone-dji:RelativeAltitude="50.599998"
+		drone-dji:GimbalRollDegree="0.000000"
+		drone-dji:GimbalYawDegree="-179.300003"
+		drone-dji:GimbalPitchDegree="-90.000000"
+		drone-dji:FlightRollDegree="3.000000"
+		drone-dji:FlightYawDegree="179.600006"
+		drone-dji:FlightPitchDegree="-4.700000"
+		FLIR:CentralTemperature="25"
+		FLIR:TlinearGain="0">
+	<FLIR:BandName>
+		<rdf:Seq>
+		<rdf:li>LWIR</rdf:li>
+		</rdf:Seq>
+	</FLIR:BandName>
+	<FLIR:CentralWavelength>
+		<rdf:Seq>
+		<rdf:li>10000</rdf:li>
+		</rdf:Seq>
+	</FLIR:CentralWavelength>
+		<FLIR:WavelengthFWHM>
+		<rdf:Seq>
+		<rdf:li>4500</rdf:li>
+		</rdf:Seq>
+	</FLIR:WavelengthFWHM>
+	</rdf:Description>
+</rdf:RDF></x:xmpmeta>
+<?xpacket end="w"?>
