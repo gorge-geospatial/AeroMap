@@ -1,0 +1,66 @@
+.vs
+*.pdb
+*.ilk
+*.user
+*.vcxproj.FileListAbsolute.txt
+
+UnitTests/TestBmpFile/x64
+UnitTests/TestCalc/x64
+UnitTests/TestCamera/x64
+UnitTests/TestDateTime/x64
+UnitTests/TestGcpFile/x64
+UnitTests/TestGdal/x64
+UnitTests/TestGis/x64
+UnitTests/TestLasFile/x64
+UnitTests/TestLasLib/x64
+UnitTests/TestLasZip/x64
+UnitTests/TestLibTiff/x64
+UnitTests/TestModel_3DS/x64
+UnitTests/TestModel_AC/x64
+UnitTests/TestModel_OBJ/x64
+UnitTests/TestModel_STL/x64
+UnitTests/TestModel_X/x64
+UnitTests/TestMulti/x64
+UnitTests/TestPdal/x64
+UnitTests/TestPhoto/x64
+UnitTests/TestPngFile/x64
+UnitTests/TestProj/x64
+UnitTests/TestRasterFile/x64
+UnitTests/TestShapeFile/x64
+UnitTests/TestShots/x64
+UnitTests/TestSvgFile/x64
+UnitTests/TestTiffFile/x64
+UnitTests/TestXString/x64
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+# *.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+#*.lib
+
+# Executables
+#*.exe
+*.out
+*.app
