@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: codem
+Version: 0.24.0
+Summary: A package for co-registering geospatial data
+Author: Jesse Shanahan, Bahirah Adewunmi
+Author-email: Preston Hartzell <pjhartzell@uh.edu>
+Maintainer-email: Ognyan Moore <ogi@hobu.co>
+License: Apache-2.0
+Project-URL: homepage, https://github.com/NCALM-UH/CODEM
+Project-URL: repository, https://github.com/NCALM-UH/CODEM
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions
+

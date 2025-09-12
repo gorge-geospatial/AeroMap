@@ -1,0 +1,3 @@
+[console_scripts]
+codem = codem.main:main
+vcd = vcd.main:main
