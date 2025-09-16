@@ -7,7 +7,24 @@
 AeroMap/x64
 AeroMap/Debug
 AeroMap/Release
+AeroMap/GeneratedFiles
 
+Lib/CppUnitLite/x64
+Lib/gdal-3.2.1/x64
+Lib/geos-3.13.0/geos.dir
+Lib/geos-3.13.0/geos_c.dir
+Lib/geos-3.13.0/Lib
+Lib/geos-3.13.0/src/deps/ryu.dir/Debug
+Lib/jpeg-9a/x64
+Lib/laslib/x64
+Lib/laszip/x64
+Lib/libpng-1.6.20/x64
+Lib/pdal-2.3/x64
+Lib/proj-7.1.1/build_vs14_x64/src/x64
+Lib/tiff-4.7.0/libtiff/Debug
+Lib/tiff-4.7.0/libtiff/tiff.dir
+Lib/zlib/x64
+ 
 UnitTests/TestBmpFile/x64
 UnitTests/TestCalc/x64
 UnitTests/TestCamera/x64
@@ -24,6 +41,7 @@ UnitTests/TestModel_AC/x64
 UnitTests/TestModel_OBJ/x64
 UnitTests/TestModel_STL/x64
 UnitTests/TestModel_X/x64
+UnitTests/TestMulti/Debug
 UnitTests/TestMulti/x64
 UnitTests/TestPdal/x64
 UnitTests/TestPhoto/x64
