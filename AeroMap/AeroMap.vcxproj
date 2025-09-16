@@ -56,6 +56,7 @@
     <OutDir>$(ProjectDir)\$(Platform)\$(Configuration)\</OutDir>
     <LinkIncremental>
     </LinkIncremental>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IntDir>$(ProjectDir)\$(Platform)\$(Configuration)\</IntDir>

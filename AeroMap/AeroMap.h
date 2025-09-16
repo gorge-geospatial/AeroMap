@@ -78,6 +78,12 @@ public:
 		Terrain
 	};
 
+	enum class TerrainType
+	{
+		DTM,		// Digital Terrain Model, ground only
+		DSM			// Digital Surface Model, ground + objects
+	};
+
 	Tool m_Tool;	// active tool
 
 public:

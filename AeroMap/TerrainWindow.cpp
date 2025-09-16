@@ -75,9 +75,7 @@ TerrainWindow::TerrainWindow(QWidget* parent, int model_type)
 	
 	CreateActions();
 
-	//TODO:
-	//literal
-	if (model_type == 1)
+	if (model_type == (int)AeroMap::TerrainType::DTM)
 		ms_FileName = tree.dtm_file;
 	else
 		ms_FileName = tree.dsm_file;
