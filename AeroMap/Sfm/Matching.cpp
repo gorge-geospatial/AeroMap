@@ -123,6 +123,8 @@ void Matching::match_images_with_pairs()
 //
 //    return output[:-2] + ")"
 
+void Matching::save_matches()
+{
 //def save_matches(
 //    data: DataSetBase,
 //    images_ref: List[str],
@@ -147,6 +149,7 @@ void Matching::match_images_with_pairs()
 //
 //    for im1, im1_matches in matches_per_im1.items():
 //        data.save_matches(im1, im1_matches)
+}
 
 //def match_arguments(
 //    pairs: List[Tuple[str, str]],
@@ -449,6 +452,8 @@ void Matching::match_images_with_pairs()
 //        matcher_type,
 //    )
 
+void Matching::match_robust()
+{
 //def match_robust(
 //    im1: str,
 //    im2: str,
@@ -520,7 +525,10 @@ void Matching::match_images_with_pairs()
 //    if len(rmatches_unfiltered) < robust_matching_min_match:
 //        return np.array([])
 //    return np.array(rmatches_unfiltered, dtype=int)
+}
 
+void Matching::_match_robust_impl()
+{
 //def _match_robust_impl(
 //    im1: str,
 //    im2: str,
@@ -537,7 +545,10 @@ void Matching::match_images_with_pairs()
 //    rmatches = robust_match(p1, p2, camera1, camera2, matches, overriden_config)
 //    rmatches = np.array([[a, b] for a, b in rmatches])
 //    return rmatches
+}
 
+void Matching::match()
+{
 //def match(
 //    im1: str,
 //    im2: str,
@@ -610,7 +621,10 @@ void Matching::match_images_with_pairs()
 //    if len(rmatches) < robust_matching_min_match:
 //        return np.array([])
 //    return np.array(rmatches, dtype=int)
+}
 
+void Matching::match_words()
+{
 //def match_words(
 //    f1: np.ndarray,
 //    words1: np.ndarray,
@@ -630,7 +644,10 @@ void Matching::match_images_with_pairs()
 //    ratio = config["lowes_ratio"]
 //    num_checks = config["bow_num_checks"]
 //    return pyfeatures.match_using_words(f1, words1, f2, words2[:, 0], ratio, num_checks)
+}
 
+void Matching::match_words_symmetric()
+{
 //def match_words_symmetric(
 //    f1: np.ndarray,
 //    words1: np.ndarray,
@@ -653,6 +670,7 @@ void Matching::match_images_with_pairs()
 //    matches_ji = [(b, a) for a, b in matches_ji]
 //
 //    return list(set(matches_ij).intersection(set(matches_ji)))
+}
 
 //def match_flann(
 //    index: Any, f2: np.ndarray, config: Dict[str, Any]

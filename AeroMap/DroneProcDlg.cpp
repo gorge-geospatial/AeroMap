@@ -107,6 +107,6 @@ void DroneProcDlg::LoadComboBoxes()
 	cboPointCloudQuality->addItem("lowest");
 
 	cboFeatureType->clear();
-	cboFeatureType->addItem("sift");
+	cboFeatureType->addItem("SIFT");
 	//akaze, hahog, orb, sift
 }

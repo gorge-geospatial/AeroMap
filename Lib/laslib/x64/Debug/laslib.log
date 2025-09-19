@@ -1,1 +1,54 @@
-﻿
+﻿  lasreader.cpp
+  lasignore.cpp
+  laswriter.cpp
+  lasreader_las.cpp
+  lasreader_bin.cpp
+  lasreader_shp.cpp
+  lasreader_asc.cpp
+  lasreader_bil.cpp
+  lasreader_dtm.cpp
+  lasreader_ply.cpp
+  lasreader_qfit.cpp
+  lasreader_txt.cpp
+  lasreadermerged.cpp
+  lasreaderbuffered.cpp
+  lasreaderstored.cpp
+  lasreaderpipeon.cpp
+  laswriter_las.cpp
+  laswriter_bin.cpp
+  laswriter_qfit.cpp
+  laswriter_wrl.cpp
+  Generating Code...
+  Compiling...
+  laswriter_txt.cpp
+  laswritercompatible.cpp
+  laswaveform13reader.cpp
+  laswaveform13writer.cpp
+  lasutility.cpp
+  lasfilter.cpp
+  lastransform.cpp
+  laskdtree.cpp
+  fopen_compressed.cpp
+  lasreadpoint.cpp
+  lasreaditemcompressed_v1.cpp
+  lasreaditemcompressed_v2.cpp
+  lasreaditemcompressed_v3.cpp
+  lasreaditemcompressed_v4.cpp
+  laswritepoint.cpp
+  laswriteitemcompressed_v1.cpp
+  laswriteitemcompressed_v2.cpp
+  laswriteitemcompressed_v3.cpp
+  laswriteitemcompressed_v4.cpp
+  integercompressor.cpp
+  Generating Code...
+  Compiling...
+  arithmeticdecoder.cpp
+  arithmeticencoder.cpp
+  arithmeticmodel.cpp
+  lasindex.cpp
+  lasquadtree.cpp
+  lasinterval.cpp
+  laszip.cpp
+  mydefs.cpp
+  Generating Code...
+  laslib.vcxproj -> C:\AeroMap\Lib\laslib\x64\Debug\laslib.lib

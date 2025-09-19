@@ -705,7 +705,7 @@ void Project::InitArg()
 	//					processing of sequential images, such as those extracted from video. It is applied only on
 	//					non-georeferenced datasets. Set to 0 to disable. Default: 0
 
-	arg.feature_type = "sift";
+	arg.feature_type = "SIFT";
 	// --feature-type <string>
 	//					Choose the algorithm for extracting keypoints and computing descriptors. Can be one of: akaze,
 	//					hahog, orb, sift. Default: sift

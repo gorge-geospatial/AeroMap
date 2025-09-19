@@ -141,7 +141,7 @@ int StageGeoref::Run()
 				fprintf(pFile, "        \"scale_x\": 0.001,\n");
 				fprintf(pFile, "        \"scale_y\": 0.001,\n");
 				fprintf(pFile, "        \"scale_z\": 0.001,\n");
-				fprintf(pFile, "        \"a_srs\": \"+proj=utm +zone=%d +datum=WGS84 +units=m +no_defs +type=crs\"\n", georef.utm_zone);
+				fprintf(pFile, "        \"a_srs\": \"%s\"\n", AeroLib::GetProj(georef).c_str());
 				fprintf(pFile, "    }\n");
 
 				fprintf(pFile, "]\n");

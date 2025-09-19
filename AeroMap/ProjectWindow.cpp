@@ -251,15 +251,11 @@ void ProjectWindow::OnItemDoubleClicked(QTreeWidgetItem* pItem, int column)
 	}
 	else if (pItem == mp_ItemDTM)
 	{
-		//TODO:
-		//literal
-		GetApp()->ActivateView(AeroMap::ViewType::Terrain, 1);
+		GetApp()->ActivateView(AeroMap::ViewType::Terrain, (int)AeroMap::TerrainType::DTM);
 	}
 	else if (pItem == mp_ItemDSM)
 	{
-		//TODO:
-		//literal
-		GetApp()->ActivateView(AeroMap::ViewType::Terrain, 2);
+		GetApp()->ActivateView(AeroMap::ViewType::Terrain, (int)AeroMap::TerrainType::DSM);
 	}
 	else if (pItem->parent() == mp_ItemLidarRoot)
 	{

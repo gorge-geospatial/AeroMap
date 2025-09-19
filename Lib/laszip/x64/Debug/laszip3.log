@@ -1,1 +1,21 @@
-﻿
+﻿  arithmeticdecoder.cpp
+  arithmeticencoder.cpp
+  arithmeticmodel.cpp
+  integercompressor.cpp
+  lasindex.cpp
+  lasinterval.cpp
+  lasquadtree.cpp
+  lasreaditemcompressed_v1.cpp
+  lasreaditemcompressed_v2.cpp
+  lasreaditemcompressed_v3.cpp
+  lasreaditemcompressed_v4.cpp
+  lasreadpoint.cpp
+  laswriteitemcompressed_v1.cpp
+  laswriteitemcompressed_v2.cpp
+  laswriteitemcompressed_v3.cpp
+  laswriteitemcompressed_v4.cpp
+  laswritepoint.cpp
+  laszip.cpp
+  laszip_dll.cpp
+  mydefs.cpp
+  laszip3.vcxproj -> C:\AeroMap\Lib\laszip\x64\Debug\laszip3.lib

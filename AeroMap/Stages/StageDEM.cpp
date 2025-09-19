@@ -16,7 +16,7 @@ int StageDEM::Run()
 	//		+ georeference
 	//			georeferenced_model.laz
 	// Outputs:
-	//		+ odm_dem
+	//		+ dem
 	//			dtm.tif
 	//			dsm.tif
 	//			dtm.dat

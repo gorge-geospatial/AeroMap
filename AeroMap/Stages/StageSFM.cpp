@@ -160,8 +160,7 @@ void StageSFM::ExportGeocoords()
 			args.push_back("export_geocoords");
 			args.push_back("--reconstruction");
 			args.push_back("--proj");
-			//TODO: no 's' handling
-			args.push_back(XString::Format("+proj=utm +zone=%d +datum=WGS84 +units=m +no_defs +type=crs", georef.utm_zone).c_str());
+			args.push_back(AeroLib::GetProj(georef).c_str());
 			args.push_back("--offset-x");
 			args.push_back(XString::Format("%0.1f", georef.x).c_str());
 			args.push_back("--offset-y");

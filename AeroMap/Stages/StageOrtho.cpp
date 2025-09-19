@@ -119,7 +119,7 @@ int StageOrtho::Run()
 			args.push_back("-utm_east_offset");
 			args.push_back(XString::Format("%0.1f", georef.x).c_str());
 			args.push_back("-a_srs");
-			args.push_back(XString::Format("+proj=utm +zone=%d +datum=WGS84 +units=m +no_defs +type=crs", georef.utm_zone).c_str());
+			args.push_back(AeroLib::GetProj(georef).c_str());
 		}
 		if (bands.IsEmpty() == false)
 		{

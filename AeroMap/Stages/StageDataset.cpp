@@ -159,7 +159,7 @@ int StageDataset::InitGeoref()
 	pFile = fopen(file_name.c_str(), "wt");
 	if (pFile)
 	{
-		fprintf(pFile, "+proj=utm +zone=%d +datum=WGS84 +units=m +no_defs +type=crs\n", utm_zone);
+		fprintf(pFile, AeroLib::GetProj(utm_zone, hemi).c_str());
 
 		fclose(pFile);
 	}
